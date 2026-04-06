@@ -9,9 +9,10 @@ import logging
 
 import numpy as np
 import pandas as pd
+from sklearn.model_selection import KFold
 
 from price_estimator.features import extract_description_features
-from price_estimator.models import XGBoostModel
+from price_estimator.models import CV_SEED, N_FOLDS, XGBoostModel
 
 logger = logging.getLogger(__name__)
 
@@ -33,10 +34,15 @@ def compute_estimator_bias(df: pd.DataFrame) -> dict:
             - by_material: bias breakdown by estimator x material
             - over_time: monthly rolling bias per estimator
     """
-    # Train debiased model on full dataset
+    # Use out-of-fold predictions for honest bias estimates.
+    # Training on full data then predicting on the same data would
+    # overfit the neutral model, attributing fitting noise to bias.
     m9 = XGBoostModel(name="M9_bias", exclude_estimator=True)
-    m9.fit(df)
-    neutral_preds = m9.predict(df)
+    kf = KFold(n_splits=N_FOLDS, shuffle=True, random_state=CV_SEED)
+    neutral_preds = np.zeros(len(df))
+    for train_idx, test_idx in kf.split(df):
+        m9.fit(df.iloc[train_idx].copy())
+        neutral_preds[test_idx] = m9.predict(df.iloc[test_idx].copy())
 
     # Clamp predictions to a minimum to avoid division by zero
     neutral_preds = np.maximum(neutral_preds, 1.0)

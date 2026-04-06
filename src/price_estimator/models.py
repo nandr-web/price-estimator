@@ -794,6 +794,22 @@ class M8PerEstimatorXGBoost(BaseModel):
             mask = df["Estimator"] == estimator
             if mask.sum() > 0:
                 preds[mask.values] = model.predict(df[mask])
+
+        # Guard: fallback for estimators absent from training
+        missing_estimators = set(df["Estimator"].unique()) - set(self.models.keys())
+        if missing_estimators:
+            logger.warning(
+                "M8: estimators %s absent from training, using ensemble fallback",
+                missing_estimators,
+            )
+            for est in missing_estimators:
+                mask = df["Estimator"] == est
+                if mask.sum() > 0:
+                    sub_preds = np.column_stack(
+                        [m.predict(df[mask]) for m in self.models.values()]
+                    )
+                    preds[mask.values] = np.mean(sub_preds, axis=1)
+
         return preds
 
 

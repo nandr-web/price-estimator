@@ -262,20 +262,40 @@ class TestBuildFeatureMatrixNoEstimator:
 class TestFeatureMatrixWithMissing:
     """Tests for feature matrix behavior with missing values."""
 
-    def test_missing_material_produces_nan_tier(self, sample_df):
-        """Missing Material produces NaN in material_cost_tier."""
+    def test_missing_material_imputed_to_median_tier(self, sample_df):
+        """Missing Material is imputed to median tier (3.0), not NaN or 0."""
         sample_df.loc[sample_df.index[0], "Material"] = np.nan
         X, _ = build_feature_matrix(sample_df, encoding="onehot")
-        assert np.isnan(X.loc[sample_df.index[0], "material_cost_tier"])
+        assert X.loc[sample_df.index[0], "material_cost_tier"] == 3.0
 
-    def test_missing_process_produces_nan_tier(self, sample_df):
-        """Missing Process produces NaN in process_precision_tier."""
+    def test_missing_process_imputed_to_median_tier(self, sample_df):
+        """Missing Process is imputed to median tier (3.0), not NaN or 0."""
         sample_df.loc[sample_df.index[0], "Process"] = np.nan
         X, _ = build_feature_matrix(sample_df, encoding="onehot")
-        assert np.isnan(X.loc[sample_df.index[0], "process_precision_tier"])
+        assert X.loc[sample_df.index[0], "process_precision_tier"] == 3.0
 
-    def test_real_data_nan_count_in_tiers(self, raw_data):
-        """NaN count in tier columns matches missing count in source columns."""
+    def test_missing_material_indicator(self, sample_df):
+        """Missing Material sets missing_material indicator to 1."""
+        sample_df.loc[sample_df.index[0], "Material"] = np.nan
+        X, _ = build_feature_matrix(sample_df, encoding="onehot")
+        assert X.loc[sample_df.index[0], "missing_material"] == 1
+        assert X.loc[sample_df.index[1], "missing_material"] == 0
+
+    def test_missing_process_indicator(self, sample_df):
+        """Missing Process sets missing_process indicator to 1."""
+        sample_df.loc[sample_df.index[0], "Process"] = np.nan
+        X, _ = build_feature_matrix(sample_df, encoding="onehot")
+        assert X.loc[sample_df.index[0], "missing_process"] == 1
+        assert X.loc[sample_df.index[1], "missing_process"] == 0
+
+    def test_real_data_no_nan_in_tiers(self, raw_data):
+        """Tier columns have no NaN after imputation."""
         X, _ = build_feature_matrix(raw_data, encoding="onehot")
-        assert X["material_cost_tier"].isna().sum() == raw_data["Material"].isna().sum()
-        assert X["process_precision_tier"].isna().sum() == raw_data["Process"].isna().sum()
+        assert X["material_cost_tier"].isna().sum() == 0
+        assert X["process_precision_tier"].isna().sum() == 0
+
+    def test_real_data_missing_indicator_counts(self, raw_data):
+        """Missing indicator counts match source column missing counts."""
+        X, _ = build_feature_matrix(raw_data, encoding="onehot")
+        assert X["missing_material"].sum() == raw_data["Material"].isna().sum()
+        assert X["missing_process"].sum() == raw_data["Process"].isna().sum()

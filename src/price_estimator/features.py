@@ -13,6 +13,8 @@ import numpy as np
 import pandas as pd
 from rapidfuzz import fuzz, process
 
+from price_estimator.data import VALID_ESTIMATORS, VALID_MATERIALS, VALID_PROCESSES
+
 logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
@@ -52,6 +54,25 @@ ALL_COMPLEXITY_FLAGS = [flag for flag, _weight in MODIFIER_REGISTRY.values()]
 
 # Minimum rapidfuzz similarity score (0-100) to accept a fuzzy match.
 FUZZY_MATCH_THRESHOLD = 85
+
+# Stable category orderings for label encoding. Using explicit categories
+# ensures codes are consistent across CV folds regardless of which subset
+# of categories appears in a given split. Without this, .cat.codes assigns
+# codes by alphabetical order of *observed* categories, which can shift if
+# a fold is missing a category.
+LABEL_ENCODING_CATEGORIES = {
+    "base_part_type": sorted(BASE_PART_TYPES.values()),
+    "material": sorted(VALID_MATERIALS),
+    "process": sorted(VALID_PROCESSES),
+    "estimator": sorted(VALID_ESTIMATORS),
+}
+
+# Expected one-hot columns per categorical feature. Ensures consistent
+# column sets across CV folds — if a fold is missing a category,
+# pd.get_dummies() would omit that column. We add it back as zeros.
+ONEHOT_EXPECTED_COLUMNS = {
+    name: [f"{name}_{cat}" for cat in cats] for name, cats in LABEL_ENCODING_CATEGORIES.items()
+}
 
 # ---------------------------------------------------------------------------
 # Material and process ordinal tiers
@@ -273,9 +294,19 @@ def build_feature_matrix(
     features["rush_job"] = df["RushJob"].astype(int)
     features["lead_time_weeks"] = df["LeadTimeWeeks"]
 
-    # Ordinal tiers (useful for both encoding types)
-    features["material_cost_tier"] = df["Material"].map(MATERIAL_COST_TIER).astype(float)
-    features["process_precision_tier"] = df["Process"].map(PROCESS_PRECISION_TIER).astype(float)
+    # Missing value indicators (before encoding drops the NaN signal)
+    features["missing_material"] = df["Material"].isna().astype(int)
+    features["missing_process"] = df["Process"].isna().astype(int)
+
+    # Ordinal tiers — impute missing to median tier (3.0) rather than
+    # leaving as NaN which becomes 0.0 after fillna, falsely implying
+    # cheaper/simpler than any known category.
+    features["material_cost_tier"] = (
+        df["Material"].map(MATERIAL_COST_TIER).astype(float).fillna(3.0)
+    )
+    features["process_precision_tier"] = (
+        df["Process"].map(PROCESS_PRECISION_TIER).astype(float).fillna(3.0)
+    )
 
     # Complexity features
     for flag in ALL_COMPLEXITY_FLAGS:
@@ -293,10 +324,23 @@ def build_feature_matrix(
     if encoding == "onehot":
         for name, series in categoricals.items():
             dummies = pd.get_dummies(series, prefix=name, dtype=int)
+            # Ensure all expected columns present even if category absent
+            expected = ONEHOT_EXPECTED_COLUMNS.get(name)
+            if expected is not None:
+                for col in expected:
+                    if col not in dummies.columns:
+                        dummies[col] = 0
+                # Consistent column ordering
+                dummies = dummies.reindex(columns=expected, fill_value=0)
             features = pd.concat([features, dummies], axis=1)
     elif encoding == "label":
         for name, series in categoricals.items():
-            features[name] = series.astype("category").cat.codes
+            cats = LABEL_ENCODING_CATEGORIES.get(name)
+            if cats is not None:
+                # Use fixed category ordering so codes are stable across CV folds
+                features[name] = pd.Categorical(series, categories=cats).codes.astype(float)
+            else:
+                features[name] = series.astype("category").cat.codes.astype(float)
 
     y = df["TotalPrice_USD"]
     return features, y
