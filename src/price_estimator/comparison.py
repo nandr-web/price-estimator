@@ -37,6 +37,13 @@ def error_profile(models: dict[str, BaseModel], df: pd.DataFrame) -> dict[str, d
     differ dramatically — one tight, the other with a long tail of
     catastrophic misses.
 
+    Note: MAPE here is computed as the mean of all pooled OOF
+    per-sample APEs. This may differ slightly from evaluate.py's
+    approach (mean of per-fold MAPEs) when fold sizes or error
+    distributions are uneven. Both are valid; pooled OOF is used
+    here because it also provides the per-sample distribution needed
+    for percentile and skew metrics.
+
     Args:
         models: Dict mapping model name to a trained BaseModel.
         df: Full dataset for cross-validated error collection.
@@ -225,7 +232,11 @@ def economic_coherence(
         checks (list of {name, passed, details}), pass_count, total_count,
         pass_rate.
     """
-    # Train all models on full data for probe predictions
+    # Train all models on full data for probe predictions.
+    # We intentionally use full-data fits (not CV) because coherence
+    # probes test domain relationships, not generalization accuracy.
+    # This overwrites in-memory model state but produces identical
+    # results to the joblib models saved by train.py.
     for model in models.values():
         model.fit(df)
 
@@ -380,6 +391,8 @@ def economic_coherence(
         stoch_mat_violations = 0
         stoch_rush_violations = 0
         stoch_qty_violations = 0
+        stoch_proc_violations = 0
+        stoch_complexity_violations = 0
         stoch_total = 0
 
         for _ in range(n_stochastic):
@@ -480,6 +493,63 @@ def economic_coherence(
             if up_1 < up_100:
                 stoch_qty_violations += 1
 
+            # Process ordering: Surface Grinding (cheapest) vs 5-Axis Milling
+            grinding_price = float(
+                model.predict(
+                    _build_probe_row(
+                        part_desc=base_desc,
+                        material=mat,
+                        process="Surface Grinding",
+                        quantity=10,
+                        lead_time=lead,
+                        estimator=est,
+                    )
+                )[0]
+            )
+            five_axis_price = float(
+                model.predict(
+                    _build_probe_row(
+                        part_desc=base_desc,
+                        material=mat,
+                        process="5-Axis Milling",
+                        quantity=10,
+                        lead_time=lead,
+                        estimator=est,
+                    )
+                )[0]
+            )
+            if grinding_price >= five_axis_price:
+                stoch_proc_violations += 1
+
+            # Complexity premium: "standard" vs "high precision"
+            base = row["PartDescription"].split(" - ")[0]
+            std_price = float(
+                model.predict(
+                    _build_probe_row(
+                        part_desc=f"{base} - standard",
+                        material=mat,
+                        process=proc,
+                        quantity=10,
+                        lead_time=lead,
+                        estimator=est,
+                    )
+                )[0]
+            )
+            hp_price = float(
+                model.predict(
+                    _build_probe_row(
+                        part_desc=f"{base} - high precision",
+                        material=mat,
+                        process=proc,
+                        quantity=10,
+                        lead_time=lead,
+                        estimator=est,
+                    )
+                )[0]
+            )
+            if hp_price < std_price:
+                stoch_complexity_violations += 1
+
             stoch_total += 1
 
         checks.append(
@@ -510,6 +580,26 @@ def economic_coherence(
                 "violations": stoch_qty_violations,
                 "total_probes": stoch_total,
                 "violation_rate": stoch_qty_violations / stoch_total * 100,
+            }
+        )
+        checks.append(
+            {
+                "name": "stochastic_process_ordering",
+                "type": "stochastic",
+                "passed": stoch_proc_violations == 0,
+                "violations": stoch_proc_violations,
+                "total_probes": stoch_total,
+                "violation_rate": stoch_proc_violations / stoch_total * 100,
+            }
+        )
+        checks.append(
+            {
+                "name": "stochastic_complexity_premium",
+                "type": "stochastic",
+                "passed": stoch_complexity_violations == 0,
+                "violations": stoch_complexity_violations,
+                "total_probes": stoch_total,
+                "violation_rate": stoch_complexity_violations / stoch_total * 100,
             }
         )
 

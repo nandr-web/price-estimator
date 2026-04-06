@@ -1,7 +1,8 @@
 """Evaluate and compare trained models.
 
 Loads CV results, generates comparison tables, runs significance tests
-(Wilcoxon signed-rank), and computes feature importance / SHAP.
+(Wilcoxon signed-rank and exact permutation), and computes feature
+importance / SHAP.
 
 Usage:
     python scripts/evaluate.py --results outputs/results/cv_fold_results.csv --output outputs/
@@ -110,6 +111,73 @@ def run_pairwise_significance(
     return pd.DataFrame(results)
 
 
+def run_pairwise_permutation_test(
+    fold_df: pd.DataFrame, pairs: list[tuple[str, str]] | None = None
+) -> pd.DataFrame:
+    """Run exact permutation tests on per-fold MAPE.
+
+    With n folds, enumerates all 2^n sign permutations of the paired
+    differences and computes a two-sided p-value. For n=5 this is only
+    32 permutations, making it an exact test that is more appropriate
+    than Wilcoxon signed-rank for very small sample sizes.
+
+    Args:
+        fold_df: DataFrame with columns: model, fold, MAPE.
+        pairs: Optional list of (model_a, model_b) tuples. If None,
+            tests all pairs.
+
+    Returns:
+        DataFrame with columns: model_a, model_b, mape_a, mape_b,
+        diff, p_value, significant.
+    """
+    models = sorted(fold_df["model"].unique())
+
+    if pairs is None:
+        pairs = list(combinations(models, 2))
+
+    results = []
+    for model_a, model_b in pairs:
+        mape_a = fold_df[fold_df["model"] == model_a].sort_values("fold")["MAPE"].values
+        mape_b = fold_df[fold_df["model"] == model_b].sort_values("fold")["MAPE"].values
+
+        if len(mape_a) != len(mape_b) or len(mape_a) < 3:
+            logger.warning(
+                "Skipping %s vs %s: insufficient matched folds",
+                model_a,
+                model_b,
+            )
+            continue
+
+        diff = mape_a - mape_b
+        observed = float(np.mean(diff))
+        n = len(diff)
+
+        # Enumerate all 2^n sign permutations
+        n_perms = 2**n
+        count_extreme = 0
+        for mask in range(n_perms):
+            signs = np.array([1 if (mask >> i) & 1 else -1 for i in range(n)])
+            perm_mean = float(np.mean(signs * diff))
+            if abs(perm_mean) >= abs(observed):
+                count_extreme += 1
+
+        p_value = count_extreme / n_perms
+
+        results.append(
+            {
+                "model_a": model_a,
+                "model_b": model_b,
+                "mape_a": float(np.mean(mape_a)),
+                "mape_b": float(np.mean(mape_b)),
+                "diff": observed,
+                "p_value": float(p_value),
+                "significant": p_value < 0.05,
+            }
+        )
+
+    return pd.DataFrame(results)
+
+
 def resolve_hypotheses(comparison: pd.DataFrame, sig_tests: pd.DataFrame) -> pd.DataFrame:
     """Map model comparisons to the hypotheses from PLAN.md.
 
@@ -125,7 +193,10 @@ def resolve_hypotheses(comparison: pd.DataFrame, sig_tests: pd.DataFrame) -> pd.
         ("M5", "M6", "RF vs XGBoost stability (overfitting check)"),
         ("M6", "M6b", "Does lead time contribute signal?"),
         ("M6", "M7", "Raw vs log target for trees"),
-        ("M6", "M7b", "XGBoost vs LightGBM on small data"),
+        # M7 vs M7c is the fair XGB/LightGBM comparison (both log-target).
+        # M6 vs M7b (both raw-target) is less informative since raw-target
+        # trees perform poorly (~38% MAPE) on this multiplicative data.
+        ("M7", "M7c", "XGBoost vs LightGBM (log-target, fair comparison)"),
         ("M6", "M8", "Is estimator bias additive or structural?"),
         ("M6", "M9", "Does including estimator help or hurt?"),
     ]
@@ -278,12 +349,30 @@ def main(
     print(f"  Saved to {csv_path}")
     print(comparison.to_string(index=False))
 
-    # Significance tests
+    # Significance tests — Wilcoxon (historical) and permutation (preferred)
     print("\nRunning pairwise significance tests...")
-    sig_tests = run_pairwise_significance(fold_df, pairs=compare_pairs)
+
+    wilcoxon_tests = run_pairwise_significance(fold_df, pairs=compare_pairs)
+    wilcoxon_path = results_dir / "significance_tests_wilcoxon.csv"
+    wilcoxon_tests.to_csv(wilcoxon_path, index=False, float_format="%.4f")
+    print(f"  Wilcoxon results saved to {wilcoxon_path}")
+
+    perm_tests = run_pairwise_permutation_test(fold_df, pairs=compare_pairs)
+    perm_path = results_dir / "significance_tests_permutation.csv"
+    perm_tests.to_csv(perm_path, index=False, float_format="%.4f")
+    print(f"  Permutation results saved to {perm_path}")
+
+    # Primary significance results use the permutation test
+    sig_tests = perm_tests
     sig_path = results_dir / "significance_tests.csv"
     sig_tests.to_csv(sig_path, index=False, float_format="%.4f")
-    print(f"  Saved to {sig_path}")
+    print(f"  Primary results (permutation) saved to {sig_path}")
+
+    print(
+        "\n  Note: With 5 CV folds, permutation tests (exact, 32"
+        " permutations) are more appropriate than Wilcoxon"
+        " signed-rank tests."
+    )
 
     significant_pairs = sig_tests[sig_tests["significant"]]
     print(f"  {len(significant_pairs)} significant differences found")

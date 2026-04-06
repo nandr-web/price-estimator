@@ -137,7 +137,6 @@ dev = [
     "httpx>=0.27",          # FastAPI test client
     "jupyterlab>=4.0",
     "ipykernel>=6.0",
-    "papermill>=2.5",       # CLI notebook execution
 ]
 
 [tool.ruff]
@@ -189,7 +188,7 @@ uv pip compile pyproject.toml -o requirements.txt
 | **ruff** | Linting + formatting | Single tool replaces flake8 + black + isort. Zero-config, extremely fast (written in Rust). Enforces consistent style across `src/`, `scripts/`, `tests/`. |
 | **pydantic** | Data validation | Already installed via FastAPI, but should be used explicitly for input validation on the `/quote` endpoint and for data contracts between pipeline stages. Validates that `Quantity` is in `{1,5,10,20,50,100}`, `Material` is one of 5 known values, etc. |
 | **joblib** | Model serialization | Serialize trained models to `outputs/models/`. sklearn's recommended serialization. Used by `scripts/train.py` (save) and `api.py` (load). |
-| **papermill** | CLI notebook execution | Runs `analysis.ipynb` from the command line with parameters, ensuring the notebook is reproducible without manual interaction: `papermill notebooks/analysis.ipynb outputs/analysis_executed.ipynb`. Critical for the full pipeline — the notebook is the primary deliverable assessors read, and it must be regenerable from a single command. Without papermill, the notebook is a manual step that can silently diverge from `outputs/`. |
+| **papermill** *(optional)* | CLI notebook execution | Could run `analysis.ipynb` from the command line for reproducibility. Deferred — the notebook imports from `src/` and reads pre-computed `outputs/`, so it stays in sync by design. Add if automated notebook regeneration becomes a requirement. |
 
 ### 3.3 Libraries to DROP (in the plan but unnecessary)
 
@@ -286,13 +285,13 @@ The script:
 2. Engineers features via `features.py`
 3. Trains the specified model(s) via `models.py`
 4. Saves trained models to `outputs/models/{model_name}.joblib`
-5. Writes CV results to `outputs/results/cv_results.csv`
+5. Writes CV results to `outputs/results/cv_results.csv` and `outputs/results/cv_fold_results.csv`
 
 ### 4.6 Evaluate & Compare
 
 ```bash
 # Generate comparison table, significance tests, feature importance
-python scripts/evaluate.py --results outputs/results/cv_results.csv --output outputs/
+python scripts/evaluate.py --results outputs/results/cv_fold_results.csv --output outputs/
 
 # Run specific comparisons
 python scripts/evaluate.py --compare M1,M2  # additive vs multiplicative
@@ -332,29 +331,24 @@ curl -X POST http://localhost:8000/quote \
 ### 4.9 Generate Deliverable Notebook
 
 ```bash
-# Execute the notebook non-interactively (imports from src/, reads from outputs/)
-papermill notebooks/analysis.ipynb outputs/analysis_executed.ipynb
-
-# Convert to HTML for sharing
-jupyter nbconvert --to html outputs/analysis_executed.ipynb
+# Convert notebook to HTML for sharing (optional)
+jupyter nbconvert --to html notebooks/analysis.ipynb --output-dir outputs/
 ```
 
-This ensures the notebook is always regenerable from a single command and stays in sync with the pipeline outputs. Without this step, the notebook can silently diverge from the actual model results.
+The notebook imports from `src/` and reads pre-computed results from `outputs/`, so it stays in sync with the pipeline by design. If automated notebook regeneration is needed, add `papermill>=2.5` to dev dependencies.
 
 ### 4.10 Full Pipeline
 
 ```bash
-# One command: lint, test, train, evaluate, analyze, generate notebook
+# One command: lint, test, train, evaluate, analyze, compare
 ruff check src/ tests/ scripts/ \
   && pytest --cov=price_estimator \
   && python scripts/eda.py --data resources/aora_historical_quotes.csv --output outputs/ \
   && python scripts/train.py --data resources/aora_historical_quotes.csv --output outputs/ \
-  && python scripts/evaluate.py --results outputs/results/cv_results.csv --output outputs/ \
+  && python scripts/evaluate.py --results outputs/results/cv_fold_results.csv --output outputs/ \
   && python scripts/bias_analysis.py --data resources/aora_historical_quotes.csv --output outputs/ \
-  && papermill notebooks/analysis.ipynb outputs/analysis_executed.ipynb
+  && python scripts/compare.py --data resources/aora_historical_quotes.csv --models outputs/models/ --output outputs/
 ```
-
-The final papermill step regenerates the deliverable notebook from the pipeline outputs, ensuring the presentation artifact always reflects the latest results.
 
 ---
 
@@ -578,6 +572,6 @@ For the prototype, none of these are necessary. The entire pipeline runs on a la
 | Data validation | Runtime assertions in `data.py` + pytest | Adopted in plan |
 | Model serialization | joblib save/load | Adopted in plan |
 | Dropped deps | spaCy, flashtext, thefuzz, pyyaml | Removed |
-| Notebook execution | papermill for CLI-driven notebook regeneration | Adopted in plan |
+| Notebook execution | papermill deferred (notebook reads from outputs/ by design) | Optional |
 | PartDescription registry | Python dict in `features.py` (not YAML) | Adopted in plan |
 | API testing | httpx + `test_api.py` | Adopted in plan |

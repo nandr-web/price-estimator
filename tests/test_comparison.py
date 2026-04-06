@@ -221,6 +221,8 @@ class TestEconomicCoherence:
             "stochastic_material_ordering",
             "stochastic_rush_premium",
             "stochastic_quantity_discount",
+            "stochastic_process_ordering",
+            "stochastic_complexity_premium",
         }
         for res in result.values():
             for check in res["checks"]:

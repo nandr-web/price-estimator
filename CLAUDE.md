@@ -26,7 +26,8 @@ pytest -m "not slow"                      # skip model training tests
 python scripts/eda.py --data resources/aora_historical_quotes.csv --output outputs/ \
   && python scripts/train.py --data resources/aora_historical_quotes.csv --output outputs/ \
   && python scripts/evaluate.py --results outputs/results/cv_fold_results.csv --output outputs/ \
-  && python scripts/bias_analysis.py --data resources/aora_historical_quotes.csv --output outputs/
+  && python scripts/bias_analysis.py --data resources/aora_historical_quotes.csv --output outputs/ \
+  && python scripts/compare.py --data resources/aora_historical_quotes.csv --models outputs/models/ --output outputs/
 
 # API
 python scripts/serve.py --model outputs/models/M6.joblib --port 8000
@@ -40,6 +41,7 @@ python scripts/serve.py --model outputs/models/M6.joblib --port 8000
   - `models.py` — M0–M9 model definitions, training, cross-validation
   - `bias.py` — Estimator bias analysis (residuals from debiased M9)
   - `predict.py` — Prediction with bands, SHAP explanations, OOD detection
+  - `comparison.py` — 7-lens model comparison framework (error profile, segment fairness, economic coherence, calibration, stability, boundary behavior, interpretability)
   - `api.py` — FastAPI endpoints: POST /quote, POST /quote/{id}/override, GET /quote/{id}
 - **`scripts/`** — CLI entry points that call into `src/`. Each is a self-contained workflow step.
 - **`notebooks/`** — Presentation only; imports from `src/`, loads pre-computed results from `outputs/`. Contains no business logic.

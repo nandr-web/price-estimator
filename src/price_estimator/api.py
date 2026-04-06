@@ -210,7 +210,7 @@ def create_quote(req: QuoteRequest) -> QuoteResponse:
     # SHAP explanation (best-effort, tree models only)
     shap_explanation = None
     shap_model_name = None
-    for name in ["M6", "M7", "M5"]:
+    for name in ["M2", "M7", "M7c", "M6", "M5"]:
         if name in _models:
             shap_model_name = name
             break

@@ -177,7 +177,7 @@ The lookup tables are median unit prices from the training data. This could run 
 | M5 vs M6 | RF vs XGBoost stability check (if XGBoost >> RF, likely overfitting) |
 | M6 vs M6b | Does lead time contribute signal? |
 | M6 vs M7 | Raw vs log target for trees |
-| M6 vs M7b | XGBoost vs LightGBM on small data (level-wise vs leaf-wise) |
+| M7 vs M7c | XGBoost vs LightGBM (log-target, fair comparison — raw-target trees perform poorly on multiplicative data) |
 | M6 vs M8 | Is estimator bias additive (M6 wins) or structural (M8 wins)? |
 | M6 vs M9 | Does including estimator help or hurt generalization? |
 
