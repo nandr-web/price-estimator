@@ -1,0 +1,511 @@
+QuoteID,Date,PartDescription,Material,Process,Quantity,LeadTimeWeeks,RushJob,Estimator,TotalPrice_USD
+Q-1000,2024-01-20,Sensor Housing - threaded,Inconel 718,Wire EDM,1,3,Yes,Sato-san,703.11
+Q-1001,2024-02-06,Manifold Block - complex internal channels,Titanium Grade 5,5-Axis Milling,1,3,No,Sato-san,1559.95
+Q-1002,2023-12-29,Manifold Block - complex internal channels,Stainless Steel 17-4 PH,5-Axis Milling,1,11,Yes,Suzuki-san,1898.02
+Q-1003,2023-10-09,Sensor Housing - threaded,Titanium Grade 5,Wire EDM,1,5,No,Tanaka-san,678.61
+Q-1004,2023-07-10,Turbine Blade Housing - thin walls,Inconel 718,CNC Turning,50,4,No,Suzuki-san,25176.21
+Q-1005,2023-01-17,Mounting Bracket - standard,Stainless Steel 17-4 PH,Surface Grinding,50,5,No,Tanaka-san,4436.3
+Q-1006,2024-01-30,Turbine Blade Housing - thin walls,Titanium Grade 5,Wire EDM,5,12,No,Suzuki-san,5883.34
+Q-1007,2023-08-06,Structural Rib - aerospace grade,Aluminum 6061,CNC Turning,10,8,Yes,Tanaka-san,1782.77
+Q-1008,2023-11-24,Fuel Injector Nozzle - high precision,Inconel 718,CNC Turning,1,4,No,Tanaka-san,1042.29
+Q-1009,2023-06-30,Actuator Linkage,Inconel 718,Wire EDM,10,8,No,Suzuki-san,4190.68
+Q-1010,2024-02-24,Fuel Injector Nozzle - high precision,Inconel 718,Wire EDM,10,5,No,Suzuki-san,9893.48
+Q-1011,2023-08-31,Structural Rib - aerospace grade,Titanium Grade 5,Surface Grinding,50,5,No,Suzuki-san,6640.92
+Q-1012,2024-03-05,Structural Rib - aerospace grade,Aluminum 7075,Wire EDM,50,3,No,Suzuki-san,13373.39
+Q-1013,2023-12-11,Manifold Block - complex internal channels,Aluminum 7075,Wire EDM,10,12,No,Tanaka-san,9519.46
+Q-1014,2023-08-09,Sensor Housing - threaded,Aluminum 6061,5-Axis Milling,10,10,No,Sato-san,3035.98
+Q-1015,2023-12-16,Turbine Blade Housing - thin walls,Aluminum 6061,3-Axis Milling,100,12,No,Suzuki-san,26620.6
+Q-1016,2023-12-01,Turbine Blade Housing - thin walls,Aluminum 7075,3-Axis Milling,1,9,No,Suzuki-san,542.45
+Q-1017,2023-10-29,Landing Gear Pin - hardened,Inconel 718,Wire EDM,10,12,No,Suzuki-san,4593.57
+Q-1018,2023-10-29,Manifold Block - complex internal channels,Inconel 718,CNC Turning,50,10,No,Suzuki-san,25603.09
+Q-1019,2023-09-02,Structural Rib - aerospace grade,Aluminum 7075,3-Axis Milling,100,12,Yes,Tanaka-san,18690.61
+Q-1020,2024-03-24,Manifold Block - complex internal channels,Inconel 718,Surface Grinding,20,11,No,Tanaka-san,11957.94
+Q-1021,2023-04-13,Actuator Linkage,Titanium Grade 5,Wire EDM,100,4,No,Suzuki-san,25700.45
+Q-1022,2023-05-24,Landing Gear Pin - hardened,Stainless Steel 17-4 PH,Wire EDM,100,2,No,Tanaka-san,28831.76
+Q-1023,2023-01-29,Sensor Housing - threaded,Aluminum 6061,CNC Turning,5,12,No,Tanaka-san,768.89
+Q-1024,2024-03-19,Structural Rib - aerospace grade,Inconel 718,3-Axis Milling,20,7,No,Suzuki-san,4780.41
+Q-1025,2023-04-13,Heat Sink - high fin density,Titanium Grade 5,Wire EDM,50,2,No,Sato-san,13633.33
+Q-1026,2023-02-08,Mounting Bracket - standard,,Wire EDM,20,5,No,Tanaka-san,5718.76
+Q-1027,2023-11-24,Fuel Injector Nozzle - high precision,Inconel 718,CNC Turning,100,3,No,Sato-san,40333.56
+Q-1028,2023-04-21,Sensor Housing - threaded,Titanium Grade 5,CNC Turning,1,5,No,Tanaka-san,355.25
+Q-1029,2023-03-30,Turbine Blade Housing - thin walls,Aluminum 6061,5-Axis Milling,10,8,No,Tanaka-san,10236.94
+Q-1030,2024-03-21,Sensor Housing - threaded,Inconel 718,5-Axis Milling,10,9,No,Suzuki-san,4646.29
+Q-1031,2024-03-08,Fuel Injector Nozzle - high precision,Aluminum 6061,Surface Grinding,100,9,No,Tanaka-san,16145.72
+Q-1032,2023-06-18,Sensor Housing - threaded,Titanium Grade 5,Wire EDM,10,7,No,Sato-san,3452.67
+Q-1033,2023-01-16,Turbine Blade Housing - thin walls,Titanium Grade 5,,1,7,Yes,Sato-san,1108.79
+Q-1034,2023-07-23,Heat Sink - high fin density,Aluminum 7075,Surface Grinding,20,3,No,Tanaka-san,2083.05
+Q-1035,2023-03-18,Fuel Injector Nozzle - high precision,Stainless Steel 17-4 PH,5-Axis Milling,50,2,No,Tanaka-san,44947.95
+Q-1036,2023-05-01,Mounting Bracket - standard,Aluminum 6061,,100,3,No,Tanaka-san,21191.86
+Q-1037,2023-05-27,Electronic Chassis - EMI shielded,Aluminum 6061,3-Axis Milling,50,12,No,Suzuki-san,5894.94
+Q-1038,2023-04-20,Landing Gear Pin - hardened,Aluminum 7075,5-Axis Milling,5,5,No,Tanaka-san,2591.01
+Q-1039,2023-10-21,Mounting Bracket - standard,Aluminum 7075,5-Axis Milling,5,10,No,Sato-san,1529.78
+Q-1040,2023-11-11,Mounting Bracket - standard,Aluminum 6061,3-Axis Milling,100,6,No,Suzuki-san,9575.44
+Q-1041,2024-03-16,Sensor Housing - threaded,Titanium Grade 5,Wire EDM,20,4,No,Sato-san,6504.84
+Q-1042,2023-02-01,Structural Rib - aerospace grade,Stainless Steel 17-4 PH,CNC Turning,5,10,No,Suzuki-san,866.6
+Q-1043,2023-12-31,Turbine Blade Housing - thin walls,Aluminum 7075,5-Axis Milling,1,10,No,Tanaka-san,1625.44
+Q-1044,2024-02-02,Sensor Housing - threaded,Aluminum 7075,3-Axis Milling,20,12,No,Suzuki-san,2814.48
+Q-1045,2023-11-05,Mounting Bracket - standard,Stainless Steel 17-4 PH,Wire EDM,5,4,Yes,Suzuki-san,1814.52
+Q-1046,2023-09-05,Turbine Blade Housing - thin walls,Stainless Steel 17-4 PH,Wire EDM,20,10,No,Sato-san,13097.46
+Q-1047,2023-02-15,Heat Sink - high fin density,Stainless Steel 17-4 PH,5-Axis Milling,10,2,No,Suzuki-san,4242.69
+Q-1048,2023-08-25,Electronic Chassis - EMI shielded,Aluminum 6061,3-Axis Milling,10,3,No,Suzuki-san,1608.89
+Q-1049,2024-01-05,Actuator Linkage,Aluminum 6061,Surface Grinding,5,5,No,Sato-san,403.75
+Q-1050,2023-03-23,Sensor Housing - threaded,Aluminum 6061,CNC Turning,5,3,No,Suzuki-san,645.12
+Q-1051,2023-02-21,Manifold Block - complex internal channels,Titanium Grade 5,Wire EDM,50,10,No,Tanaka-san,46236.35
+Q-1052,2023-10-13,Structural Rib - aerospace grade,Inconel 718,CNC Turning,100,4,No,Sato-san,16251.68
+Q-1053,2024-02-19,Fuel Injector Nozzle - high precision,Stainless Steel 17-4 PH,CNC Turning,100,10,No,Tanaka-san,34889.18
+Q-1054,2023-04-06,Fuel Injector Nozzle - high precision,Inconel 718,3-Axis Milling,1,2,No,Suzuki-san,1034.48
+Q-1055,2024-03-08,Sensor Housing - threaded,Titanium Grade 5,Wire EDM,50,4,No,Tanaka-san,19329.03
+Q-1056,2023-02-06,Fuel Injector Nozzle - high precision,,Surface Grinding,1,8,No,Sato-san,273.51
+Q-1057,2024-01-02,Structural Rib - aerospace grade,Titanium Grade 5,CNC Turning,5,10,No,Suzuki-san,1263.88
+Q-1058,2023-06-28,Landing Gear Pin - hardened,Stainless Steel 17-4 PH,5-Axis Milling,20,5,Yes,Tanaka-san,10415.16
+Q-1059,2023-10-26,Structural Rib - aerospace grade,Titanium Grade 5,Surface Grinding,1,5,No,Suzuki-san,229.51
+Q-1060,2023-02-07,Electronic Chassis - EMI shielded,Aluminum 7075,Surface Grinding,50,11,No,Sato-san,3323.63
+Q-1061,2024-03-25,Manifold Block - complex internal channels,Titanium Grade 5,Surface Grinding,100,2,No,Suzuki-san,29297.39
+Q-1062,2023-04-25,Electronic Chassis - EMI shielded,Aluminum 6061,3-Axis Milling,10,4,No,Tanaka-san,1948.99
+Q-1063,2023-09-11,Mounting Bracket - standard,Titanium Grade 5,Surface Grinding,10,2,No,Tanaka-san,1679.26
+Q-1064,2024-01-18,Electronic Chassis - EMI shielded,Aluminum 7075,3-Axis Milling,5,12,No,Suzuki-san,1005.87
+Q-1065,2023-11-21,Sensor Housing - threaded,Aluminum 6061,5-Axis Milling,20,5,No,Tanaka-san,7842.79
+Q-1066,2023-06-07,Turbine Blade Housing - thin walls,Stainless Steel 17-4 PH,3-Axis Milling,50,12,No,Sato-san,18436.94
+Q-1067,2023-09-24,Actuator Linkage,Titanium Grade 5,5-Axis Milling,100,11,Yes,Suzuki-san,43268.08
+Q-1068,2023-03-09,Fuel Injector Nozzle - high precision,Inconel 718,5-Axis Milling,1,5,Yes,Tanaka-san,2869.51
+Q-1069,2023-06-06,Heat Sink - high fin density,Stainless Steel 17-4 PH,3-Axis Milling,100,12,No,Sato-san,12097.23
+Q-1070,2024-03-10,Mounting Bracket - standard,Aluminum 6061,3-Axis Milling,20,6,No,Tanaka-san,2836.71
+Q-1071,2023-11-10,Heat Sink - high fin density,Stainless Steel 17-4 PH,Wire EDM,1,10,No,Sato-san,441.84
+Q-1072,2023-10-11,Sensor Housing - threaded,Aluminum 7075,5-Axis Milling,10,7,No,Suzuki-san,3494.86
+Q-1073,2023-04-20,Landing Gear Pin - hardened,,,100,11,No,Sato-san,7633.55
+Q-1074,2023-05-21,Turbine Blade Housing - thin walls,Stainless Steel 17-4 PH,CNC Turning,1,11,No,Tanaka-san,700.33
+Q-1075,2023-10-29,Structural Rib - aerospace grade,Stainless Steel 17-4 PH,3-Axis Milling,10,4,Yes,Suzuki-san,2381.39
+Q-1076,2023-09-30,Structural Rib - aerospace grade,Titanium Grade 5,3-Axis Milling,100,7,No,Tanaka-san,18931.1
+Q-1077,2023-04-30,Manifold Block - complex internal channels,Aluminum 6061,Wire EDM,100,8,No,Suzuki-san,52506.09
+Q-1078,2023-07-13,Fuel Injector Nozzle - high precision,Aluminum 6061,Wire EDM,50,9,No,Sato-san,26186.92
+Q-1079,2024-03-20,Landing Gear Pin - hardened,Stainless Steel 17-4 PH,Wire EDM,100,3,No,Suzuki-san,22586.23
+Q-1080,2023-12-29,Landing Gear Pin - hardened,Inconel 718,5-Axis Milling,1,7,Yes,Sato-san,798.34
+Q-1081,2024-03-11,Actuator Linkage,Titanium Grade 5,Wire EDM,5,7,No,Tanaka-san,2449.25
+Q-1082,2023-02-22,Actuator Linkage,Inconel 718,Wire EDM,50,4,No,Suzuki-san,15975.89
+Q-1083,2023-03-28,Electronic Chassis - EMI shielded,Stainless Steel 17-4 PH,CNC Turning,20,7,No,Suzuki-san,2943.63
+Q-1084,2024-03-04,Electronic Chassis - EMI shielded,Inconel 718,Wire EDM,100,2,Yes,Sato-san,35409.46
+Q-1085,2023-09-25,Manifold Block - complex internal channels,Titanium Grade 5,5-Axis Milling,5,11,No,Tanaka-san,7695.76
+Q-1086,2024-02-22,Actuator Linkage,Aluminum 6061,3-Axis Milling,5,10,No,Sato-san,760.76
+Q-1087,2023-02-28,Mounting Bracket - standard,Inconel 718,Surface Grinding,5,9,Yes,Sato-san,1029.88
+Q-1088,2023-12-10,Heat Sink - high fin density,Stainless Steel 17-4 PH,3-Axis Milling,10,5,No,Sato-san,1634.07
+Q-1089,2023-02-20,Electronic Chassis - EMI shielded,Aluminum 7075,3-Axis Milling,100,10,No,Sato-san,10517.76
+Q-1090,2024-02-04,Electronic Chassis - EMI shielded,Aluminum 7075,CNC Turning,100,11,No,Tanaka-san,10892.15
+Q-1091,2023-01-15,Electronic Chassis - EMI shielded,Titanium Grade 5,CNC Turning,20,9,Yes,Suzuki-san,4820.16
+Q-1092,2023-09-17,Turbine Blade Housing - thin walls,Inconel 718,Wire EDM,5,11,No,Tanaka-san,6481.69
+Q-1093,2024-01-12,Fuel Injector Nozzle - high precision,Aluminum 6061,CNC Turning,1,12,No,Sato-san,370.17
+Q-1094,2023-08-28,Fuel Injector Nozzle - high precision,Titanium Grade 5,3-Axis Milling,10,11,No,Tanaka-san,6644.44
+Q-1095,2023-05-03,Manifold Block - complex internal channels,Aluminum 6061,5-Axis Milling,1,4,Yes,Sato-san,1650.63
+Q-1096,2023-03-18,Sensor Housing - threaded,Inconel 718,3-Axis Milling,10,2,No,Sato-san,2682.92
+Q-1097,2023-06-23,Heat Sink - high fin density,Titanium Grade 5,CNC Turning,50,8,Yes,Tanaka-san,13613.61
+Q-1098,2023-11-25,Actuator Linkage,Stainless Steel 17-4 PH,CNC Turning,100,3,No,Suzuki-san,11597.5
+Q-1099,2023-04-25,Landing Gear Pin - hardened,Aluminum 7075,Surface Grinding,100,8,No,Sato-san,6115.49
+Q-1100,2023-08-06,Turbine Blade Housing - thin walls,Inconel 718,5-Axis Milling,1,3,No,Sato-san,1486.32
+Q-1101,2023-01-04,Landing Gear Pin - hardened,Inconel 718,5-Axis Milling,5,12,No,Tanaka-san,3152.1
+Q-1102,2023-08-22,Actuator Linkage,Inconel 718,Surface Grinding,50,3,No,Suzuki-san,7866.95
+Q-1103,2023-07-02,Sensor Housing - threaded,Aluminum 7075,CNC Turning,50,6,No,Sato-san,4434.12
+Q-1104,2023-02-19,Actuator Linkage,Stainless Steel 17-4 PH,3-Axis Milling,100,8,No,Suzuki-san,14394.53
+Q-1105,2023-02-08,Sensor Housing - threaded,Inconel 718,Surface Grinding,1,11,No,Suzuki-san,313.4
+Q-1106,2024-01-01,Actuator Linkage,Stainless Steel 17-4 PH,3-Axis Milling,5,10,No,Suzuki-san,1096.28
+Q-1107,2023-08-04,Actuator Linkage,Inconel 718,5-Axis Milling,5,11,No,Sato-san,2686.96
+Q-1108,2024-02-18,Landing Gear Pin - hardened,Stainless Steel 17-4 PH,5-Axis Milling,5,11,No,Tanaka-san,2763.58
+Q-1109,2023-06-14,Actuator Linkage,,5-Axis Milling,20,6,No,Sato-san,6456.87
+Q-1110,2023-06-03,Turbine Blade Housing - thin walls,Stainless Steel 17-4 PH,5-Axis Milling,50,8,No,Tanaka-san,44273.25
+Q-1111,2024-03-23,Landing Gear Pin - hardened,Titanium Grade 5,Wire EDM,50,6,No,Suzuki-san,14351.22
+Q-1112,2024-01-14,Structural Rib - aerospace grade,Stainless Steel 17-4 PH,Wire EDM,10,8,No,Suzuki-san,3279.53
+Q-1113,2023-10-15,Sensor Housing - threaded,Aluminum 6061,CNC Turning,1,10,No,Tanaka-san,208.57
+Q-1114,2024-01-10,Landing Gear Pin - hardened,Inconel 718,3-Axis Milling,10,12,No,Tanaka-san,3555.17
+Q-1115,2023-01-23,Heat Sink - high fin density,Inconel 718,3-Axis Milling,20,2,No,Tanaka-san,5927.13
+Q-1116,2023-06-22,Structural Rib - aerospace grade,Aluminum 6061,5-Axis Milling,20,9,No,Tanaka-san,7762.37
+Q-1117,2023-11-24,Landing Gear Pin - hardened,Titanium Grade 5,Surface Grinding,10,6,No,Suzuki-san,1769.0
+Q-1118,2024-03-17,Structural Rib - aerospace grade,Inconel 718,5-Axis Milling,100,12,No,Suzuki-san,35829.59
+Q-1119,2023-01-18,Actuator Linkage,Aluminum 6061,3-Axis Milling,20,6,No,Sato-san,2339.28
+Q-1120,2023-01-01,Manifold Block - complex internal channels,Aluminum 6061,Surface Grinding,50,8,No,Tanaka-san,9738.53
+Q-1121,2023-11-15,Electronic Chassis - EMI shielded,Aluminum 6061,Surface Grinding,100,7,No,Tanaka-san,6635.1
+Q-1122,2023-05-09,Turbine Blade Housing - thin walls,Aluminum 6061,5-Axis Milling,5,10,Yes,Suzuki-san,7125.72
+Q-1123,2023-10-29,Landing Gear Pin - hardened,Aluminum 7075,CNC Turning,20,8,No,Tanaka-san,2859.83
+Q-1124,2023-05-31,Electronic Chassis - EMI shielded,Stainless Steel 17-4 PH,Surface Grinding,20,4,No,Tanaka-san,2616.15
+Q-1125,2023-12-06,Mounting Bracket - standard,Aluminum 7075,3-Axis Milling,100,12,Yes,Suzuki-san,13653.48
+Q-1126,2023-02-02,Structural Rib - aerospace grade,,CNC Turning,20,3,No,Sato-san,4329.33
+Q-1127,2024-01-18,Sensor Housing - threaded,Titanium Grade 5,5-Axis Milling,10,3,No,Tanaka-san,5029.56
+Q-1128,2023-04-16,Heat Sink - high fin density,Stainless Steel 17-4 PH,3-Axis Milling,10,5,No,Sato-san,1913.76
+Q-1129,2023-08-05,Heat Sink - high fin density,Aluminum 7075,CNC Turning,50,11,No,Tanaka-san,5851.85
+Q-1130,2023-11-28,Mounting Bracket - standard,Stainless Steel 17-4 PH,Surface Grinding,1,7,Yes,Tanaka-san,228.62
+Q-1131,2023-09-02,Turbine Blade Housing - thin walls,,5-Axis Milling,20,6,No,Sato-san,16152.22
+Q-1132,2023-06-04,Turbine Blade Housing - thin walls,Stainless Steel 17-4 PH,CNC Turning,1,4,No,Sato-san,550.29
+Q-1133,2023-02-21,Turbine Blade Housing - thin walls,Titanium Grade 5,3-Axis Milling,50,9,No,Tanaka-san,27346.89
+Q-1134,2023-03-25,Landing Gear Pin - hardened,Aluminum 6061,5-Axis Milling,50,8,No,Sato-san,13591.35
+Q-1135,2024-03-11,Electronic Chassis - EMI shielded,Titanium Grade 5,3-Axis Milling,1,3,No,Sato-san,306.48
+Q-1136,2023-05-26,Manifold Block - complex internal channels,Inconel 718,Surface Grinding,20,10,No,Suzuki-san,10477.51
+Q-1137,2023-02-04,Turbine Blade Housing - thin walls,Inconel 718,CNC Turning,20,8,No,Sato-san,10956.28
+Q-1138,2023-06-24,Manifold Block - complex internal channels,Stainless Steel 17-4 PH,5-Axis Milling,20,8,No,Tanaka-san,21691.85
+Q-1139,2024-01-24,Actuator Linkage,Stainless Steel 17-4 PH,Wire EDM,20,4,Yes,Sato-san,6894.38
+Q-1140,2023-09-10,Turbine Blade Housing - thin walls,Aluminum 7075,Surface Grinding,50,11,No,Suzuki-san,9195.7
+Q-1141,2023-09-27,Sensor Housing - threaded,Aluminum 7075,5-Axis Milling,50,12,No,Tanaka-san,18508.87
+Q-1142,2023-12-06,Structural Rib - aerospace grade,Inconel 718,3-Axis Milling,10,10,No,Sato-san,2716.27
+Q-1143,2023-06-04,Heat Sink - high fin density,Aluminum 7075,5-Axis Milling,5,2,No,Tanaka-san,2220.22
+Q-1144,2023-05-14,Landing Gear Pin - hardened,Stainless Steel 17-4 PH,Wire EDM,20,6,No,Suzuki-san,6563.83
+Q-1145,2023-12-02,Manifold Block - complex internal channels,Stainless Steel 17-4 PH,Wire EDM,50,8,No,Suzuki-san,34374.67
+Q-1146,2024-01-02,Landing Gear Pin - hardened,Titanium Grade 5,Surface Grinding,20,6,Yes,Suzuki-san,3962.11
+Q-1147,2023-06-16,Mounting Bracket - standard,Inconel 718,5-Axis Milling,10,3,No,Suzuki-san,3673.88
+Q-1148,2023-03-21,Mounting Bracket - standard,Aluminum 6061,CNC Turning,1,4,No,Sato-san,127.38
+Q-1149,2023-07-20,Landing Gear Pin - hardened,Titanium Grade 5,Wire EDM,20,9,Yes,Sato-san,7434.75
+Q-1150,2023-11-03,Structural Rib - aerospace grade,Titanium Grade 5,Wire EDM,100,7,No,Sato-san,25550.09
+Q-1151,2023-08-18,Fuel Injector Nozzle - high precision,Titanium Grade 5,3-Axis Milling,10,6,No,Suzuki-san,6664.73
+Q-1152,2023-07-06,Turbine Blade Housing - thin walls,Stainless Steel 17-4 PH,5-Axis Milling,1,5,No,Sato-san,1270.14
+Q-1153,2023-12-06,Landing Gear Pin - hardened,Titanium Grade 5,5-Axis Milling,100,6,No,Suzuki-san,33584.7
+Q-1154,2023-08-16,Landing Gear Pin - hardened,Aluminum 6061,Wire EDM,20,11,No,Tanaka-san,5556.26
+Q-1155,2024-01-16,Fuel Injector Nozzle - high precision,Aluminum 6061,3-Axis Milling,20,11,No,Tanaka-san,7679.6
+Q-1156,2023-10-06,Mounting Bracket - standard,Aluminum 6061,Wire EDM,50,9,No,Suzuki-san,10013.29
+Q-1157,2023-09-09,Structural Rib - aerospace grade,Aluminum 6061,3-Axis Milling,5,5,No,Suzuki-san,808.47
+Q-1158,2023-12-28,Structural Rib - aerospace grade,Inconel 718,Wire EDM,20,6,No,Suzuki-san,7521.21
+Q-1159,2023-08-14,Electronic Chassis - EMI shielded,Titanium Grade 5,CNC Turning,50,7,No,Tanaka-san,9602.27
+Q-1160,2023-02-13,Manifold Block - complex internal channels,Aluminum 7075,CNC Turning,5,10,No,Suzuki-san,1724.0
+Q-1161,2023-02-04,Fuel Injector Nozzle - high precision,Inconel 718,3-Axis Milling,50,2,No,Tanaka-san,33474.09
+Q-1162,2023-10-20,Manifold Block - complex internal channels,Aluminum 6061,5-Axis Milling,50,11,No,Sato-san,32001.36
+Q-1163,2023-04-04,Structural Rib - aerospace grade,Aluminum 7075,Wire EDM,100,4,No,Sato-san,19084.76
+Q-1164,2024-02-05,Landing Gear Pin - hardened,Titanium Grade 5,Wire EDM,10,5,No,Sato-san,3316.31
+Q-1165,2023-08-25,Heat Sink - high fin density,Titanium Grade 5,,10,12,No,Sato-san,3620.28
+Q-1166,2023-03-07,Landing Gear Pin - hardened,Inconel 718,Wire EDM,20,3,No,Tanaka-san,8086.09
+Q-1167,2023-07-20,Fuel Injector Nozzle - high precision,Titanium Grade 5,Wire EDM,50,6,No,Sato-san,32903.1
+Q-1168,2023-08-09,Turbine Blade Housing - thin walls,Titanium Grade 5,Surface Grinding,10,8,Yes,Tanaka-san,5964.01
+Q-1169,2024-01-01,Fuel Injector Nozzle - high precision,Aluminum 7075,5-Axis Milling,10,9,No,Suzuki-san,8728.48
+Q-1170,2023-11-13,Sensor Housing - threaded,Stainless Steel 17-4 PH,Surface Grinding,5,11,No,Tanaka-san,810.52
+Q-1171,2023-11-29,Manifold Block - complex internal channels,Stainless Steel 17-4 PH,,1,5,No,Tanaka-san,536.29
+Q-1172,2023-02-27,Turbine Blade Housing - thin walls,Aluminum 6061,5-Axis Milling,1,3,No,Sato-san,1285.9
+Q-1173,2023-02-27,Manifold Block - complex internal channels,Aluminum 6061,Surface Grinding,100,2,No,Tanaka-san,16347.49
+Q-1174,2024-01-25,Fuel Injector Nozzle - high precision,Titanium Grade 5,Wire EDM,1,9,Yes,Suzuki-san,1642.85
+Q-1175,2023-05-01,Mounting Bracket - standard,Stainless Steel 17-4 PH,3-Axis Milling,5,2,No,Sato-san,780.48
+Q-1176,2023-01-26,Turbine Blade Housing - thin walls,Titanium Grade 5,CNC Turning,100,2,Yes,Suzuki-san,51415.34
+Q-1177,2023-09-08,Actuator Linkage,Aluminum 7075,CNC Turning,100,12,No,Tanaka-san,10887.39
+Q-1178,2023-01-14,Structural Rib - aerospace grade,Stainless Steel 17-4 PH,3-Axis Milling,1,2,Yes,Tanaka-san,416.13
+Q-1179,2023-07-01,Heat Sink - high fin density,Aluminum 6061,Wire EDM,100,2,No,Sato-san,17081.96
+Q-1180,2023-03-05,Turbine Blade Housing - thin walls,Aluminum 7075,5-Axis Milling,1,12,No,Sato-san,1182.93
+Q-1181,2023-03-15,Heat Sink - high fin density,Stainless Steel 17-4 PH,Wire EDM,20,6,No,Tanaka-san,6728.99
+Q-1182,2023-12-29,Structural Rib - aerospace grade,Inconel 718,Wire EDM,1,3,No,Sato-san,552.72
+Q-1183,2023-02-25,Fuel Injector Nozzle - high precision,Stainless Steel 17-4 PH,Surface Grinding,5,3,No,Tanaka-san,2031.14
+Q-1184,2023-04-13,Manifold Block - complex internal channels,Titanium Grade 5,CNC Turning,1,10,No,Suzuki-san,799.03
+Q-1185,2023-08-04,Electronic Chassis - EMI shielded,Aluminum 6061,Surface Grinding,1,4,No,Sato-san,98.55
+Q-1186,2023-09-10,Heat Sink - high fin density,Inconel 718,5-Axis Milling,10,6,Yes,Sato-san,5636.0
+Q-1187,2024-02-11,Fuel Injector Nozzle - high precision,Inconel 718,Wire EDM,50,4,No,Sato-san,35907.9
+Q-1188,2023-10-01,Turbine Blade Housing - thin walls,Inconel 718,3-Axis Milling,20,9,No,Suzuki-san,12401.13
+Q-1189,2023-11-19,Turbine Blade Housing - thin walls,Aluminum 6061,CNC Turning,100,4,No,Tanaka-san,26326.54
+Q-1190,2023-02-01,Structural Rib - aerospace grade,Titanium Grade 5,Wire EDM,5,11,No,Sato-san,1806.76
+Q-1191,2024-01-10,Actuator Linkage,Titanium Grade 5,5-Axis Milling,50,10,Yes,Suzuki-san,24387.74
+Q-1192,2023-03-29,Structural Rib - aerospace grade,Stainless Steel 17-4 PH,3-Axis Milling,10,9,No,Suzuki-san,2132.47
+Q-1193,2023-09-12,Sensor Housing - threaded,Aluminum 7075,3-Axis Milling,50,3,No,Sato-san,6078.3
+Q-1194,2024-01-11,Structural Rib - aerospace grade,Inconel 718,Wire EDM,1,7,No,Suzuki-san,551.79
+Q-1195,2024-03-19,Heat Sink - high fin density,Stainless Steel 17-4 PH,Wire EDM,20,5,No,Suzuki-san,5613.69
+Q-1196,2023-01-08,Sensor Housing - threaded,Aluminum 7075,Wire EDM,1,10,Yes,Tanaka-san,637.36
+Q-1197,2023-01-01,Electronic Chassis - EMI shielded,Stainless Steel 17-4 PH,CNC Turning,1,9,Yes,Suzuki-san,274.25
+Q-1198,2023-12-05,Electronic Chassis - EMI shielded,Stainless Steel 17-4 PH,Wire EDM,100,9,No,Tanaka-san,25083.55
+Q-1199,2023-05-03,Structural Rib - aerospace grade,Inconel 718,Surface Grinding,50,11,No,Tanaka-san,10525.6
+Q-1200,2023-02-08,Structural Rib - aerospace grade,Aluminum 6061,3-Axis Milling,50,9,No,Suzuki-san,6406.37
+Q-1201,2024-01-02,Landing Gear Pin - hardened,Stainless Steel 17-4 PH,CNC Turning,20,10,No,Tanaka-san,3456.86
+Q-1202,2023-11-14,Heat Sink - high fin density,Aluminum 7075,CNC Turning,50,6,No,Tanaka-san,6382.8
+Q-1203,2024-01-04,Structural Rib - aerospace grade,Aluminum 7075,Wire EDM,1,12,No,Sato-san,426.82
+Q-1204,2023-05-16,Mounting Bracket - standard,Inconel 718,Wire EDM,20,7,No,Suzuki-san,6724.2
+Q-1205,2023-11-19,Turbine Blade Housing - thin walls,Stainless Steel 17-4 PH,Surface Grinding,10,6,No,Suzuki-san,3363.95
+Q-1206,2023-02-08,Electronic Chassis - EMI shielded,Titanium Grade 5,3-Axis Milling,100,2,No,Sato-san,16080.39
+Q-1207,2023-10-15,Sensor Housing - threaded,Aluminum 6061,5-Axis Milling,50,4,No,Tanaka-san,16513.32
+Q-1208,2023-04-20,Fuel Injector Nozzle - high precision,Inconel 718,Wire EDM,5,2,No,Sato-san,5770.26
+Q-1209,2023-11-23,Fuel Injector Nozzle - high precision,Titanium Grade 5,Surface Grinding,20,9,No,Suzuki-san,7854.62
+Q-1210,2023-03-22,Mounting Bracket - standard,Stainless Steel 17-4 PH,Surface Grinding,50,3,No,Sato-san,3302.79
+Q-1211,2023-12-23,Turbine Blade Housing - thin walls,Aluminum 6061,CNC Turning,10,6,No,Sato-san,2495.23
+Q-1212,2023-12-20,Turbine Blade Housing - thin walls,Inconel 718,Wire EDM,20,10,No,Sato-san,17244.15
+Q-1213,2023-06-15,Electronic Chassis - EMI shielded,Aluminum 7075,5-Axis Milling,20,9,Yes,Tanaka-san,9467.77
+Q-1214,2024-02-22,Landing Gear Pin - hardened,Aluminum 6061,Surface Grinding,1,2,No,Suzuki-san,130.72
+Q-1215,2023-01-18,Landing Gear Pin - hardened,Aluminum 7075,Surface Grinding,10,4,Yes,Tanaka-san,1434.82
+Q-1216,2023-04-28,Landing Gear Pin - hardened,Aluminum 6061,Wire EDM,1,5,No,Tanaka-san,448.79
+Q-1217,2023-11-03,Landing Gear Pin - hardened,Aluminum 7075,CNC Turning,5,12,No,Tanaka-san,895.23
+Q-1218,2023-06-19,Structural Rib - aerospace grade,Titanium Grade 5,CNC Turning,20,4,No,Suzuki-san,4076.01
+Q-1219,2024-01-20,Fuel Injector Nozzle - high precision,Aluminum 7075,3-Axis Milling,50,4,No,Suzuki-san,15874.47
+Q-1220,2024-02-18,Electronic Chassis - EMI shielded,Aluminum 7075,CNC Turning,20,5,No,Suzuki-san,2236.49
+Q-1221,2024-01-14,Sensor Housing - threaded,Aluminum 6061,3-Axis Milling,20,2,No,Suzuki-san,2967.01
+Q-1222,2023-05-13,Manifold Block - complex internal channels,Stainless Steel 17-4 PH,CNC Turning,10,2,No,Sato-san,3788.35
+Q-1223,2024-01-20,Fuel Injector Nozzle - high precision,,,100,12,Yes,Suzuki-san,115093.74
+Q-1224,2023-02-08,Fuel Injector Nozzle - high precision,Titanium Grade 5,5-Axis Milling,5,9,No,Tanaka-san,7328.96
+Q-1225,2023-02-25,Fuel Injector Nozzle - high precision,Inconel 718,CNC Turning,20,10,No,Suzuki-san,11487.08
+Q-1226,2024-02-27,Sensor Housing - threaded,Stainless Steel 17-4 PH,Surface Grinding,1,11,No,Tanaka-san,187.71
+Q-1227,2023-08-08,Landing Gear Pin - hardened,Inconel 718,CNC Turning,5,12,No,Suzuki-san,1499.87
+Q-1228,2023-03-08,Structural Rib - aerospace grade,Inconel 718,5-Axis Milling,100,3,No,Suzuki-san,37025.69
+Q-1229,2023-09-24,Structural Rib - aerospace grade,Titanium Grade 5,Surface Grinding,50,3,No,Sato-san,5911.37
+Q-1230,2023-03-04,Turbine Blade Housing - thin walls,Aluminum 7075,CNC Turning,100,7,No,Suzuki-san,25697.76
+Q-1231,2024-02-11,Landing Gear Pin - hardened,Aluminum 6061,Wire EDM,20,6,No,Tanaka-san,6297.88
+Q-1232,2023-06-11,Sensor Housing - threaded,Stainless Steel 17-4 PH,Surface Grinding,100,12,No,Sato-san,8605.64
+Q-1233,2023-12-28,Fuel Injector Nozzle - high precision,Titanium Grade 5,5-Axis Milling,5,8,No,Tanaka-san,6967.18
+Q-1234,2024-01-10,Electronic Chassis - EMI shielded,Stainless Steel 17-4 PH,Wire EDM,5,3,No,Sato-san,1537.87
+Q-1235,2023-12-20,Turbine Blade Housing - thin walls,Aluminum 7075,3-Axis Milling,5,11,No,Tanaka-san,2867.97
+Q-1236,2024-02-06,Turbine Blade Housing - thin walls,Aluminum 7075,CNC Turning,1,10,Yes,Suzuki-san,599.93
+Q-1237,2023-07-27,Turbine Blade Housing - thin walls,Inconel 718,Surface Grinding,20,10,No,Sato-san,8797.71
+Q-1238,2023-07-16,Actuator Linkage,Stainless Steel 17-4 PH,Surface Grinding,100,11,No,Tanaka-san,10689.82
+Q-1239,2023-04-30,Heat Sink - high fin density,Aluminum 6061,Wire EDM,50,11,No,Suzuki-san,12391.66
+Q-1240,2023-10-27,Mounting Bracket - standard,,Surface Grinding,5,12,Yes,Sato-san,1001.63
+Q-1241,2024-02-28,Structural Rib - aerospace grade,Stainless Steel 17-4 PH,5-Axis Milling,5,10,No,Sato-san,1855.48
+Q-1242,2023-10-22,Manifold Block - complex internal channels,Aluminum 7075,Wire EDM,20,3,No,Suzuki-san,13262.94
+Q-1243,2023-11-23,Turbine Blade Housing - thin walls,Stainless Steel 17-4 PH,CNC Turning,1,6,No,Tanaka-san,723.34
+Q-1244,2023-09-17,Fuel Injector Nozzle - high precision,Aluminum 6061,Surface Grinding,50,4,No,Suzuki-san,7954.99
+Q-1245,2023-01-11,Electronic Chassis - EMI shielded,Aluminum 6061,Surface Grinding,20,6,Yes,Suzuki-san,1932.35
+Q-1246,2023-06-11,Turbine Blade Housing - thin walls,Aluminum 6061,Surface Grinding,10,2,No,Sato-san,2065.12
+Q-1247,2023-09-01,Fuel Injector Nozzle - high precision,Inconel 718,3-Axis Milling,1,5,No,Tanaka-san,1119.17
+Q-1248,2024-01-27,Manifold Block - complex internal channels,Stainless Steel 17-4 PH,5-Axis Milling,1,6,No,Tanaka-san,1643.15
+Q-1249,2023-02-25,Sensor Housing - threaded,Stainless Steel 17-4 PH,5-Axis Milling,50,11,No,Suzuki-san,16561.34
+Q-1250,2024-03-22,Sensor Housing - threaded,Aluminum 6061,3-Axis Milling,100,12,No,Tanaka-san,11536.39
+Q-1251,2023-08-01,Mounting Bracket - standard,Stainless Steel 17-4 PH,Surface Grinding,50,3,No,Sato-san,3446.45
+Q-1252,2023-03-04,Heat Sink - high fin density,Stainless Steel 17-4 PH,5-Axis Milling,20,2,No,Tanaka-san,8293.28
+Q-1253,2023-03-06,Structural Rib - aerospace grade,Aluminum 6061,Wire EDM,5,5,No,Suzuki-san,1774.05
+Q-1254,2023-10-21,Heat Sink - high fin density,Aluminum 7075,,5,7,No,Sato-san,888.88
+Q-1255,2023-12-17,Actuator Linkage,Aluminum 7075,Surface Grinding,5,12,No,Tanaka-san,694.12
+Q-1256,2024-03-02,Fuel Injector Nozzle - high precision,Inconel 718,CNC Turning,10,4,No,Sato-san,5912.18
+Q-1257,2023-07-09,Landing Gear Pin - hardened,Aluminum 6061,5-Axis Milling,1,5,Yes,Tanaka-san,797.07
+Q-1258,2023-10-01,Structural Rib - aerospace grade,Aluminum 7075,5-Axis Milling,100,8,No,Sato-san,22523.55
+Q-1259,2024-01-08,Actuator Linkage,Aluminum 6061,3-Axis Milling,1,11,No,Tanaka-san,248.05
+Q-1260,2023-04-10,Mounting Bracket - standard,Aluminum 7075,CNC Turning,100,6,No,Tanaka-san,8449.99
+Q-1261,2023-05-05,Actuator Linkage,Aluminum 7075,Surface Grinding,100,12,Yes,Suzuki-san,9907.87
+Q-1262,2023-09-24,Landing Gear Pin - hardened,Aluminum 7075,Wire EDM,100,11,No,Sato-san,18555.41
+Q-1263,2023-10-19,Heat Sink - high fin density,Titanium Grade 5,CNC Turning,100,10,No,Tanaka-san,16034.84
+Q-1264,2023-12-09,Heat Sink - high fin density,Inconel 718,,50,2,No,Tanaka-san,19272.55
+Q-1265,2023-04-28,Mounting Bracket - standard,Aluminum 7075,5-Axis Milling,1,4,No,Suzuki-san,424.01
+Q-1266,2023-02-15,Turbine Blade Housing - thin walls,Titanium Grade 5,3-Axis Milling,20,6,Yes,Sato-san,12071.76
+Q-1267,2023-07-07,Structural Rib - aerospace grade,Aluminum 7075,Wire EDM,5,10,No,Suzuki-san,1736.67
+Q-1268,2023-09-01,Fuel Injector Nozzle - high precision,Aluminum 7075,Wire EDM,10,6,No,Sato-san,7291.77
+Q-1269,2023-12-10,Mounting Bracket - standard,Titanium Grade 5,3-Axis Milling,50,5,No,Sato-san,7615.25
+Q-1270,2023-08-10,Actuator Linkage,Inconel 718,Surface Grinding,5,10,No,Tanaka-san,1347.94
+Q-1271,2024-02-25,Turbine Blade Housing - thin walls,Aluminum 7075,5-Axis Milling,5,11,Yes,Suzuki-san,7261.41
+Q-1272,2023-04-25,Mounting Bracket - standard,Aluminum 6061,3-Axis Milling,5,10,Yes,Sato-san,847.48
+Q-1273,2023-04-12,Mounting Bracket - standard,Titanium Grade 5,5-Axis Milling,10,9,No,Sato-san,3611.2
+Q-1274,2023-10-23,Manifold Block - complex internal channels,Aluminum 6061,Wire EDM,20,7,No,Suzuki-san,14080.01
+Q-1275,2023-09-09,Fuel Injector Nozzle - high precision,Stainless Steel 17-4 PH,CNC Turning,5,5,No,Sato-san,2091.4
+Q-1276,2023-09-16,Structural Rib - aerospace grade,Aluminum 6061,Surface Grinding,100,5,No,Sato-san,5783.13
+Q-1277,2023-12-14,Turbine Blade Housing - thin walls,Aluminum 7075,CNC Turning,1,8,No,Tanaka-san,594.86
+Q-1278,2023-07-25,Actuator Linkage,Titanium Grade 5,5-Axis Milling,5,11,Yes,Sato-san,3274.78
+Q-1279,2023-07-19,Turbine Blade Housing - thin walls,Titanium Grade 5,Surface Grinding,20,6,Yes,Tanaka-san,11762.96
+Q-1280,2023-07-23,Sensor Housing - threaded,Aluminum 7075,CNC Turning,50,5,No,Suzuki-san,5004.09
+Q-1281,2023-08-25,Electronic Chassis - EMI shielded,Titanium Grade 5,CNC Turning,100,7,No,Sato-san,12582.69
+Q-1282,2023-02-18,Turbine Blade Housing - thin walls,Titanium Grade 5,3-Axis Milling,20,12,No,Sato-san,10824.26
+Q-1283,2023-10-18,Mounting Bracket - standard,Stainless Steel 17-4 PH,Surface Grinding,50,2,No,Sato-san,3682.11
+Q-1284,2023-03-21,Fuel Injector Nozzle - high precision,Titanium Grade 5,3-Axis Milling,20,8,Yes,Suzuki-san,14748.16
+Q-1285,2023-08-28,Landing Gear Pin - hardened,Titanium Grade 5,3-Axis Milling,20,5,No,Sato-san,4065.04
+Q-1286,2024-01-14,Actuator Linkage,Aluminum 6061,Surface Grinding,1,12,No,Suzuki-san,120.22
+Q-1287,2024-01-10,Mounting Bracket - standard,Aluminum 6061,CNC Turning,20,4,No,Sato-san,1618.62
+Q-1288,2023-01-26,Manifold Block - complex internal channels,Aluminum 6061,Surface Grinding,1,12,No,Sato-san,257.94
+Q-1289,2024-03-12,Turbine Blade Housing - thin walls,Stainless Steel 17-4 PH,5-Axis Milling,5,7,Yes,Sato-san,6989.89
+Q-1290,2024-01-05,Fuel Injector Nozzle - high precision,Stainless Steel 17-4 PH,Wire EDM,1,7,No,Sato-san,1149.45
+Q-1291,2024-01-10,Heat Sink - high fin density,Aluminum 6061,Wire EDM,10,12,Yes,Suzuki-san,3497.57
+Q-1292,2023-03-23,Fuel Injector Nozzle - high precision,Aluminum 7075,5-Axis Milling,20,12,No,Suzuki-san,18888.91
+Q-1293,2023-01-10,Electronic Chassis - EMI shielded,Stainless Steel 17-4 PH,Surface Grinding,20,7,No,Suzuki-san,2452.05
+Q-1294,2023-12-07,Mounting Bracket - standard,Aluminum 6061,Surface Grinding,10,2,No,Tanaka-san,831.45
+Q-1295,2023-10-02,Structural Rib - aerospace grade,Titanium Grade 5,5-Axis Milling,1,6,No,Tanaka-san,743.09
+Q-1296,2023-11-03,Electronic Chassis - EMI shielded,Aluminum 7075,Wire EDM,1,8,No,Tanaka-san,531.12
+Q-1297,2023-04-07,Electronic Chassis - EMI shielded,Aluminum 7075,Surface Grinding,1,6,No,Tanaka-san,160.07
+Q-1298,2023-12-24,Manifold Block - complex internal channels,Aluminum 7075,CNC Turning,10,9,No,Suzuki-san,3362.62
+Q-1299,2023-10-20,Electronic Chassis - EMI shielded,Inconel 718,CNC Turning,5,7,No,Tanaka-san,1676.65
+Q-1300,2023-08-28,Manifold Block - complex internal channels,Titanium Grade 5,5-Axis Milling,1,12,No,Tanaka-san,1742.05
+Q-1301,2023-01-14,Electronic Chassis - EMI shielded,Titanium Grade 5,Wire EDM,50,7,No,Tanaka-san,16308.0
+Q-1302,2023-05-05,Mounting Bracket - standard,Titanium Grade 5,3-Axis Milling,10,11,No,Sato-san,1798.51
+Q-1303,2023-04-20,Actuator Linkage,Aluminum 6061,5-Axis Milling,1,8,No,Sato-san,436.19
+Q-1304,2023-08-05,Heat Sink - high fin density,Titanium Grade 5,5-Axis Milling,5,4,No,Suzuki-san,2347.54
+Q-1305,2023-11-18,Mounting Bracket - standard,Titanium Grade 5,CNC Turning,1,6,No,Suzuki-san,247.34
+Q-1306,2023-03-25,Fuel Injector Nozzle - high precision,Stainless Steel 17-4 PH,Surface Grinding,1,7,No,Tanaka-san,488.46
+Q-1307,2024-03-12,Heat Sink - high fin density,Aluminum 6061,3-Axis Milling,1,7,No,Tanaka-san,247.65
+Q-1308,2023-12-19,Mounting Bracket - standard,Aluminum 7075,CNC Turning,5,7,No,Sato-san,549.82
+Q-1309,2023-09-21,Manifold Block - complex internal channels,Aluminum 6061,5-Axis Milling,10,9,No,Suzuki-san,10026.13
+Q-1310,2023-05-09,Heat Sink - high fin density,Inconel 718,3-Axis Milling,5,6,No,Sato-san,1550.92
+Q-1311,2024-01-05,Electronic Chassis - EMI shielded,Aluminum 6061,5-Axis Milling,1,6,No,Sato-san,428.18
+Q-1312,2023-05-31,Turbine Blade Housing - thin walls,Stainless Steel 17-4 PH,5-Axis Milling,20,6,No,Tanaka-san,22459.64
+Q-1313,2023-11-28,Actuator Linkage,Aluminum 6061,3-Axis Milling,1,4,No,Tanaka-san,243.52
+Q-1314,2023-09-18,Manifold Block - complex internal channels,Stainless Steel 17-4 PH,Wire EDM,1,7,No,Sato-san,1008.65
+Q-1315,2024-01-19,Landing Gear Pin - hardened,Aluminum 7075,Wire EDM,10,12,No,Suzuki-san,2992.06
+Q-1316,2023-06-29,Landing Gear Pin - hardened,,Wire EDM,50,11,No,Sato-san,11000.31
+Q-1317,2023-08-26,Manifold Block - complex internal channels,Inconel 718,3-Axis Milling,5,12,No,Sato-san,3558.06
+Q-1318,2023-08-16,Structural Rib - aerospace grade,Aluminum 6061,Wire EDM,20,6,No,Tanaka-san,6671.4
+Q-1319,2023-01-09,Actuator Linkage,Inconel 718,5-Axis Milling,5,7,No,Sato-san,2717.75
+Q-1320,2023-03-29,Sensor Housing - threaded,Inconel 718,3-Axis Milling,20,6,No,Tanaka-san,6109.98
+Q-1321,2024-02-29,Manifold Block - complex internal channels,Titanium Grade 5,5-Axis Milling,5,3,No,Tanaka-san,7378.5
+Q-1322,2023-01-31,Electronic Chassis - EMI shielded,Inconel 718,Wire EDM,1,3,No,Sato-san,551.17
+Q-1323,2023-01-19,Fuel Injector Nozzle - high precision,Titanium Grade 5,Wire EDM,20,10,No,Suzuki-san,18456.13
+Q-1324,2024-03-05,Actuator Linkage,Aluminum 7075,5-Axis Milling,100,5,No,Tanaka-san,32042.29
+Q-1325,2023-10-18,Landing Gear Pin - hardened,Aluminum 7075,5-Axis Milling,10,9,No,Sato-san,3388.24
+Q-1326,2023-02-22,Structural Rib - aerospace grade,Aluminum 7075,Surface Grinding,20,10,No,Tanaka-san,1986.25
+Q-1327,2023-02-08,Structural Rib - aerospace grade,Titanium Grade 5,Surface Grinding,1,8,No,Sato-san,240.48
+Q-1328,2024-01-25,Fuel Injector Nozzle - high precision,Inconel 718,3-Axis Milling,20,3,No,Sato-san,12430.28
+Q-1329,2023-02-26,Actuator Linkage,Aluminum 6061,5-Axis Milling,5,4,No,Sato-san,1762.33
+Q-1330,2024-01-24,Landing Gear Pin - hardened,Inconel 718,5-Axis Milling,10,2,No,Sato-san,4405.72
+Q-1331,2023-03-15,Electronic Chassis - EMI shielded,Aluminum 6061,CNC Turning,50,10,Yes,Tanaka-san,7671.03
+Q-1332,2024-01-30,Actuator Linkage,Aluminum 7075,5-Axis Milling,5,4,No,Tanaka-san,2524.75
+Q-1333,2023-05-01,Sensor Housing - threaded,,5-Axis Milling,100,9,No,Tanaka-san,28557.74
+Q-1334,2023-03-11,Actuator Linkage,Inconel 718,Wire EDM,100,11,No,Sato-san,26776.87
+Q-1335,2023-03-11,Sensor Housing - threaded,Stainless Steel 17-4 PH,5-Axis Milling,5,12,No,Suzuki-san,2101.54
+Q-1336,2023-05-23,Manifold Block - complex internal channels,Inconel 718,5-Axis Milling,50,10,No,Tanaka-san,51501.34
+Q-1337,2023-01-25,Electronic Chassis - EMI shielded,Aluminum 7075,Surface Grinding,50,10,No,Tanaka-san,4862.32
+Q-1338,2023-03-02,Turbine Blade Housing - thin walls,Stainless Steel 17-4 PH,3-Axis Milling,100,4,No,Suzuki-san,33741.3
+Q-1339,2023-01-28,Structural Rib - aerospace grade,Aluminum 6061,3-Axis Milling,5,4,No,Tanaka-san,1079.16
+Q-1340,2023-09-26,Mounting Bracket - standard,Aluminum 6061,CNC Turning,20,12,No,Sato-san,1581.97
+Q-1341,2023-03-08,Electronic Chassis - EMI shielded,Titanium Grade 5,3-Axis Milling,10,7,No,Suzuki-san,2350.18
+Q-1342,2023-04-29,Mounting Bracket - standard,Inconel 718,5-Axis Milling,10,4,No,Tanaka-san,4886.35
+Q-1343,2023-09-09,Fuel Injector Nozzle - high precision,Aluminum 7075,Wire EDM,20,8,Yes,Tanaka-san,21471.83
+Q-1344,2023-09-21,Fuel Injector Nozzle - high precision,Inconel 718,5-Axis Milling,20,2,No,Sato-san,21637.31
+Q-1345,2023-10-03,Mounting Bracket - standard,Aluminum 7075,Wire EDM,10,9,No,Sato-san,2090.53
+Q-1346,2023-02-26,Landing Gear Pin - hardened,Stainless Steel 17-4 PH,Surface Grinding,1,9,No,Suzuki-san,187.5
+Q-1347,2023-12-22,Actuator Linkage,Aluminum 6061,3-Axis Milling,100,7,No,Sato-san,10471.27
+Q-1348,2023-03-05,Turbine Blade Housing - thin walls,Stainless Steel 17-4 PH,5-Axis Milling,1,3,No,Tanaka-san,1642.74
+Q-1349,2023-10-24,Mounting Bracket - standard,Aluminum 7075,3-Axis Milling,50,7,No,Sato-san,4793.64
+Q-1350,2023-08-01,Electronic Chassis - EMI shielded,Titanium Grade 5,5-Axis Milling,20,4,No,Tanaka-san,10036.66
+Q-1351,2023-01-31,Manifold Block - complex internal channels,Titanium Grade 5,CNC Turning,1,5,Yes,Suzuki-san,1051.25
+Q-1352,2024-03-23,Landing Gear Pin - hardened,Titanium Grade 5,3-Axis Milling,100,5,No,Suzuki-san,16111.55
+Q-1353,2023-11-30,Mounting Bracket - standard,Stainless Steel 17-4 PH,CNC Turning,100,3,No,Tanaka-san,10947.29
+Q-1354,2023-10-11,Actuator Linkage,Aluminum 7075,5-Axis Milling,1,5,Yes,Sato-san,656.43
+Q-1355,2023-09-08,Landing Gear Pin - hardened,Inconel 718,5-Axis Milling,5,3,Yes,Tanaka-san,3709.72
+Q-1356,2023-04-17,Turbine Blade Housing - thin walls,,Surface Grinding,1,9,No,Tanaka-san,552.99
+Q-1357,2024-02-10,Sensor Housing - threaded,Titanium Grade 5,5-Axis Milling,10,3,No,Sato-san,4182.08
+Q-1358,2023-12-29,Structural Rib - aerospace grade,Inconel 718,CNC Turning,20,6,No,Suzuki-san,4365.1
+Q-1359,2023-12-10,Heat Sink - high fin density,Aluminum 6061,Surface Grinding,10,5,No,Sato-san,713.43
+Q-1360,2023-09-27,Turbine Blade Housing - thin walls,Aluminum 7075,CNC Turning,10,3,No,Suzuki-san,3043.27
+Q-1361,2023-12-09,Sensor Housing - threaded,Aluminum 7075,5-Axis Milling,100,5,Yes,Sato-san,31649.72
+Q-1362,2024-03-19,Actuator Linkage,,3-Axis Milling,20,4,No,Tanaka-san,4289.98
+Q-1363,2023-08-01,Turbine Blade Housing - thin walls,Inconel 718,CNC Turning,20,11,No,Tanaka-san,13127.43
+Q-1364,2023-10-03,Electronic Chassis - EMI shielded,Aluminum 7075,Surface Grinding,5,12,No,Sato-san,534.64
+Q-1365,2023-02-19,Heat Sink - high fin density,Stainless Steel 17-4 PH,5-Axis Milling,20,6,No,Sato-san,6596.15
+Q-1366,2024-01-12,Sensor Housing - threaded,Inconel 718,Wire EDM,100,2,No,Suzuki-san,31476.23
+Q-1367,2024-03-14,Manifold Block - complex internal channels,Inconel 718,3-Axis Milling,20,6,No,Tanaka-san,13256.41
+Q-1368,2023-10-18,Mounting Bracket - standard,Titanium Grade 5,CNC Turning,100,5,No,Sato-san,11446.6
+Q-1369,2023-12-30,Electronic Chassis - EMI shielded,Stainless Steel 17-4 PH,Wire EDM,20,4,No,Suzuki-san,6281.3
+Q-1370,2023-06-17,Structural Rib - aerospace grade,Titanium Grade 5,5-Axis Milling,10,12,No,Suzuki-san,4447.62
+Q-1371,2023-06-01,Fuel Injector Nozzle - high precision,Aluminum 7075,5-Axis Milling,1,7,No,Tanaka-san,1464.26
+Q-1372,2023-04-28,Structural Rib - aerospace grade,Stainless Steel 17-4 PH,Wire EDM,10,7,No,Sato-san,3129.11
+Q-1373,2023-11-08,Electronic Chassis - EMI shielded,Titanium Grade 5,5-Axis Milling,10,9,No,Suzuki-san,4848.94
+Q-1374,2023-06-08,Landing Gear Pin - hardened,Titanium Grade 5,CNC Turning,20,6,No,Tanaka-san,4192.74
+Q-1375,2023-03-27,Mounting Bracket - standard,Aluminum 7075,CNC Turning,10,6,No,Suzuki-san,1042.09
+Q-1376,2023-02-11,Mounting Bracket - standard,Stainless Steel 17-4 PH,CNC Turning,20,11,No,Suzuki-san,2232.44
+Q-1377,2023-06-26,Structural Rib - aerospace grade,Titanium Grade 5,Wire EDM,5,11,No,Tanaka-san,2613.63
+Q-1378,2023-05-02,Fuel Injector Nozzle - high precision,Stainless Steel 17-4 PH,3-Axis Milling,5,10,No,Suzuki-san,2527.94
+Q-1379,2024-01-25,Heat Sink - high fin density,Inconel 718,5-Axis Milling,100,5,Yes,Suzuki-san,45809.56
+Q-1380,2024-01-03,Actuator Linkage,Aluminum 7075,CNC Turning,5,9,No,Suzuki-san,781.99
+Q-1381,2023-01-15,Fuel Injector Nozzle - high precision,Aluminum 7075,CNC Turning,10,5,No,Suzuki-san,3057.77
+Q-1382,2024-01-02,Mounting Bracket - standard,Titanium Grade 5,Surface Grinding,10,5,No,Sato-san,1343.26
+Q-1383,2023-08-28,Actuator Linkage,Aluminum 6061,CNC Turning,10,4,No,Sato-san,1070.5
+Q-1384,2023-05-30,Manifold Block - complex internal channels,Aluminum 7075,,100,10,No,Tanaka-san,59590.37
+Q-1385,2023-03-02,Actuator Linkage,Inconel 718,3-Axis Milling,50,12,No,Tanaka-san,12029.69
+Q-1386,2024-01-23,Electronic Chassis - EMI shielded,Titanium Grade 5,5-Axis Milling,100,12,No,Sato-san,27498.23
+Q-1387,2023-06-27,Actuator Linkage,Stainless Steel 17-4 PH,5-Axis Milling,50,12,No,Sato-san,15927.04
+Q-1388,2023-07-12,Actuator Linkage,Titanium Grade 5,5-Axis Milling,50,5,No,Tanaka-san,20713.51
+Q-1389,2024-03-08,Sensor Housing - threaded,Inconel 718,5-Axis Milling,50,7,No,Tanaka-san,21782.82
+Q-1390,2023-03-26,Sensor Housing - threaded,Titanium Grade 5,5-Axis Milling,20,10,No,Tanaka-san,10041.77
+Q-1391,2023-12-26,Sensor Housing - threaded,Inconel 718,CNC Turning,100,8,No,Sato-san,14925.17
+Q-1392,2023-08-07,Actuator Linkage,,,10,10,No,Suzuki-san,1236.54
+Q-1393,2024-02-11,Sensor Housing - threaded,Stainless Steel 17-4 PH,5-Axis Milling,10,6,No,Sato-san,3428.04
+Q-1394,2023-02-04,Manifold Block - complex internal channels,Titanium Grade 5,3-Axis Milling,100,7,No,Suzuki-san,47062.66
+Q-1395,2023-12-08,Electronic Chassis - EMI shielded,Aluminum 7075,Wire EDM,20,12,No,Suzuki-san,5390.09
+Q-1396,2023-08-19,Heat Sink - high fin density,Stainless Steel 17-4 PH,Wire EDM,50,5,No,Tanaka-san,16832.45
+Q-1397,2023-04-15,Heat Sink - high fin density,Aluminum 6061,Surface Grinding,10,10,No,Sato-san,726.23
+Q-1398,2023-07-05,Landing Gear Pin - hardened,Stainless Steel 17-4 PH,5-Axis Milling,10,11,No,Tanaka-san,5116.6
+Q-1399,2023-03-16,Structural Rib - aerospace grade,Aluminum 6061,3-Axis Milling,1,7,No,Sato-san,180.06
+Q-1400,2023-12-03,Sensor Housing - threaded,Aluminum 7075,,50,11,No,Suzuki-san,12462.28
+Q-1401,2024-02-02,Actuator Linkage,Inconel 718,CNC Turning,5,6,Yes,Suzuki-san,1699.6
+Q-1402,2023-05-11,Turbine Blade Housing - thin walls,Aluminum 7075,Surface Grinding,10,7,No,Tanaka-san,3042.22
+Q-1403,2023-11-16,Fuel Injector Nozzle - high precision,Aluminum 7075,3-Axis Milling,20,9,No,Tanaka-san,8287.43
+Q-1404,2023-10-22,Manifold Block - complex internal channels,Aluminum 6061,3-Axis Milling,1,9,No,Suzuki-san,513.31
+Q-1405,2023-12-14,Actuator Linkage,Stainless Steel 17-4 PH,Wire EDM,100,9,No,Sato-san,22650.75
+Q-1406,2023-05-07,Sensor Housing - threaded,Aluminum 7075,5-Axis Milling,50,9,No,Suzuki-san,16054.48
+Q-1407,2023-10-04,Electronic Chassis - EMI shielded,Aluminum 6061,CNC Turning,100,4,No,Suzuki-san,8719.51
+Q-1408,2024-02-27,Landing Gear Pin - hardened,Stainless Steel 17-4 PH,Wire EDM,100,5,No,Tanaka-san,29214.89
+Q-1409,2023-03-16,Landing Gear Pin - hardened,Titanium Grade 5,CNC Turning,100,12,No,Suzuki-san,14754.77
+Q-1410,2023-08-22,Actuator Linkage,Aluminum 7075,Surface Grinding,50,4,Yes,Tanaka-san,6339.15
+Q-1411,2023-02-04,Electronic Chassis - EMI shielded,Titanium Grade 5,5-Axis Milling,20,8,No,Tanaka-san,9073.53
+Q-1412,2023-12-27,Turbine Blade Housing - thin walls,Inconel 718,Wire EDM,5,2,No,Sato-san,5117.03
+Q-1413,2023-12-01,Fuel Injector Nozzle - high precision,Aluminum 7075,3-Axis Milling,50,11,No,Suzuki-san,18100.9
+Q-1414,2024-03-24,Heat Sink - high fin density,Stainless Steel 17-4 PH,5-Axis Milling,10,11,No,Sato-san,3624.36
+Q-1415,2023-05-17,Electronic Chassis - EMI shielded,Stainless Steel 17-4 PH,3-Axis Milling,20,4,No,Tanaka-san,3764.51
+Q-1416,2023-05-12,Mounting Bracket - standard,Stainless Steel 17-4 PH,5-Axis Milling,100,2,No,Sato-san,19175.86
+Q-1417,2023-07-12,Heat Sink - high fin density,Titanium Grade 5,CNC Turning,5,11,No,Suzuki-san,1095.18
+Q-1418,2024-01-28,Electronic Chassis - EMI shielded,Inconel 718,3-Axis Milling,20,8,No,Suzuki-san,4784.04
+Q-1419,2023-05-17,Landing Gear Pin - hardened,Titanium Grade 5,Surface Grinding,50,10,No,Tanaka-san,7579.83
+Q-1420,2023-10-31,Manifold Block - complex internal channels,Aluminum 6061,,20,5,No,Sato-san,4989.24
+Q-1421,2023-07-19,Structural Rib - aerospace grade,Aluminum 7075,5-Axis Milling,20,5,Yes,Tanaka-san,10104.48
+Q-1422,2023-12-11,Manifold Block - complex internal channels,Stainless Steel 17-4 PH,5-Axis Milling,100,11,No,Tanaka-san,89149.91
+Q-1423,2023-03-29,Sensor Housing - threaded,Aluminum 6061,5-Axis Milling,100,7,No,Sato-san,22880.14
+Q-1424,2023-08-18,Sensor Housing - threaded,Inconel 718,CNC Turning,10,11,No,Sato-san,2359.85
+Q-1425,2023-11-13,Structural Rib - aerospace grade,Aluminum 6061,Wire EDM,5,8,Yes,Suzuki-san,2128.85
+Q-1426,2023-09-02,Mounting Bracket - standard,Aluminum 6061,3-Axis Milling,100,5,No,Sato-san,8048.21
+Q-1427,2023-12-24,Turbine Blade Housing - thin walls,Stainless Steel 17-4 PH,Wire EDM,20,2,No,Suzuki-san,16537.56
+Q-1428,2023-01-15,Heat Sink - high fin density,Aluminum 7075,Wire EDM,20,4,No,Sato-san,5057.7
+Q-1429,2023-06-19,Mounting Bracket - standard,Stainless Steel 17-4 PH,5-Axis Milling,10,4,No,Tanaka-san,3825.4
+Q-1430,2023-08-06,Manifold Block - complex internal channels,Aluminum 6061,Wire EDM,10,9,No,Sato-san,6228.15
+Q-1431,2023-03-18,Actuator Linkage,Inconel 718,3-Axis Milling,5,4,No,Tanaka-san,1862.89
+Q-1432,2023-11-12,Mounting Bracket - standard,Aluminum 7075,Wire EDM,1,3,No,Suzuki-san,376.97
+Q-1433,2024-02-11,Fuel Injector Nozzle - high precision,Aluminum 6061,Wire EDM,1,6,No,Suzuki-san,1105.36
+Q-1434,2023-03-27,Electronic Chassis - EMI shielded,Inconel 718,5-Axis Milling,20,8,No,Sato-san,7755.1
+Q-1435,2023-03-21,Heat Sink - high fin density,Titanium Grade 5,3-Axis Milling,50,8,No,Tanaka-san,11527.12
+Q-1436,2023-05-24,Heat Sink - high fin density,Inconel 718,Surface Grinding,100,8,No,Suzuki-san,15852.36
+Q-1437,2024-01-29,Turbine Blade Housing - thin walls,Inconel 718,Surface Grinding,1,9,No,Sato-san,682.39
+Q-1438,2023-09-16,Mounting Bracket - standard,Aluminum 6061,Surface Grinding,20,8,No,Sato-san,1021.17
+Q-1439,2024-02-04,Actuator Linkage,Aluminum 7075,CNC Turning,1,2,No,Sato-san,178.6
+Q-1440,2023-01-21,Sensor Housing - threaded,Titanium Grade 5,CNC Turning,10,12,No,Suzuki-san,2023.66
+Q-1441,2023-08-09,Actuator Linkage,Titanium Grade 5,3-Axis Milling,1,3,No,Suzuki-san,360.87
+Q-1442,2023-04-22,Fuel Injector Nozzle - high precision,Aluminum 7075,Surface Grinding,20,11,No,Tanaka-san,4826.46
+Q-1443,2023-06-11,Turbine Blade Housing - thin walls,Aluminum 6061,,1,7,No,Tanaka-san,633.52
+Q-1444,2023-10-18,Electronic Chassis - EMI shielded,Stainless Steel 17-4 PH,5-Axis Milling,100,8,No,Tanaka-san,35829.67
+Q-1445,2023-01-16,Sensor Housing - threaded,Inconel 718,5-Axis Milling,20,10,No,Tanaka-san,9494.2
+Q-1446,2023-08-27,Sensor Housing - threaded,Aluminum 7075,Wire EDM,10,9,Yes,Sato-san,3616.61
+Q-1447,2024-02-15,Structural Rib - aerospace grade,Aluminum 7075,Wire EDM,5,2,No,Tanaka-san,1958.45
+Q-1448,2023-04-19,Heat Sink - high fin density,Aluminum 7075,Surface Grinding,100,9,No,Tanaka-san,7599.46
+Q-1449,2023-12-19,Electronic Chassis - EMI shielded,Stainless Steel 17-4 PH,Wire EDM,1,12,Yes,Suzuki-san,654.69
+Q-1450,2023-07-06,Manifold Block - complex internal channels,Inconel 718,5-Axis Milling,100,3,No,Suzuki-san,82079.34
+Q-1451,2023-11-12,Turbine Blade Housing - thin walls,Titanium Grade 5,Surface Grinding,100,4,Yes,Suzuki-san,37409.79
+Q-1452,2024-02-21,Turbine Blade Housing - thin walls,Titanium Grade 5,3-Axis Milling,1,10,No,Sato-san,754.38
+Q-1453,2023-02-14,Sensor Housing - threaded,Aluminum 7075,3-Axis Milling,50,11,No,Tanaka-san,8349.91
+Q-1454,2024-02-23,Actuator Linkage,Aluminum 6061,3-Axis Milling,20,11,Yes,Sato-san,3253.94
+Q-1455,2024-03-09,Actuator Linkage,Titanium Grade 5,CNC Turning,100,2,No,Sato-san,12649.54
+Q-1456,2023-05-05,Landing Gear Pin - hardened,Titanium Grade 5,5-Axis Milling,50,5,No,Suzuki-san,18959.19
+Q-1457,2023-12-19,Heat Sink - high fin density,Aluminum 6061,Surface Grinding,1,8,No,Suzuki-san,129.93
+Q-1458,2023-03-26,Heat Sink - high fin density,Stainless Steel 17-4 PH,5-Axis Milling,5,5,Yes,Sato-san,2494.9
+Q-1459,2023-09-29,Electronic Chassis - EMI shielded,Titanium Grade 5,Wire EDM,5,5,No,Suzuki-san,1973.18
+Q-1460,2024-03-22,Structural Rib - aerospace grade,Titanium Grade 5,5-Axis Milling,10,11,No,Suzuki-san,4415.05
+Q-1461,2023-01-20,Turbine Blade Housing - thin walls,Inconel 718,Surface Grinding,50,10,No,Sato-san,18794.84
+Q-1462,2023-02-23,Heat Sink - high fin density,Aluminum 6061,Wire EDM,1,7,No,Sato-san,406.08
+Q-1463,2023-10-03,Fuel Injector Nozzle - high precision,Stainless Steel 17-4 PH,Surface Grinding,20,7,No,Sato-san,4789.46
+Q-1464,2023-09-17,Sensor Housing - threaded,Titanium Grade 5,Wire EDM,100,8,No,Sato-san,22405.52
+Q-1465,2023-02-06,Heat Sink - high fin density,Stainless Steel 17-4 PH,Surface Grinding,50,5,No,Sato-san,4271.8
+Q-1466,2023-06-04,Manifold Block - complex internal channels,Aluminum 6061,Surface Grinding,1,9,No,Sato-san,273.03
+Q-1467,2023-02-12,Heat Sink - high fin density,Stainless Steel 17-4 PH,CNC Turning,50,3,Yes,Sato-san,7682.02
+Q-1468,2024-02-12,Heat Sink - high fin density,Inconel 718,3-Axis Milling,5,8,No,Sato-san,1543.07
+Q-1469,2023-09-22,Fuel Injector Nozzle - high precision,Inconel 718,3-Axis Milling,10,8,No,Tanaka-san,7676.69
+Q-1470,2023-03-16,Manifold Block - complex internal channels,Aluminum 6061,5-Axis Milling,20,7,No,Sato-san,15852.43
+Q-1471,2023-08-10,Actuator Linkage,Aluminum 6061,Surface Grinding,5,7,No,Sato-san,384.75
+Q-1472,2023-09-20,Fuel Injector Nozzle - high precision,Aluminum 6061,,50,11,Yes,Suzuki-san,21720.89
+Q-1473,2023-01-09,Actuator Linkage,Titanium Grade 5,CNC Turning,100,6,No,Tanaka-san,17540.98
+Q-1474,2024-01-05,Structural Rib - aerospace grade,Aluminum 7075,CNC Turning,1,9,No,Sato-san,175.7
+Q-1475,2023-06-15,Turbine Blade Housing - thin walls,Titanium Grade 5,CNC Turning,100,11,No,Tanaka-san,47442.19
+Q-1476,2023-10-04,Structural Rib - aerospace grade,Aluminum 6061,Wire EDM,20,12,No,Sato-san,4445.67
+Q-1477,2023-09-15,Sensor Housing - threaded,Aluminum 6061,Surface Grinding,1,8,No,Sato-san,97.94
+Q-1478,2023-12-22,Sensor Housing - threaded,,Wire EDM,100,10,Yes,Suzuki-san,28428.28
+Q-1479,2023-01-27,Mounting Bracket - standard,Aluminum 6061,Wire EDM,1,7,No,Sato-san,308.47
+Q-1480,2024-01-14,Structural Rib - aerospace grade,Aluminum 7075,Surface Grinding,20,6,No,Sato-san,1646.34
+Q-1481,2023-02-03,Turbine Blade Housing - thin walls,Aluminum 7075,Wire EDM,20,10,No,Suzuki-san,15177.02
+Q-1482,2023-08-18,Heat Sink - high fin density,Inconel 718,3-Axis Milling,5,10,Yes,Suzuki-san,2020.79
+Q-1483,2023-09-01,Fuel Injector Nozzle - high precision,Aluminum 6061,,10,6,No,Tanaka-san,2246.25
+Q-1484,2023-07-06,Actuator Linkage,Stainless Steel 17-4 PH,3-Axis Milling,100,3,No,Tanaka-san,14982.33
+Q-1485,2023-10-09,Structural Rib - aerospace grade,Aluminum 6061,Surface Grinding,10,10,No,Tanaka-san,1060.48
+Q-1486,2023-10-07,Heat Sink - high fin density,Aluminum 7075,3-Axis Milling,100,8,No,Tanaka-san,13534.22
+Q-1487,2023-06-26,Heat Sink - high fin density,Stainless Steel 17-4 PH,Surface Grinding,10,10,No,Sato-san,1111.98
+Q-1488,2024-02-18,Fuel Injector Nozzle - high precision,Aluminum 7075,Surface Grinding,10,6,No,Sato-san,2275.3
+Q-1489,2023-10-17,Structural Rib - aerospace grade,Stainless Steel 17-4 PH,Wire EDM,50,12,No,Suzuki-san,12849.33
+Q-1490,2023-05-29,Turbine Blade Housing - thin walls,Aluminum 7075,CNC Turning,50,9,No,Tanaka-san,14923.98
+Q-1491,2024-01-25,Turbine Blade Housing - thin walls,Aluminum 6061,Surface Grinding,50,3,No,Suzuki-san,8679.55
+Q-1492,2024-03-16,Sensor Housing - threaded,Stainless Steel 17-4 PH,3-Axis Milling,1,7,No,Sato-san,263.34
+Q-1493,2023-04-14,Landing Gear Pin - hardened,Stainless Steel 17-4 PH,Surface Grinding,1,6,No,Suzuki-san,190.41
+Q-1494,2024-02-02,Fuel Injector Nozzle - high precision,Stainless Steel 17-4 PH,Surface Grinding,20,8,No,Sato-san,5435.63
+Q-1495,2023-10-26,Heat Sink - high fin density,Stainless Steel 17-4 PH,3-Axis Milling,100,12,No,Suzuki-san,12784.7
+Q-1496,2023-07-01,Turbine Blade Housing - thin walls,Inconel 718,Wire EDM,1,3,No,Suzuki-san,1571.42
+Q-1497,2023-10-21,Manifold Block - complex internal channels,Inconel 718,Surface Grinding,10,11,No,Tanaka-san,6489.37
+Q-1498,2023-04-11,Manifold Block - complex internal channels,Aluminum 7075,Surface Grinding,10,5,No,Sato-san,2190.86
+Q-1499,2023-03-20,Actuator Linkage,Aluminum 7075,Wire EDM,20,12,No,Sato-san,5480.69
+Q-2498,2023-04-11,Manifold Block - complex internal channels,Aluminum 7075,Surface Grinding,10,5,No,Sato-san,2738.5750000000003
+Q-2279,2023-07-19,Turbine Blade Housing - thin walls,Titanium Grade 5,Surface Grinding,20,6,Yes,Tanaka-san,14703.699999999999
+Q-2362,2024-03-19,Actuator Linkage,Stainless Steel 17-4 PH,3-Axis Milling,20,4,No,Tanaka-san,5362.474999999999
+Q-2136,2023-05-26,Manifold Block - complex internal channels,Inconel 718,Surface Grinding,20,10,No,Suzuki-san,13096.8875
+Q-2487,2023-06-26,Heat Sink - high fin density,Stainless Steel 17-4 PH,Surface Grinding,10,10,No,Sato-san,1389.975
+Q-2193,2023-09-12,Sensor Housing - threaded,Aluminum 7075,3-Axis Milling,50,3,No,Sato-san,7597.875
+Q-2285,2023-08-28,Landing Gear Pin - hardened,,3-Axis Milling,20,5,No,Sato-san,5081.3
+Q-2339,2023-01-28,Structural Rib - aerospace grade,Aluminum 6061,3-Axis Milling,5,4,No,Tanaka-san,1348.95
+Q-2471,2023-08-10,Actuator Linkage,Aluminum 6061,Surface Grinding,5,7,No,Sato-san,480.9375
+Q-2222,2023-05-13,Manifold Block - complex internal channels,Stainless Steel 17-4 PH,CNC Turning,10,2,No,Sato-san,4735.4375
