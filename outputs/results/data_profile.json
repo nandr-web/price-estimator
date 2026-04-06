@@ -1,0 +1,474 @@
+{
+  "summary": {
+    "row_count": 510,
+    "column_count": 10,
+    "column_types": {
+      "QuoteID": "object",
+      "Date": "datetime",
+      "PartDescription": "object",
+      "Material": "object",
+      "Process": "object",
+      "Quantity": "integer",
+      "LeadTimeWeeks": "integer",
+      "RushJob": "boolean",
+      "Estimator": "object",
+      "TotalPrice_USD": "float"
+    },
+    "missing_counts": {
+      "QuoteID": 0,
+      "Date": 0,
+      "PartDescription": 0,
+      "Material": 15,
+      "Process": 15,
+      "Quantity": 0,
+      "LeadTimeWeeks": 0,
+      "RushJob": 0,
+      "Estimator": 0,
+      "TotalPrice_USD": 0
+    },
+    "target_stats": {
+      "mean": 9096.971867647058,
+      "median": 4782.225,
+      "std": 12310.722720770369,
+      "min": 97.94,
+      "max": 115093.74
+    }
+  },
+  "unit_price_analysis": {
+    "by_material": {
+      "Aluminum 6061": {
+        "mean": 305.7316633663366,
+        "median": 211.9186,
+        "std": 293.5947751934495,
+        "count": 101
+      },
+      "Aluminum 7075": {
+        "mean": 348.88229108910895,
+        "median": 267.4678,
+        "std": 309.0053120134503,
+        "count": 101
+      },
+      "Inconel 718": {
+        "mean": 562.1086819444445,
+        "median": 461.993,
+        "std": 384.8298320923305,
+        "count": 90
+      },
+      "Stainless Steel 17-4 PH": {
+        "mean": 412.8332446601941,
+        "median": 327.95300000000003,
+        "std": 358.12856248755594,
+        "count": 103
+      },
+      "Titanium Grade 5": {
+        "mean": 478.83897600000006,
+        "median": 366.88275,
+        "std": 371.48645997561795,
+        "count": 100
+      }
+    },
+    "by_part_type": {
+      "Actuator Linkage": {
+        "mean": 264.51289537037036,
+        "median": 242.0569,
+        "std": 152.53594982148587,
+        "count": 54
+      },
+      "Electronic Chassis - EMI shielded": {
+        "mean": 254.23983829787232,
+        "median": 235.01799999999997,
+        "std": 149.3821826904088,
+        "count": 47
+      },
+      "Fuel Injector Nozzle - high precision": {
+        "mean": 729.2016264150943,
+        "median": 658.062,
+        "std": 483.53170358492645,
+        "count": 53
+      },
+      "Heat Sink - high fin density": {
+        "mean": 260.85335625,
+        "median": 250.3591,
+        "std": 132.6554035766304,
+        "count": 48
+      },
+      "Landing Gear Pin - hardened": {
+        "mean": 319.45521276595747,
+        "median": 288.31759999999997,
+        "std": 178.236000769363,
+        "count": 47
+      },
+      "Manifold Block - complex internal channels": {
+        "mean": 757.3438175531915,
+        "median": 654.844375,
+        "std": 450.1415393824247,
+        "count": 47
+      },
+      "Mounting Bracket - standard": {
+        "mean": 190.20174222222218,
+        "median": 156.096,
+        "std": 113.64325512854109,
+        "count": 45
+      },
+      "Sensor Housing - threaded": {
+        "mean": 297.1670480769231,
+        "median": 304.5485,
+        "std": 147.64958350065157,
+        "count": 52
+      },
+      "Structural Rib - aerospace grade": {
+        "mean": 283.82551964285716,
+        "median": 246.628,
+        "std": 136.55923112597688,
+        "count": 56
+      },
+      "Turbine Blade Housing - thin walls": {
+        "mean": 728.9080393442622,
+        "median": 603.588,
+        "std": 404.729580282632,
+        "count": 61
+      }
+    },
+    "by_process": {
+      "3-Axis Milling": {
+        "mean": 310.3665328125,
+        "median": 239.11124999999998,
+        "std": 212.13040211684168,
+        "count": 96
+      },
+      "5-Axis Milling": {
+        "mean": 702.4821375,
+        "median": 488.1949000000001,
+        "std": 476.8073614260361,
+        "count": 112
+      },
+      "CNC Turning": {
+        "mean": 285.6154637931035,
+        "median": 209.637,
+        "std": 208.58800707652705,
+        "count": 87
+      },
+      "Surface Grinding": {
+        "mean": 214.8551271052632,
+        "median": 161.4572,
+        "std": 161.6169532992731,
+        "count": 95
+      },
+      "Wire EDM": {
+        "mean": 496.4498219047619,
+        "median": 361.661,
+        "std": 306.899212455068,
+        "count": 105
+      }
+    },
+    "by_estimator": {
+      "Sato-san": {
+        "mean": 369.1924608333333,
+        "median": 272.8483,
+        "std": 314.69014015194136,
+        "count": 180
+      },
+      "Suzuki-san": {
+        "mean": 408.56671984375,
+        "median": 328.07225000000005,
+        "std": 320.92346988015606,
+        "count": 160
+      },
+      "Tanaka-san": {
+        "mean": 473.8543338235294,
+        "median": 356.90684999999996,
+        "std": 408.5174439609151,
+        "count": 170
+      }
+    }
+  },
+  "volume_discount": {
+    "log_qty_vs_log_unit_price_correlation": -0.37672174822054555,
+    "slope": -0.1862317648803896,
+    "intercept": 6.222247841411633,
+    "r_squared": 0.1419192755823441,
+    "p_value": 1.213159610114924e-18,
+    "std_err": 0.020317266777005544,
+    "per_part_type": {
+      "Actuator Linkage": {
+        "slope": -0.09057732782629946,
+        "intercept": 5.656883661894691,
+        "r_squared": 0.0591744093731285,
+        "n": 54
+      },
+      "Electronic Chassis": {
+        "slope": -0.1608761336840975,
+        "intercept": 5.803026864177657,
+        "r_squared": 0.16623306785497066,
+        "n": 47
+      },
+      "Fuel Injector Nozzle": {
+        "slope": -0.1852939896117441,
+        "intercept": 6.8342955401692596,
+        "r_squared": 0.17969439519893002,
+        "n": 53
+      },
+      "Heat Sink": {
+        "slope": -0.14310532322983216,
+        "intercept": 5.820321203800809,
+        "r_squared": 0.11153752575489519,
+        "n": 48
+      },
+      "Landing Gear Pin": {
+        "slope": -0.1644256560005473,
+        "intercept": 6.063202769991902,
+        "r_squared": 0.17191179875862977,
+        "n": 47
+      },
+      "Manifold Block": {
+        "slope": -0.12813040212028703,
+        "intercept": 6.75254193014732,
+        "r_squared": 0.11390695010775093,
+        "n": 47
+      },
+      "Mounting Bracket": {
+        "slope": -0.21438378494619986,
+        "intercept": 5.646601354962606,
+        "r_squared": 0.27693245611306605,
+        "n": 45
+      },
+      "Sensor Housing": {
+        "slope": -0.08837159550973744,
+        "intercept": 5.804571932741556,
+        "r_squared": 0.06616426712371691,
+        "n": 52
+      },
+      "Structural Rib": {
+        "slope": -0.14213234673308456,
+        "intercept": 5.880465406155177,
+        "r_squared": 0.17138634181075202,
+        "n": 56
+      },
+      "Turbine Blade Housing": {
+        "slope": -0.2064481077531398,
+        "intercept": 6.882495532918991,
+        "r_squared": 0.3368285744121043,
+        "n": 61
+      }
+    }
+  },
+  "rush_premium": {
+    "controlled_mean_ratio": 1.5370426870743445,
+    "n_controlled_groups": 42,
+    "marginal_ratio": 1.5006614069554614,
+    "rush_mean_unit_price": 586.3575313432837,
+    "no_rush_mean_unit_price": 390.73273199774263,
+    "by_part_type": {
+      "Actuator Linkage": {
+        "ratio": 1.5051992534929333,
+        "n_rush": 9,
+        "n_no_rush": 45
+      },
+      "Electronic Chassis": {
+        "ratio": 1.3237416672044167,
+        "n_rush": 7,
+        "n_no_rush": 40
+      },
+      "Fuel Injector Nozzle": {
+        "ratio": 2.015408956780917,
+        "n_rush": 6,
+        "n_no_rush": 47
+      },
+      "Heat Sink": {
+        "ratio": 1.6106410912439661,
+        "n_rush": 7,
+        "n_no_rush": 41
+      },
+      "Landing Gear Pin": {
+        "ratio": 1.7834734190732353,
+        "n_rush": 7,
+        "n_no_rush": 40
+      },
+      "Manifold Block": {
+        "ratio": 2.176629628258064,
+        "n_rush": 3,
+        "n_no_rush": 44
+      },
+      "Mounting Bracket": {
+        "ratio": 1.1681337479753893,
+        "n_rush": 6,
+        "n_no_rush": 39
+      },
+      "Sensor Housing": {
+        "ratio": 1.6462154353889917,
+        "n_rush": 5,
+        "n_no_rush": 47
+      },
+      "Structural Rib": {
+        "ratio": 1.1656605312919741,
+        "n_rush": 6,
+        "n_no_rush": 50
+      },
+      "Turbine Blade Housing": {
+        "ratio": 1.2178649698516952,
+        "n_rush": 11,
+        "n_no_rush": 50
+      }
+    },
+    "by_material": {
+      "Aluminum 6061": {
+        "ratio": 1.909632312290749,
+        "n_rush": 11,
+        "n_no_rush": 90
+      },
+      "Aluminum 7075": {
+        "ratio": 1.4776408581383444,
+        "n_rush": 14,
+        "n_no_rush": 87
+      },
+      "Inconel 718": {
+        "ratio": 1.3791091712371268,
+        "n_rush": 10,
+        "n_no_rush": 80
+      },
+      "Stainless Steel 17-4 PH": {
+        "ratio": 1.4915324242564056,
+        "n_rush": 12,
+        "n_no_rush": 91
+      },
+      "Titanium Grade 5": {
+        "ratio": 1.3898247762986575,
+        "n_rush": 17,
+        "n_no_rush": 83
+      }
+    }
+  },
+  "lead_time": {
+    "correlation_with_unit_price": 0.007287365498161884,
+    "p_value": 0.86959712388478,
+    "by_bucket": {
+      "short (2-4)": {
+        "mean": 410.358411023622,
+        "median": 314.7623,
+        "count": 127
+      },
+      "medium (5-8)": {
+        "mean": 410.68584787234045,
+        "median": 311.5475,
+        "count": 188
+      },
+      "long (9-12)": {
+        "mean": 425.92870397435894,
+        "median": 336.262,
+        "count": 195
+      }
+    }
+  },
+  "missing_values": {
+    "counts": {
+      "Material": 15,
+      "Process": 15
+    },
+    "missing_material_ids": [
+      "Q-1026",
+      "Q-1056",
+      "Q-1073",
+      "Q-1109",
+      "Q-1126",
+      "Q-1131",
+      "Q-1223",
+      "Q-1240",
+      "Q-1316",
+      "Q-1333",
+      "Q-1356",
+      "Q-1362",
+      "Q-1392",
+      "Q-1478",
+      "Q-2285"
+    ],
+    "missing_process_ids": [
+      "Q-1033",
+      "Q-1036",
+      "Q-1073",
+      "Q-1165",
+      "Q-1171",
+      "Q-1223",
+      "Q-1254",
+      "Q-1264",
+      "Q-1384",
+      "Q-1392",
+      "Q-1400",
+      "Q-1420",
+      "Q-1443",
+      "Q-1472",
+      "Q-1483"
+    ],
+    "overlap_count": 3,
+    "overlap_ids": [
+      "Q-1073",
+      "Q-1223",
+      "Q-1392"
+    ],
+    "by_estimator": {
+      "Sato-san": 12,
+      "Tanaka-san": 10,
+      "Suzuki-san": 5
+    },
+    "by_part_type": {
+      "Turbine Blade Housing - thin walls": 4,
+      "Fuel Injector Nozzle - high precision": 4,
+      "Mounting Bracket - standard": 3,
+      "Landing Gear Pin - hardened": 3,
+      "Actuator Linkage": 3,
+      "Heat Sink - high fin density": 3,
+      "Manifold Block - complex internal channels": 3,
+      "Sensor Housing - threaded": 3,
+      "Structural Rib - aerospace grade": 1
+    }
+  },
+  "confounding": {
+    "chi_squared_tests": {
+      "Estimator_x_PartDescription": {
+        "chi2": 16.515542240100416,
+        "p_value": 0.5566149263311553,
+        "dof": 18,
+        "significant_at_005": false
+      },
+      "Estimator_x_Material": {
+        "chi2": 6.513026604456454,
+        "p_value": 0.5899630914188612,
+        "dof": 8,
+        "significant_at_005": false
+      },
+      "Estimator_x_Process": {
+        "chi2": 15.02992570150781,
+        "p_value": 0.05856617870278421,
+        "dof": 8,
+        "significant_at_005": false
+      },
+      "RushJob_x_Estimator": {
+        "chi2": 3.8890199117280413,
+        "p_value": 0.14305731055992318,
+        "dof": 2,
+        "significant_at_005": false
+      }
+    },
+    "marginal_mean_unit_price_by_estimator": {
+      "Sato-san": 369.1924608333333,
+      "Suzuki-san": 408.56671984375,
+      "Tanaka-san": 473.8543338235294
+    },
+    "conditional_mean_unit_price_by_estimator": {
+      "Sato-san": 398.08524271019166,
+      "Suzuki-san": 391.78633923906347,
+      "Tanaka-san": 464.6409371585185
+    },
+    "propensity_classifier": {
+      "accuracy": 0.2899699312714777,
+      "cv_scores": [
+        0.24742268041237114,
+        0.26804123711340205,
+        0.29896907216494845,
+        0.2916666666666667,
+        0.34375
+      ],
+      "random_baseline": 0.3333333333333333,
+      "non_random_assignment": false
+    }
+  }
+}

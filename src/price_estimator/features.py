@@ -168,9 +168,7 @@ def parse_part_description(description: str) -> ParsedDescription:
             result.base_type = BASE_PART_TYPES[matched_key]
             result.fuzzy_matched = True
             result.match_score = score
-            logger.info(
-                "Fuzzy matched '%s' -> '%s' (score=%.1f)", base_raw, matched_key, score
-            )
+            logger.info("Fuzzy matched '%s' -> '%s' (score=%.1f)", base_raw, matched_key, score)
         else:
             result.base_type = "UNKNOWN"
             result.fuzzy_matched = True
