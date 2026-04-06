@@ -195,6 +195,15 @@ The lookup tables are median unit prices from the training data. This could run 
 
 ## Phase 4: Evaluation
 
+### 7-Lens Model Comparison Framework
+
+Beyond MAPE-based model selection, we evaluate models across 7 dimensions to answer "which model should we trust?" This provides a second, independent reference point. See:
+
+- **[COMPARISON.md](COMPARISON.md)** — Framework design, lens descriptions, scorecard format
+- **[VALIDATION_PLAN.md](VALIDATION_PLAN.md)** — Domain invariants, statistical properties, boundary safety checks
+
+Implementation: `src/price_estimator/comparison.py` (library), `scripts/compare.py` (CLI), `tests/test_comparison.py` (boundary validation suite).
+
 ### Cross-Validation
 
 - **5-fold CV**, same seeded splits across all models

@@ -6,11 +6,6 @@ import pytest
 
 from price_estimator.features import (
     ALL_COMPLEXITY_FLAGS,
-    BASE_PART_TYPES,
-    MATERIAL_COST_TIER,
-    MODIFIER_REGISTRY,
-    PROCESS_PRECISION_TIER,
-    ParsedDescription,
     build_feature_matrix,
     build_feature_matrix_no_estimator,
     extract_description_features,
@@ -104,9 +99,7 @@ class TestParsePartDescription:
 
     def test_complexity_score_ordering(self):
         """Complex parts score higher than simple parts."""
-        complex_result = parse_part_description(
-            "Manifold Block - complex internal channels"
-        )
+        complex_result = parse_part_description("Manifold Block - complex internal channels")
         simple_result = parse_part_description("Mounting Bracket - standard")
         assert complex_result.complexity_score > simple_result.complexity_score
 
@@ -223,7 +216,8 @@ class TestBuildFeatureMatrix:
         """No NaN in feature matrix when input has no missing values."""
         X, _ = build_feature_matrix(sample_df, encoding="onehot")
         # Tiers should be non-null when material/process are non-null
-        assert not X.drop(columns=["material_cost_tier", "process_precision_tier"]).isna().any().any()
+        cols = ["material_cost_tier", "process_precision_tier"]
+        assert not X.drop(columns=cols).isna().any().any()
 
     def test_real_data_feature_matrix(self, raw_data):
         """Feature matrix builds from real data without error."""

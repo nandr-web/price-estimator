@@ -25,7 +25,7 @@ pytest -m "not slow"                      # skip model training tests
 # Full pipeline
 python scripts/eda.py --data resources/aora_historical_quotes.csv --output outputs/ \
   && python scripts/train.py --data resources/aora_historical_quotes.csv --output outputs/ \
-  && python scripts/evaluate.py --results outputs/results/cv_results.csv --output outputs/ \
+  && python scripts/evaluate.py --results outputs/results/cv_fold_results.csv --output outputs/ \
   && python scripts/bias_analysis.py --data resources/aora_historical_quotes.csv --output outputs/
 
 # API

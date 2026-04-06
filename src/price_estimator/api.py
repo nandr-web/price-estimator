@@ -207,6 +207,34 @@ def create_quote(req: QuoteRequest) -> QuoteResponse:
     # Primary estimate = median across models
     estimate = float(np.median(list(predictions.values())))
 
+    # SHAP explanation (best-effort, tree models only)
+    shap_explanation = None
+    shap_model_name = None
+    for name in ["M6", "M7", "M5"]:
+        if name in _models:
+            shap_model_name = name
+            break
+
+    if shap_model_name:
+        try:
+            from price_estimator.predict import compute_shap_explanation
+
+            explanation = compute_shap_explanation(_models[shap_model_name], df)
+            shap_vals = explanation["shap_values"]
+            if shap_vals.ndim > 1:
+                shap_vals = shap_vals[0]
+            names = explanation["feature_names"]
+            indices = np.argsort(np.abs(shap_vals))[::-1][:10]
+            shap_explanation = [
+                {
+                    "feature": names[idx],
+                    "contribution": round(float(shap_vals[idx]), 2),
+                }
+                for idx in indices
+            ]
+        except Exception as e:
+            logger.warning("SHAP computation failed: %s", e)
+
     # Model range
     model_range = {
         "low": float(min(predictions.values())),
@@ -254,6 +282,7 @@ def create_quote(req: QuoteRequest) -> QuoteResponse:
         estimate=round(estimate, 2),
         model_range=model_range,
         confidence_flags=confidence_flags,
+        shap_explanation=shap_explanation,
     )
 
 
