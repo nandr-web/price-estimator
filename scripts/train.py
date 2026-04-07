@@ -18,8 +18,16 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from price_estimator.data import load_data, validate
-from price_estimator.models import get_all_models, get_model_by_name, results_to_dataframe
+from price_estimator.data import load_data, validate  # noqa: E402
+from price_estimator.models import (  # noqa: E402
+    get_all_models,
+    get_model_by_name,
+    results_to_dataframe,
+)
+from price_estimator.predict import (  # noqa: E402
+    compute_empirical_bands,
+    save_prediction_bands,
+)
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
@@ -79,6 +87,19 @@ def main(data_path: str, output_path: str, model_names: list[str] | None = None)
 
         except Exception:
             logger.exception("Failed to train %s", model.name)
+
+    # Compute and save empirical prediction bands from OOF predictions
+    if all_results:
+        bands = {}
+        for result in all_results:
+            if result.all_predictions is not None and result.all_actuals is not None:
+                bands[result.model_name] = compute_empirical_bands(
+                    result.all_actuals,
+                    result.all_predictions,
+                )
+        bands_path = results_dir / "prediction_bands.json"
+        save_prediction_bands(bands, bands_path)
+        print(f"\nPrediction bands saved to {bands_path}")
 
     # Save comparison table
     if all_results:

@@ -1,0 +1,41 @@
+====================================================================================================
+  MODEL COMPARISON REPORT — 7 Lenses
+====================================================================================================
+
+Model     Error  Segment  Econ.  Calib.  Stabil. Boundary Interp.   Avg
+----------------------------------------------------------------------------------------------------
+M3a       ●●●●●   ●●●●●   ●●●●●   ●●●●○   ●●●●○   ●●●●●    ●●●●●    4.7
+M4        ●●●●●   ●●●●●   ●●●●●   ●●●●●   ●●●●●   ●●●●○    ●●●●○    4.7
+M2        ●●●●●   ●●●●○   ●●●●●   ●●●●○   ●●●●○   ●●●●●    ●●●●●    4.6
+M3b       ●●●●○   ●●●●●   ●●●●●   ●●●●○   ●●●●●   ●●●●○    ●●●●●    4.6
+M7c       ●●●●○   ●●●●○   ●●●●●   ●●●●●   ●●●●●   ●●●○○    ●●●○○    4.1
+M7        ●●●●○   ●●●●○   ●●●●●   ●●●●●   ●●●●○   ●●●○○    ●●●○○    4.0
+M0        ●●○○○   ●●●○○   ●●●●●   ●○○○○   ●●●○○   ●●●●●    ●●●●●    3.4
+M5        ●●●○○   ●●●○○   ●●●●○   ●●○○○   ●●●○○   ●●●○○    ●●●○○    3.0
+M6        ●●●○○   ●●○○○   ●●●●○   ●●●○○   ●●●○○   ●●○○○    ●●●○○    2.9
+M1        ●○○○○   ●○○○○   ●●○○○   ●○○○○   ●●○○○   ●●●●○    ●●●●●    2.3
+M6b       ●●○○○   ●●○○○   ●●●○○   ●●○○○   ●●○○○   ●●○○○    ●●●○○    2.3
+M7b       ●●○○○   ●●○○○   ●●●○○   ●●●○○   ●○○○○   ●●○○○    ●●●○○    2.3
+M9        ●●●○○   ●●●○○   ●●○○○   ●●●○○   ●○○○○   ●○○○○    ●●●○○    2.3
+M8        ●○○○○   ●○○○○   ●●●●○   ●●○○○   ●●○○○   ●○○○○    ●●○○○    1.9
+----------------------------------------------------------------------------------------------------
+
+NARRATIVES
+
+  M3a: 12.3% MAPE, balanced. Fold stability: ±1.2%. Strong on: error profile, segment fairness, economic coherence, calibration, stability, boundary behavior, interpretability.
+  M4: 11.1% MAPE, balanced. Fold stability: ±0.4%. Strong on: error profile, segment fairness, economic coherence, calibration, stability, boundary behavior, interpretability.
+  M2: 10.8% MAPE, balanced. Fold stability: ±0.5%. Strong on: error profile, segment fairness, economic coherence, calibration, stability, boundary behavior, interpretability.
+  M3b: 13.2% MAPE, balanced. Fold stability: ±0.3%. Strong on: error profile, segment fairness, economic coherence, calibration, stability, boundary behavior, interpretability.
+  M7c: 13.0% MAPE, balanced. Fold stability: ±0.4%. Strong on: error profile, segment fairness, economic coherence, calibration, stability.
+  M7: 12.7% MAPE, balanced. Fold stability: ±0.7%. Strong on: error profile, segment fairness, economic coherence, calibration, stability.
+  M0: 40.3% MAPE, aggressive. Fold stability: ±2.2%. Strong on: economic coherence, boundary behavior, interpretability. Weak on: error profile, calibration.
+  M5: 36.8% MAPE, conservative. 3 economic coherence violation(s). Fold stability: ±2.3%. Strong on: economic coherence. Weak on: calibration.
+  M6: 39.4% MAPE, conservative. 3 economic coherence violation(s). Fold stability: ±5.8%. Strong on: economic coherence. Weak on: segment fairness, boundary behavior.
+  M1: 99.5% MAPE, conservative. 6 economic coherence violation(s). Fold stability: ±6.0%. Strong on: boundary behavior, interpretability. Weak on: error profile, segment fairness, economic coherence, calibration, stability.
+  M6b: 40.9% MAPE, conservative. 4 economic coherence violation(s). Fold stability: ±6.6%. Weak on: error profile, segment fairness, calibration, stability, boundary behavior.
+  M7b: 45.3% MAPE, conservative. 4 economic coherence violation(s). Fold stability: ±9.7%. Weak on: error profile, segment fairness, stability, boundary behavior.
+  M9: 40.3% MAPE, conservative. 5 economic coherence violation(s). Fold stability: ±9.4%. Weak on: economic coherence, stability, boundary behavior.
+  M8: 61.7% MAPE, conservative. 3 economic coherence violation(s). Fold stability: ±6.6%. Strong on: economic coherence. Weak on: error profile, segment fairness, calibration, stability, boundary behavior, interpretability.
+
+Scoring: ●●●●● = best quintile, ●○○○○ = worst quintile
+Economic coherence uses absolute pass/fail, not relative ranking.

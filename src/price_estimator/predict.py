@@ -4,7 +4,9 @@ Provides the prediction interface that combines multiple models, generates
 prediction intervals, and flags out-of-distribution inputs.
 """
 
+import json
 import logging
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -160,6 +162,209 @@ def compute_model_disagreement(
         "mean_spread_pct": float(np.mean(spread_pct)),
         "flagged_indices": np.where(spread_pct > 20)[0],
     }
+
+
+# ---------------------------------------------------------------------------
+# Top-tier model consensus
+# ---------------------------------------------------------------------------
+
+# Top-tier selection criteria:
+# 1. MAPE < 14% and perfect economic coherence (10/10)
+# 2. Structural diversity: at least one linear AND one tree model
+# 3. Segment-weighted: include models that perform well on expensive jobs
+#    (where underquoting hurts most), not just best overall MAPE
+#
+# Linear family: M2 (Ridge log-linear), M3a/M3b (two-stage), M4 (Lasso)
+# Tree family: M7 (XGBoost log-target) — best tree model at 12.7% MAPE
+#   with perfect economic coherence
+TOP_TIER_LINEAR = {"M2", "M3a", "M3b", "M4"}
+TOP_TIER_TREE = {"M7"}
+TOP_TIER_MODELS = TOP_TIER_LINEAR | TOP_TIER_TREE
+
+
+def compute_recommendation(
+    predictions: dict[str, float],
+    band: dict | None = None,
+) -> dict:
+    """Compute recommended quote values from top-tier model consensus.
+
+    Uses the median of top-tier models as the best estimate of true cost,
+    then shifts using the empirical error band to produce conservative
+    (protects margin) and aggressive (wins bids) values.
+
+    The top tier includes both linear (M2, M3a, M3b, M4) and tree (M7)
+    models for structural diversity. When these families disagree, it's
+    a signal that the job has characteristics one family handles better.
+
+    Win bid = shifted 75% toward lower band edge (competitive price)
+    Protect margin = shifted 75% toward upper band edge (safer margin)
+
+    Args:
+        predictions: Dict mapping model name to prediction value.
+        band: Empirical band dict from compute_empirical_bands().
+            If None, only the estimate is returned.
+
+    Returns:
+        Dictionary with:
+            - estimate: median of top-tier models (best guess of true cost)
+            - win_bid: lower quote, more competitive
+            - protect_margin: higher quote, safer margin
+            - top_tier_models: which models contributed
+            - top_tier_spread_pct: spread among top-tier models as %
+            - family_divergence: dict with linear/tree medians and spread,
+              or None if both families aren't represented
+    """
+    top_preds = {m: p for m, p in predictions.items() if m in TOP_TIER_MODELS}
+
+    # Fall back to all models if no top-tier models are available
+    if not top_preds:
+        top_preds = predictions
+
+    vals = list(top_preds.values())
+    estimate = float(np.median(vals))
+
+    result = {
+        "estimate": estimate,
+        "win_bid": None,
+        "protect_margin": None,
+        "top_tier_models": sorted(top_preds.keys()),
+        "top_tier_spread_pct": (
+            float((max(vals) - min(vals)) / estimate * 100) if estimate > 0 else 0.0
+        ),
+        "family_divergence": None,
+    }
+
+    # Check linear vs tree family divergence
+    linear_preds = [p for m, p in top_preds.items() if m in TOP_TIER_LINEAR]
+    tree_preds = [p for m, p in top_preds.items() if m in TOP_TIER_TREE]
+
+    if linear_preds and tree_preds:
+        linear_med = float(np.median(linear_preds))
+        tree_med = float(np.median(tree_preds))
+        midpoint = (linear_med + tree_med) / 2
+        divergence_pct = abs(linear_med - tree_med) / midpoint * 100
+
+        result["family_divergence"] = {
+            "linear_median": round(linear_med, 2),
+            "tree_median": round(tree_med, 2),
+            "divergence_pct": round(divergence_pct, 1),
+        }
+
+    if band:
+        # Band has lower_pct (e.g. -14.5%) and upper_pct (e.g. +17.9%)
+        # These are signed errors: positive = model overestimated.
+        #
+        # Win bid: shift lower (underestimate direction).
+        # Protect margin: shift higher (overestimate direction).
+        # Factor 0.75: at 0.25 PM underquoted 28% of jobs ($197K exposure);
+        # at 0.75 exposure drops to 12% ($112K), concentrated in genuine
+        # outliers rather than routine jobs.
+        margin_shift = band["upper_pct"] * 0.75 / 100
+        bid_shift = band["lower_pct"] * 0.75 / 100
+
+        result["protect_margin"] = round(estimate * (1 + margin_shift), 2)
+        result["win_bid"] = round(estimate * (1 + bid_shift), 2)
+
+    result["estimate"] = round(estimate, 2)
+    return result
+
+
+# ---------------------------------------------------------------------------
+# Empirical prediction bands
+# ---------------------------------------------------------------------------
+
+
+def compute_empirical_bands(
+    actuals: np.ndarray,
+    predictions: np.ndarray,
+    coverage: float = 0.80,
+) -> dict:
+    """Compute empirical prediction bands from out-of-fold residuals.
+
+    Uses signed percentage errors from CV predictions to derive lower
+    and upper multipliers. Applying these to a new prediction gives a
+    "typical range" — e.g., 80% of similar historical jobs fell within
+    this band.
+
+    Args:
+        actuals: Actual prices from OOF predictions.
+        predictions: Model predictions from OOF predictions.
+        coverage: Desired coverage probability (default 0.80).
+
+    Returns:
+        Dictionary with:
+            - coverage: the coverage level
+            - lower_pct: lower percentile of signed errors (e.g. -12.5%)
+            - upper_pct: upper percentile of signed errors (e.g. +15.3%)
+            - median_abs_error_pct: median absolute error percentage
+    """
+    # Signed percentage errors: positive = model overestimated
+    signed_pct = (predictions - actuals) / actuals * 100
+    abs_pct = np.abs(signed_pct)
+
+    tail = (1 - coverage) / 2
+    lower_pct = float(np.percentile(signed_pct, tail * 100))
+    upper_pct = float(np.percentile(signed_pct, (1 - tail) * 100))
+
+    return {
+        "coverage": coverage,
+        "lower_pct": lower_pct,
+        "upper_pct": upper_pct,
+        "median_abs_error_pct": float(np.median(abs_pct)),
+    }
+
+
+def save_prediction_bands(
+    bands_by_model: dict[str, dict],
+    path: str | Path,
+) -> None:
+    """Save empirical prediction bands to a JSON file.
+
+    Args:
+        bands_by_model: Dict mapping model name to band dict from
+            compute_empirical_bands().
+        path: Output file path.
+    """
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w") as f:
+        json.dump(bands_by_model, f, indent=2)
+    logger.info("Saved prediction bands to %s", path)
+
+
+def load_prediction_bands(path: str | Path) -> dict[str, dict]:
+    """Load empirical prediction bands from a JSON file.
+
+    Args:
+        path: Path to the bands JSON file.
+
+    Returns:
+        Dict mapping model name to band dict.
+    """
+    with open(path) as f:
+        return json.load(f)
+
+
+def apply_prediction_band(
+    prediction: float,
+    band: dict,
+) -> tuple[float, float]:
+    """Apply empirical band to a point prediction.
+
+    Args:
+        prediction: The model's point prediction.
+        band: Band dict from compute_empirical_bands().
+
+    Returns:
+        Tuple of (lower_bound, upper_bound).
+    """
+    # The band percentiles represent model error direction.
+    # If model overestimates by 15% at P90, the actual was 15% lower.
+    # So lower bound = prediction / (1 + upper_pct/100)
+    # and upper bound = prediction / (1 + lower_pct/100)
+    lower = prediction / (1 + band["upper_pct"] / 100)
+    upper = prediction / (1 + band["lower_pct"] / 100)
+    return (max(lower, 0), upper)
 
 
 def compute_shap_explanation(model, df: pd.DataFrame) -> dict:

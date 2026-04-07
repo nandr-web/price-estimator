@@ -1,0 +1,86 @@
+{
+  "M0": {
+    "coverage": 0.8,
+    "lower_pct": -57.844431566421584,
+    "upper_pct": -20.262500004404057,
+    "median_abs_error_pct": 42.00019565007441
+  },
+  "M1": {
+    "coverage": 0.8,
+    "lower_pct": -100.0,
+    "upper_pct": 177.49308784853417,
+    "median_abs_error_pct": 75.953906941778
+  },
+  "M2": {
+    "coverage": 0.8,
+    "lower_pct": -14.498079294492067,
+    "upper_pct": 17.914408450918724,
+    "median_abs_error_pct": 8.277000419734593
+  },
+  "M3a": {
+    "coverage": 0.8,
+    "lower_pct": -16.65821823641773,
+    "upper_pct": 20.722243066035535,
+    "median_abs_error_pct": 8.940155236917729
+  },
+  "M3b": {
+    "coverage": 0.8,
+    "lower_pct": -16.778687674983715,
+    "upper_pct": 23.08006149549437,
+    "median_abs_error_pct": 10.271173183338828
+  },
+  "M4": {
+    "coverage": 0.8,
+    "lower_pct": -15.693752461617569,
+    "upper_pct": 17.83049111949542,
+    "median_abs_error_pct": 8.723059359684495
+  },
+  "M5": {
+    "coverage": 0.8,
+    "lower_pct": -27.2217759478341,
+    "upper_pct": 83.22300361862362,
+    "median_abs_error_pct": 22.599317575719716
+  },
+  "M6": {
+    "coverage": 0.8,
+    "lower_pct": -51.402896672984824,
+    "upper_pct": 54.99895842604824,
+    "median_abs_error_pct": 16.489056738506907
+  },
+  "M6b": {
+    "coverage": 0.8,
+    "lower_pct": -44.844655801022725,
+    "upper_pct": 59.593837851225786,
+    "median_abs_error_pct": 15.863814669375353
+  },
+  "M7": {
+    "coverage": 0.8,
+    "lower_pct": -16.468953775673075,
+    "upper_pct": 19.081579495230688,
+    "median_abs_error_pct": 9.129075155709906
+  },
+  "M7b": {
+    "coverage": 0.8,
+    "lower_pct": -58.10466306518303,
+    "upper_pct": 66.16326859022817,
+    "median_abs_error_pct": 20.064428282538405
+  },
+  "M7c": {
+    "coverage": 0.8,
+    "lower_pct": -17.073008221990545,
+    "upper_pct": 21.98702125084998,
+    "median_abs_error_pct": 9.603734918325143
+  },
+  "M8": {
+    "coverage": 0.8,
+    "lower_pct": -44.12832080192439,
+    "upper_pct": 123.10570426424339,
+    "median_abs_error_pct": 27.306583446281216
+  },
+  "M9": {
+    "coverage": 0.8,
+    "lower_pct": -42.874580362175635,
+    "upper_pct": 60.42223295918967,
+    "median_abs_error_pct": 20.599118275794314
+  }
+}

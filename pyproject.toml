@@ -42,3 +42,8 @@ select = ["E", "F", "I", "W", "UP"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-v --tb=short"
+markers = [
+    "slow: marks tests that train models (deselect with '-m \"not slow\"')",
+    "integration: marks tests using the full 510-row dataset",
+    "api: marks API endpoint tests",
+]

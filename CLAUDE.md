@@ -30,7 +30,7 @@ python scripts/eda.py --data resources/aora_historical_quotes.csv --output outpu
   && python scripts/compare.py --data resources/aora_historical_quotes.csv --models outputs/models/ --output outputs/
 
 # API
-python scripts/serve.py --model outputs/models/M6.joblib --port 8000
+python scripts/serve.py --models-dir outputs/models/ --data resources/aora_historical_quotes.csv --bands outputs/results/prediction_bands.json --port 8000
 ```
 
 ## Architecture

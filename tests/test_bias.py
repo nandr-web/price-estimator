@@ -183,3 +183,33 @@ class TestComputeEstimatorBiasIntegration:
             ci_width = stats["ci_95_high"] - stats["ci_95_low"]
             assert ci_width < 50, f"CI width {ci_width:.1f}% too wide for {est}"
             assert ci_width >= 0, "CI low should be <= CI high"
+
+    def test_bias_direction_regression(self, raw_data):
+        """Regression test: Sato-san is aggressive (negative bias, quotes low).
+
+        Sato-san has the strongest negative bias (quotes low) and should be
+        labeled 'aggressive'. Tanaka-san is closest to neutral. If the
+        residual sign convention flips, this test catches it.
+        """
+        result = compute_estimator_bias(raw_data)
+        summary = result["summary"]
+
+        assert summary["Sato-san"]["label"] == "aggressive", (
+            f"Expected Sato-san to be 'aggressive', got '{summary['Sato-san']['label']}' "
+            f"(mean_pct_bias={summary['Sato-san']['mean_pct_bias']:.2f}%)"
+        )
+        assert summary["Sato-san"]["mean_pct_bias"] < 0, (
+            f"Sato-san should have negative bias (quotes low), "
+            f"got {summary['Sato-san']['mean_pct_bias']:.2f}%"
+        )
+
+    def test_bias_magnitude_reasonable(self, raw_data):
+        """All estimators should have |mean_pct_bias| < 30%.
+
+        Prevents the +inf% bug from recurring. Any estimator with bias
+        exceeding 30% indicates a model or data issue.
+        """
+        result = compute_estimator_bias(raw_data)
+        for est, stats in result["summary"].items():
+            abs_bias = abs(stats["mean_pct_bias"])
+            assert abs_bias < 30, f"|mean_pct_bias| for {est} is {abs_bias:.1f}%, expected < 30%"

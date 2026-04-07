@@ -17,7 +17,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
 from price_estimator.api import app, set_models
 from price_estimator.data import load_data
-from price_estimator.predict import TrainingBounds
+from price_estimator.predict import TrainingBounds, load_prediction_bands
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
@@ -27,6 +27,7 @@ def main(
     model_path: str | None = None,
     models_dir: str | None = None,
     data_path: str | None = None,
+    bands_path: str | None = None,
     port: int = 8000,
 ) -> None:
     """Load models and start the API server.
@@ -35,6 +36,7 @@ def main(
         model_path: Path to a single serialized model.
         models_dir: Path to directory of serialized models (loads all .joblib files).
         data_path: Path to training data CSV (for OOD bounds). Optional.
+        bands_path: Path to prediction_bands.json. Optional.
         port: Port to serve on.
     """
     models = {}
@@ -63,7 +65,13 @@ def main(
         bounds = TrainingBounds.from_dataframe(df)
         print(f"Training bounds computed from {len(df)} rows")
 
-    set_models(models, bounds)
+    # Load empirical prediction bands
+    bands = None
+    if bands_path:
+        bands = load_prediction_bands(bands_path)
+        print(f"Loaded prediction bands for {len(bands)} model(s)")
+
+    set_models(models, bounds, prediction_bands=bands)
     print(f"\nStarting server on port {port} with {len(models)} model(s)...")
     uvicorn.run(app, host="0.0.0.0", port=port)
 
@@ -77,6 +85,11 @@ if __name__ == "__main__":
         default=None,
         help="Path to training CSV (for OOD bounds)",
     )
+    parser.add_argument(
+        "--bands",
+        default=None,
+        help="Path to prediction_bands.json (for typical range)",
+    )
     parser.add_argument("--port", type=int, default=8000, help="Port (default: 8000)")
     args = parser.parse_args()
-    main(args.model, args.models_dir, args.data, args.port)
+    main(args.model, args.models_dir, args.data, args.bands, args.port)

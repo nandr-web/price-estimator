@@ -99,10 +99,12 @@ class TestValidate:
             validate(sample_df)
 
     def test_nan_rush_job_raises(self, sample_df):
-        """ValueError raised when RushJob contains NaN."""
-        sample_df.loc[sample_df.index[0], "RushJob"] = np.nan
+        """NaN in RushJob after conversion should raise."""
+        bad_df = sample_df.copy()
+        bad_df["RushJob"] = bad_df["RushJob"].astype(object)
+        bad_df.loc[bad_df.index[0], "RushJob"] = np.nan
         with pytest.raises(ValueError, match="NaN values in RushJob"):
-            validate(sample_df)
+            validate(bad_df)
 
     def test_valid_quantities(self, raw_data):
         """All quantities in real data are from the valid set."""

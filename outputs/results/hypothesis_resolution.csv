@@ -1,12 +1,12 @@
 hypothesis,model_a,model_b,mape_a,mape_b,winner,p_value,significant
-How much does ML add over a simple formula?,M0,M1,40.3309,92.9866,M0,0.0625,False
-Is pricing additive or multiplicative?,M1,M2,92.9866,10.7964,M2,0.0625,False
-Does explicit unit-price decomposition help?,M2,M3a,10.7964,12.2677,M2,0.0625,False
-Do discount curves differ by part type?,M3a,M3b,12.2677,13.1222,M3a,0.1875,False
-Do interaction terms add lift?,M2,M4,10.7964,11.0189,M2,0.6250,False
-RF vs XGBoost stability (overfitting check),M5,M6,37.4689,38.0696,M5,0.6250,False
-Does lead time contribute signal?,M6,M6b,38.0696,38.3630,M6,0.6250,False
-Raw vs log target for trees,M6,M7,38.0696,12.5080,M7,0.0625,False
-XGBoost vs LightGBM on small data,M6,M7b,38.0696,47.1822,M6,0.1250,False
-Is estimator bias additive or structural?,M6,M8,38.0696,55.5585,M6,0.0625,False
-Does including estimator help or hurt?,M6,M9,38.0696,38.2249,M6,1.0000,False
+How much does ML add over a simple formula?,M0,M1,40.3309,99.4931,M0,0.0625,False
+Is pricing additive or multiplicative?,M1,M2,99.4931,10.8321,M2,0.0625,False
+Does explicit unit-price decomposition help?,M2,M3a,10.8321,12.3465,M2,0.0625,False
+Do discount curves differ by part type?,M3a,M3b,12.3465,13.1652,M3a,0.1875,False
+Do interaction terms add lift?,M2,M4,10.8321,11.0626,M2,0.3750,False
+RF vs XGBoost stability (overfitting check),M5,M6,36.8498,39.4143,M5,0.4375,False
+Does lead time contribute signal?,M6,M6b,39.4143,40.9016,M6,0.1875,False
+Raw vs log target for trees,M6,M7,39.4143,12.7190,M7,0.0625,False
+"XGBoost vs LightGBM (log-target, fair comparison)",M7,M7c,12.7190,12.9737,M7,0.5000,False
+Is estimator bias additive or structural?,M6,M8,39.4143,61.7350,M6,0.0625,False
+Does including estimator help or hurt?,M6,M9,39.4143,40.2939,M6,0.8125,False

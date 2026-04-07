@@ -1,157 +1,157 @@
 {
   "summary": {
     "Sato-san": {
-      "mean_pct_bias": -10.367851391301462,
-      "median_pct_bias": -6.311184400857533,
-      "ci_95_low": -20.89244996150104,
-      "ci_95_high": -1.3156046104404509,
-      "std_pct_bias": 66.10694917802844,
+      "mean_pct_bias": -28.971538523138406,
+      "median_pct_bias": -15.217809308061856,
+      "ci_95_low": -46.04429322704119,
+      "ci_95_high": -14.433884490090946,
+      "std_pct_bias": 110.09787370312698,
       "n_quotes": 180,
       "label": "aggressive"
     },
     "Suzuki-san": {
-      "mean_pct_bias": -1.4502193805796302,
-      "median_pct_bias": -3.6185922987363295,
-      "ci_95_low": -9.93759013905788,
-      "ci_95_high": 6.3535441427067045,
-      "std_pct_bias": 51.81706713630565,
+      "mean_pct_bias": -8.325764474589551,
+      "median_pct_bias": -5.940894814952624,
+      "ci_95_low": -17.448787700600306,
+      "ci_95_high": -0.3282439612256545,
+      "std_pct_bias": 54.976363522513246,
       "n_quotes": 160,
-      "label": "neutral"
+      "label": "aggressive"
     },
     "Tanaka-san": {
-      "mean_pct_bias": 9.552387424010323,
-      "median_pct_bias": 8.189533441959554,
-      "ci_95_low": 3.585129859078517,
-      "ci_95_high": 15.334529037488208,
-      "std_pct_bias": 39.49764309988767,
+      "mean_pct_bias": -1.1397563947218532,
+      "median_pct_bias": 5.988169928889306,
+      "ci_95_low": -9.642392482616764,
+      "ci_95_high": 6.780900625575688,
+      "std_pct_bias": 54.0968526367874,
       "n_quotes": 170,
-      "label": "safe"
+      "label": "neutral"
     }
   },
   "by_part_type": {
     "Sato-san": {
       "Sensor Housing": {
-        "mean_pct_bias": 1.3354093526058086,
+        "mean_pct_bias": -12.548331079220402,
         "n_quotes": 19
       },
       "Manifold Block": {
-        "mean_pct_bias": -19.566929944297833,
+        "mean_pct_bias": -30.806331316354793,
         "n_quotes": 14
       },
       "Heat Sink": {
-        "mean_pct_bias": 8.388492734488796,
+        "mean_pct_bias": -11.128832799984085,
         "n_quotes": 22
       },
       "Fuel Injector Nozzle": {
-        "mean_pct_bias": -43.036727410387606,
+        "mean_pct_bias": -104.88916257461251,
         "n_quotes": 16
       },
       "Turbine Blade Housing": {
-        "mean_pct_bias": -47.73950964122151,
+        "mean_pct_bias": -42.795675161566216,
         "n_quotes": 21
       },
       "Mounting Bracket": {
-        "mean_pct_bias": -5.252468139673396,
+        "mean_pct_bias": -15.888880041543333,
         "n_quotes": 23
       },
       "Actuator Linkage": {
-        "mean_pct_bias": -0.22685556458474532,
+        "mean_pct_bias": -14.519250051797849,
         "n_quotes": 22
       },
       "Structural Rib": {
-        "mean_pct_bias": 13.508021971621922,
+        "mean_pct_bias": -12.896861082259791,
         "n_quotes": 18
       },
       "Electronic Chassis": {
-        "mean_pct_bias": 3.9420582603220344,
+        "mean_pct_bias": -8.306237477515063,
         "n_quotes": 13
       },
       "Landing Gear Pin": {
-        "mean_pct_bias": -23.306005940044386,
+        "mean_pct_bias": -58.2006312717497,
         "n_quotes": 12
       }
     },
     "Suzuki-san": {
       "Manifold Block": {
-        "mean_pct_bias": -8.133247966579688,
+        "mean_pct_bias": -30.67927232447558,
         "n_quotes": 17
       },
       "Turbine Blade Housing": {
-        "mean_pct_bias": -4.745454083342851,
+        "mean_pct_bias": -13.511043208268706,
         "n_quotes": 19
       },
       "Actuator Linkage": {
-        "mean_pct_bias": -21.75963531741645,
+        "mean_pct_bias": 0.8828457881066247,
         "n_quotes": 15
       },
       "Fuel Injector Nozzle": {
-        "mean_pct_bias": -26.920971007378803,
+        "mean_pct_bias": -29.372925085308143,
         "n_quotes": 18
       },
       "Structural Rib": {
-        "mean_pct_bias": 0.22775634076365228,
+        "mean_pct_bias": -7.507385326535424,
         "n_quotes": 23
       },
       "Landing Gear Pin": {
-        "mean_pct_bias": 18.44317103316927,
+        "mean_pct_bias": 20.96390765061834,
         "n_quotes": 15
       },
       "Sensor Housing": {
-        "mean_pct_bias": -0.46850120540152373,
+        "mean_pct_bias": 4.457327716397731,
         "n_quotes": 14
       },
       "Electronic Chassis": {
-        "mean_pct_bias": 11.098583195672763,
+        "mean_pct_bias": -12.092081815912737,
         "n_quotes": 17
       },
       "Mounting Bracket": {
-        "mean_pct_bias": 20.883524651685324,
+        "mean_pct_bias": 14.878705780798443,
         "n_quotes": 11
       },
       "Heat Sink": {
-        "mean_pct_bias": 10.331283642021448,
+        "mean_pct_bias": -18.244237613089606,
         "n_quotes": 11
       }
     },
     "Tanaka-san": {
       "Sensor Housing": {
-        "mean_pct_bias": 24.682194327857086,
+        "mean_pct_bias": 21.742516582257807,
         "n_quotes": 19
       },
       "Mounting Bracket": {
-        "mean_pct_bias": 33.55537058574848,
+        "mean_pct_bias": 23.83036627174891,
         "n_quotes": 11
       },
       "Structural Rib": {
-        "mean_pct_bias": 13.808776733058588,
+        "mean_pct_bias": -9.186669340024064,
         "n_quotes": 15
       },
       "Fuel Injector Nozzle": {
-        "mean_pct_bias": -4.800851929679097,
+        "mean_pct_bias": -13.588881435703414,
         "n_quotes": 19
       },
       "Manifold Block": {
-        "mean_pct_bias": -11.85445532672977,
+        "mean_pct_bias": -52.30991511267776,
         "n_quotes": 16
       },
       "Landing Gear Pin": {
-        "mean_pct_bias": 10.158036085027238,
+        "mean_pct_bias": 12.818575203248148,
         "n_quotes": 20
       },
       "Turbine Blade Housing": {
-        "mean_pct_bias": -9.38008925948437,
+        "mean_pct_bias": -8.140030246436828,
         "n_quotes": 21
       },
       "Heat Sink": {
-        "mean_pct_bias": 10.190842812600533,
+        "mean_pct_bias": -11.023690068464472,
         "n_quotes": 15
       },
       "Electronic Chassis": {
-        "mean_pct_bias": 18.574115806874293,
+        "mean_pct_bias": 5.84336445669972,
         "n_quotes": 17
       },
       "Actuator Linkage": {
-        "mean_pct_bias": 22.6346738910408,
+        "mean_pct_bias": 20.26672261176476,
         "n_quotes": 17
       }
     }
@@ -159,67 +159,67 @@
   "by_material": {
     "Sato-san": {
       "Inconel 718": {
-        "mean_pct_bias": -13.522443311647626,
+        "mean_pct_bias": -45.155540403088814,
         "n_quotes": 33
       },
       "Titanium Grade 5": {
-        "mean_pct_bias": -16.307426966856973,
+        "mean_pct_bias": -9.403161113661302,
         "n_quotes": 30
       },
       "Aluminum 6061": {
-        "mean_pct_bias": 10.960608896538526,
+        "mean_pct_bias": -20.531300227793334,
         "n_quotes": 42
       },
       "Aluminum 7075": {
-        "mean_pct_bias": 3.334916733651582,
+        "mean_pct_bias": -5.014069850857074,
         "n_quotes": 30
       },
       "Stainless Steel 17-4 PH": {
-        "mean_pct_bias": -17.15781263067246,
+        "mean_pct_bias": -25.738593260909283,
         "n_quotes": 37
       }
     },
     "Suzuki-san": {
       "Stainless Steel 17-4 PH": {
-        "mean_pct_bias": 3.162626656397435,
+        "mean_pct_bias": -24.52066776623908,
         "n_quotes": 30
       },
       "Inconel 718": {
-        "mean_pct_bias": -0.8461112039408107,
+        "mean_pct_bias": -5.434825682878967,
         "n_quotes": 31
       },
       "Titanium Grade 5": {
-        "mean_pct_bias": -1.1640676401626668,
+        "mean_pct_bias": -9.491056989900802,
         "n_quotes": 37
       },
       "Aluminum 7075": {
-        "mean_pct_bias": -2.792591149157973,
+        "mean_pct_bias": -5.793932809169062,
         "n_quotes": 32
       },
       "Aluminum 6061": {
-        "mean_pct_bias": 7.670297742702669,
+        "mean_pct_bias": 2.3175992810393473,
         "n_quotes": 27
       }
     },
     "Tanaka-san": {
       "Titanium Grade 5": {
-        "mean_pct_bias": 5.756819233655013,
+        "mean_pct_bias": -10.467967816432486,
         "n_quotes": 33
       },
       "Stainless Steel 17-4 PH": {
-        "mean_pct_bias": 10.58760627742776,
+        "mean_pct_bias": -2.944814587393099,
         "n_quotes": 36
       },
       "Aluminum 6061": {
-        "mean_pct_bias": 24.682025814855947,
+        "mean_pct_bias": 7.873989748937538,
         "n_quotes": 32
       },
       "Inconel 718": {
-        "mean_pct_bias": 1.8668955518954549,
+        "mean_pct_bias": 6.329940818474928,
         "n_quotes": 26
       },
       "Aluminum 7075": {
-        "mean_pct_bias": 9.056186800447643,
+        "mean_pct_bias": -4.177731785358806,
         "n_quotes": 39
       }
     }
@@ -227,187 +227,187 @@
   "over_time": {
     "Sato-san": {
       "2023-01": {
-        "mean_pct_bias": 11.18041721095716,
+        "mean_pct_bias": -22.115050696286026,
         "n_quotes": 8
       },
       "2023-02": {
-        "mean_pct_bias": -33.04457363725734,
+        "mean_pct_bias": -58.84587083860474,
         "n_quotes": 17
       },
       "2023-03": {
-        "mean_pct_bias": 3.217510420399485,
+        "mean_pct_bias": -7.189765482569822,
         "n_quotes": 12
       },
       "2023-04": {
-        "mean_pct_bias": -20.00456841838805,
+        "mean_pct_bias": -56.199579263152046,
         "n_quotes": 13
       },
       "2023-05": {
-        "mean_pct_bias": 6.998224104865325,
+        "mean_pct_bias": -20.59156659086106,
         "n_quotes": 7
       },
       "2023-06": {
-        "mean_pct_bias": 1.6184189222306768,
+        "mean_pct_bias": -35.779020614081425,
         "n_quotes": 12
       },
       "2023-07": {
-        "mean_pct_bias": -23.230318882371517,
+        "mean_pct_bias": -17.497586703280348,
         "n_quotes": 8
       },
       "2023-08": {
-        "mean_pct_bias": -8.065432649481373,
+        "mean_pct_bias": -8.696878365386906,
         "n_quotes": 16
       },
       "2023-09": {
-        "mean_pct_bias": -18.747250475814745,
+        "mean_pct_bias": -21.475291952355732,
         "n_quotes": 17
       },
       "2023-10": {
-        "mean_pct_bias": -19.2092273036462,
+        "mean_pct_bias": -40.34408209316258,
         "n_quotes": 16
       },
       "2023-11": {
-        "mean_pct_bias": 35.12529484517772,
+        "mean_pct_bias": 36.86497434159565,
         "n_quotes": 3
       },
       "2023-12": {
-        "mean_pct_bias": -8.216404329734818,
+        "mean_pct_bias": -16.61176182134464,
         "n_quotes": 14
       },
       "2024-01": {
-        "mean_pct_bias": -1.9476504837589612,
+        "mean_pct_bias": -71.12443265541617,
         "n_quotes": 16
       },
       "2024-02": {
-        "mean_pct_bias": -32.273320066012715,
+        "mean_pct_bias": -18.62012707044855,
         "n_quotes": 13
       },
       "2024-03": {
-        "mean_pct_bias": 20.05644317272585,
+        "mean_pct_bias": 18.065318301010574,
         "n_quotes": 8
       }
     },
     "Suzuki-san": {
       "2023-01": {
-        "mean_pct_bias": 11.783884512330607,
+        "mean_pct_bias": 4.810929154283749,
         "n_quotes": 9
       },
       "2023-02": {
-        "mean_pct_bias": 7.344596455742528,
+        "mean_pct_bias": 8.199961217760858,
         "n_quotes": 13
       },
       "2023-03": {
-        "mean_pct_bias": -6.838020180332967,
+        "mean_pct_bias": 3.439233327170172,
         "n_quotes": 13
       },
       "2023-04": {
-        "mean_pct_bias": 5.913815864542258,
+        "mean_pct_bias": -18.734036968672847,
         "n_quotes": 7
       },
       "2023-05": {
-        "mean_pct_bias": -0.8620964236766036,
+        "mean_pct_bias": -9.015106861657703,
         "n_quotes": 11
       },
       "2023-06": {
-        "mean_pct_bias": 0.13896352383135735,
+        "mean_pct_bias": -13.38281686016257,
         "n_quotes": 4
       },
       "2023-07": {
-        "mean_pct_bias": -6.348278327549356,
+        "mean_pct_bias": -16.591453249843656,
         "n_quotes": 6
       },
       "2023-08": {
-        "mean_pct_bias": -39.39404789201477,
+        "mean_pct_bias": -3.5687981812568714,
         "n_quotes": 9
       },
       "2023-09": {
-        "mean_pct_bias": -16.877218351197953,
+        "mean_pct_bias": -42.85151307580058,
         "n_quotes": 8
       },
       "2023-10": {
-        "mean_pct_bias": 9.929342390788765,
+        "mean_pct_bias": -4.07648834628465,
         "n_quotes": 13
       },
       "2023-11": {
-        "mean_pct_bias": 15.727693540435064,
+        "mean_pct_bias": 4.268894113197462,
         "n_quotes": 11
       },
       "2023-12": {
-        "mean_pct_bias": 0.41655793048179635,
+        "mean_pct_bias": -26.934843822455342,
         "n_quotes": 17
       },
       "2024-01": {
-        "mean_pct_bias": -6.859173658712845,
+        "mean_pct_bias": -6.226984220092124,
         "n_quotes": 21
       },
       "2024-02": {
-        "mean_pct_bias": 4.5547243156708745,
+        "mean_pct_bias": -9.899722971363367,
         "n_quotes": 8
       },
       "2024-03": {
-        "mean_pct_bias": -5.105392230333402,
+        "mean_pct_bias": -9.452118733950138,
         "n_quotes": 10
       }
     },
     "Tanaka-san": {
       "2023-01": {
-        "mean_pct_bias": 14.13781138000846,
+        "mean_pct_bias": -8.267682152736276,
         "n_quotes": 14
       },
       "2023-02": {
-        "mean_pct_bias": 4.614173794286348,
+        "mean_pct_bias": 7.10384886099361,
         "n_quotes": 10
       },
       "2023-03": {
-        "mean_pct_bias": -0.20670303067557352,
+        "mean_pct_bias": 2.199125670533306,
         "n_quotes": 14
       },
       "2023-04": {
-        "mean_pct_bias": 8.981523378624333,
+        "mean_pct_bias": 17.114772105571955,
         "n_quotes": 10
       },
       "2023-05": {
-        "mean_pct_bias": 2.4746760132656926,
+        "mean_pct_bias": 13.84567754652943,
         "n_quotes": 13
       },
       "2023-06": {
-        "mean_pct_bias": 9.497297102269837,
+        "mean_pct_bias": -1.135768379317843,
         "n_quotes": 13
       },
       "2023-07": {
-        "mean_pct_bias": 13.142804418385829,
+        "mean_pct_bias": -1.7899540777181697,
         "n_quotes": 9
       },
       "2023-08": {
-        "mean_pct_bias": -4.731772857396063,
+        "mean_pct_bias": -21.818821820713673,
         "n_quotes": 13
       },
       "2023-09": {
-        "mean_pct_bias": 13.02813125571718,
+        "mean_pct_bias": -12.973428889489862,
         "n_quotes": 12
       },
       "2023-10": {
-        "mean_pct_bias": 18.778940511759956,
+        "mean_pct_bias": -9.552867349766368,
         "n_quotes": 11
       },
       "2023-11": {
-        "mean_pct_bias": 25.342128193372474,
+        "mean_pct_bias": -16.450494498810887,
         "n_quotes": 14
       },
       "2023-12": {
-        "mean_pct_bias": 11.468401004976084,
+        "mean_pct_bias": 10.302863931629911,
         "n_quotes": 10
       },
       "2024-01": {
-        "mean_pct_bias": -5.452767966479927,
+        "mean_pct_bias": -12.204568944497215,
         "n_quotes": 7
       },
       "2024-02": {
-        "mean_pct_bias": 11.732703431498926,
+        "mean_pct_bias": 10.651812059643134,
         "n_quotes": 8
       },
       "2024-03": {
-        "mean_pct_bias": 16.03612943326078,
+        "mean_pct_bias": 14.316575208346555,
         "n_quotes": 12
       }
     }

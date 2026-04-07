@@ -1,0 +1,5441 @@
+{
+  "scorecard": {
+    "M0": {
+      "ranks": {
+        "error_profile": 2,
+        "segment_fairness": 3,
+        "economic_coherence": 5,
+        "calibration": 1,
+        "stability": 3,
+        "boundary_behavior": 5,
+        "interpretability": 5
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "segment_fairness": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "economic_coherence": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "calibration": "\u25cf\u25cb\u25cb\u25cb\u25cb",
+        "stability": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "boundary_behavior": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "interpretability": "\u25cf\u25cf\u25cf\u25cf\u25cf"
+      },
+      "average_rank": 3.43,
+      "narrative": "M0: 40.3% MAPE, aggressive. Fold stability: \u00b12.2%. Strong on: economic coherence, boundary behavior, interpretability. Weak on: error profile, calibration."
+    },
+    "M1": {
+      "ranks": {
+        "error_profile": 1,
+        "segment_fairness": 1,
+        "economic_coherence": 2,
+        "calibration": 1,
+        "stability": 2,
+        "boundary_behavior": 4,
+        "interpretability": 5
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cb\u25cb\u25cb\u25cb",
+        "segment_fairness": "\u25cf\u25cb\u25cb\u25cb\u25cb",
+        "economic_coherence": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "calibration": "\u25cf\u25cb\u25cb\u25cb\u25cb",
+        "stability": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "boundary_behavior": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "interpretability": "\u25cf\u25cf\u25cf\u25cf\u25cf"
+      },
+      "average_rank": 2.29,
+      "narrative": "M1: 99.5% MAPE, conservative. 6 economic coherence violation(s). Fold stability: \u00b16.0%. Strong on: boundary behavior, interpretability. Weak on: error profile, segment fairness, economic coherence, calibration, stability."
+    },
+    "M2": {
+      "ranks": {
+        "error_profile": 5,
+        "segment_fairness": 4,
+        "economic_coherence": 5,
+        "calibration": 4,
+        "stability": 4,
+        "boundary_behavior": 5,
+        "interpretability": 5
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "segment_fairness": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "economic_coherence": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "calibration": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "stability": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "boundary_behavior": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "interpretability": "\u25cf\u25cf\u25cf\u25cf\u25cf"
+      },
+      "average_rank": 4.57,
+      "narrative": "M2: 10.8% MAPE, balanced. Fold stability: \u00b10.5%. Strong on: error profile, segment fairness, economic coherence, calibration, stability, boundary behavior, interpretability."
+    },
+    "M3a": {
+      "ranks": {
+        "error_profile": 5,
+        "segment_fairness": 5,
+        "economic_coherence": 5,
+        "calibration": 4,
+        "stability": 4,
+        "boundary_behavior": 5,
+        "interpretability": 5
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "segment_fairness": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "economic_coherence": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "calibration": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "stability": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "boundary_behavior": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "interpretability": "\u25cf\u25cf\u25cf\u25cf\u25cf"
+      },
+      "average_rank": 4.71,
+      "narrative": "M3a: 12.3% MAPE, balanced. Fold stability: \u00b11.2%. Strong on: error profile, segment fairness, economic coherence, calibration, stability, boundary behavior, interpretability."
+    },
+    "M3b": {
+      "ranks": {
+        "error_profile": 4,
+        "segment_fairness": 5,
+        "economic_coherence": 5,
+        "calibration": 4,
+        "stability": 5,
+        "boundary_behavior": 4,
+        "interpretability": 5
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "segment_fairness": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "economic_coherence": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "calibration": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "stability": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "boundary_behavior": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "interpretability": "\u25cf\u25cf\u25cf\u25cf\u25cf"
+      },
+      "average_rank": 4.57,
+      "narrative": "M3b: 13.2% MAPE, balanced. Fold stability: \u00b10.3%. Strong on: error profile, segment fairness, economic coherence, calibration, stability, boundary behavior, interpretability."
+    },
+    "M4": {
+      "ranks": {
+        "error_profile": 5,
+        "segment_fairness": 5,
+        "economic_coherence": 5,
+        "calibration": 5,
+        "stability": 5,
+        "boundary_behavior": 4,
+        "interpretability": 4
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "segment_fairness": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "economic_coherence": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "calibration": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "stability": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "boundary_behavior": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "interpretability": "\u25cf\u25cf\u25cf\u25cf\u25cb"
+      },
+      "average_rank": 4.71,
+      "narrative": "M4: 11.1% MAPE, balanced. Fold stability: \u00b10.4%. Strong on: error profile, segment fairness, economic coherence, calibration, stability, boundary behavior, interpretability."
+    },
+    "M5": {
+      "ranks": {
+        "error_profile": 3,
+        "segment_fairness": 3,
+        "economic_coherence": 4,
+        "calibration": 2,
+        "stability": 3,
+        "boundary_behavior": 3,
+        "interpretability": 3
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "segment_fairness": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "economic_coherence": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "calibration": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "stability": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "boundary_behavior": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "interpretability": "\u25cf\u25cf\u25cf\u25cb\u25cb"
+      },
+      "average_rank": 3.0,
+      "narrative": "M5: 36.8% MAPE, conservative. 3 economic coherence violation(s). Fold stability: \u00b12.3%. Strong on: economic coherence. Weak on: calibration."
+    },
+    "M6": {
+      "ranks": {
+        "error_profile": 3,
+        "segment_fairness": 2,
+        "economic_coherence": 4,
+        "calibration": 3,
+        "stability": 3,
+        "boundary_behavior": 2,
+        "interpretability": 3
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "segment_fairness": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "economic_coherence": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "calibration": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "stability": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "boundary_behavior": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "interpretability": "\u25cf\u25cf\u25cf\u25cb\u25cb"
+      },
+      "average_rank": 2.86,
+      "narrative": "M6: 39.4% MAPE, conservative. 3 economic coherence violation(s). Fold stability: \u00b15.8%. Strong on: economic coherence. Weak on: segment fairness, boundary behavior."
+    },
+    "M6b": {
+      "ranks": {
+        "error_profile": 2,
+        "segment_fairness": 2,
+        "economic_coherence": 3,
+        "calibration": 2,
+        "stability": 2,
+        "boundary_behavior": 2,
+        "interpretability": 3
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "segment_fairness": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "economic_coherence": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "calibration": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "stability": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "boundary_behavior": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "interpretability": "\u25cf\u25cf\u25cf\u25cb\u25cb"
+      },
+      "average_rank": 2.29,
+      "narrative": "M6b: 40.9% MAPE, conservative. 4 economic coherence violation(s). Fold stability: \u00b16.6%. Weak on: error profile, segment fairness, calibration, stability, boundary behavior."
+    },
+    "M7": {
+      "ranks": {
+        "error_profile": 4,
+        "segment_fairness": 4,
+        "economic_coherence": 5,
+        "calibration": 5,
+        "stability": 4,
+        "boundary_behavior": 3,
+        "interpretability": 3
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "segment_fairness": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "economic_coherence": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "calibration": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "stability": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "boundary_behavior": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "interpretability": "\u25cf\u25cf\u25cf\u25cb\u25cb"
+      },
+      "average_rank": 4.0,
+      "narrative": "M7: 12.7% MAPE, balanced. Fold stability: \u00b10.7%. Strong on: error profile, segment fairness, economic coherence, calibration, stability."
+    },
+    "M7b": {
+      "ranks": {
+        "error_profile": 2,
+        "segment_fairness": 2,
+        "economic_coherence": 3,
+        "calibration": 3,
+        "stability": 1,
+        "boundary_behavior": 2,
+        "interpretability": 3
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "segment_fairness": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "economic_coherence": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "calibration": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "stability": "\u25cf\u25cb\u25cb\u25cb\u25cb",
+        "boundary_behavior": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "interpretability": "\u25cf\u25cf\u25cf\u25cb\u25cb"
+      },
+      "average_rank": 2.29,
+      "narrative": "M7b: 45.3% MAPE, conservative. 4 economic coherence violation(s). Fold stability: \u00b19.7%. Weak on: error profile, segment fairness, stability, boundary behavior."
+    },
+    "M7c": {
+      "ranks": {
+        "error_profile": 4,
+        "segment_fairness": 4,
+        "economic_coherence": 5,
+        "calibration": 5,
+        "stability": 5,
+        "boundary_behavior": 3,
+        "interpretability": 3
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "segment_fairness": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "economic_coherence": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "calibration": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "stability": "\u25cf\u25cf\u25cf\u25cf\u25cf",
+        "boundary_behavior": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "interpretability": "\u25cf\u25cf\u25cf\u25cb\u25cb"
+      },
+      "average_rank": 4.14,
+      "narrative": "M7c: 13.0% MAPE, balanced. Fold stability: \u00b10.4%. Strong on: error profile, segment fairness, economic coherence, calibration, stability."
+    },
+    "M8": {
+      "ranks": {
+        "error_profile": 1,
+        "segment_fairness": 1,
+        "economic_coherence": 4,
+        "calibration": 2,
+        "stability": 2,
+        "boundary_behavior": 1,
+        "interpretability": 2
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cb\u25cb\u25cb\u25cb",
+        "segment_fairness": "\u25cf\u25cb\u25cb\u25cb\u25cb",
+        "economic_coherence": "\u25cf\u25cf\u25cf\u25cf\u25cb",
+        "calibration": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "stability": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "boundary_behavior": "\u25cf\u25cb\u25cb\u25cb\u25cb",
+        "interpretability": "\u25cf\u25cf\u25cb\u25cb\u25cb"
+      },
+      "average_rank": 1.86,
+      "narrative": "M8: 61.7% MAPE, conservative. 3 economic coherence violation(s). Fold stability: \u00b16.6%. Strong on: economic coherence. Weak on: error profile, segment fairness, calibration, stability, boundary behavior, interpretability."
+    },
+    "M9": {
+      "ranks": {
+        "error_profile": 3,
+        "segment_fairness": 3,
+        "economic_coherence": 2,
+        "calibration": 3,
+        "stability": 1,
+        "boundary_behavior": 1,
+        "interpretability": 3
+      },
+      "dots": {
+        "error_profile": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "segment_fairness": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "economic_coherence": "\u25cf\u25cf\u25cb\u25cb\u25cb",
+        "calibration": "\u25cf\u25cf\u25cf\u25cb\u25cb",
+        "stability": "\u25cf\u25cb\u25cb\u25cb\u25cb",
+        "boundary_behavior": "\u25cf\u25cb\u25cb\u25cb\u25cb",
+        "interpretability": "\u25cf\u25cf\u25cf\u25cb\u25cb"
+      },
+      "average_rank": 2.29,
+      "narrative": "M9: 40.3% MAPE, conservative. 5 economic coherence violation(s). Fold stability: \u00b19.4%. Weak on: economic coherence, stability, boundary behavior."
+    }
+  },
+  "error_profile": {
+    "M0": {
+      "mape": 40.330908871968,
+      "median_ape": 42.00019565007441,
+      "p90_ape": 57.917277225681445,
+      "p95_ape": 61.190827547071144,
+      "max_ape": 79.72860183070463,
+      "skew": 1.431731755434152,
+      "pct_under_5": 0.39215686274509803,
+      "pct_under_10": 1.7647058823529411,
+      "pct_under_20": 9.215686274509805,
+      "pct_over_50": 26.078431372549023
+    },
+    "M1": {
+      "mape": 99.49307160714511,
+      "median_ape": 75.953906941778,
+      "p90_ape": 177.49308784853417,
+      "p95_ape": 272.60069101036675,
+      "max_ape": 2522.036154791451,
+      "skew": 6.968129853719932,
+      "pct_under_5": 4.901960784313726,
+      "pct_under_10": 8.235294117647058,
+      "pct_under_20": 16.07843137254902,
+      "pct_over_50": 61.568627450980394
+    },
+    "M2": {
+      "mape": 10.832136785996324,
+      "median_ape": 8.277000419734593,
+      "p90_ape": 20.590632779344013,
+      "p95_ape": 25.386305072439644,
+      "max_ape": 131.40556650617802,
+      "skew": 1.6731798926866863,
+      "pct_under_5": 31.56862745098039,
+      "pct_under_10": 57.647058823529406,
+      "pct_under_20": 88.62745098039215,
+      "pct_over_50": 1.3725490196078431
+    },
+    "M3a": {
+      "mape": 12.34653403515553,
+      "median_ape": 8.940155236917729,
+      "p90_ape": 24.66714866138998,
+      "p95_ape": 34.39323686337966,
+      "max_ape": 131.0145763091109,
+      "skew": 1.4535372065960686,
+      "pct_under_5": 29.607843137254903,
+      "pct_under_10": 53.529411764705884,
+      "pct_under_20": 82.74509803921568,
+      "pct_over_50": 1.7647058823529411
+    },
+    "M3b": {
+      "mape": 13.165153818269937,
+      "median_ape": 10.271173183338828,
+      "p90_ape": 27.426703478931145,
+      "p95_ape": 36.27662793983382,
+      "max_ape": 137.26803584894765,
+      "skew": 1.04209425371304,
+      "pct_under_5": 29.215686274509807,
+      "pct_under_10": 47.45098039215686,
+      "pct_under_20": 80.98039215686275,
+      "pct_over_50": 1.9607843137254901
+    },
+    "M4": {
+      "mape": 11.062619980382296,
+      "median_ape": 8.723059359684495,
+      "p90_ape": 21.0053845701977,
+      "p95_ape": 26.13184339037093,
+      "max_ape": 117.9332879947528,
+      "skew": 1.1704403918136324,
+      "pct_under_5": 32.549019607843135,
+      "pct_under_10": 54.90196078431373,
+      "pct_under_20": 88.4313725490196,
+      "pct_over_50": 1.1764705882352942
+    },
+    "M5": {
+      "mape": 36.84981601988561,
+      "median_ape": 22.59931757571974,
+      "p90_ape": 83.22300361862361,
+      "p95_ape": 128.44447046688893,
+      "max_ape": 299.3666666738254,
+      "skew": 1.7146197813734707,
+      "pct_under_5": 12.156862745098039,
+      "pct_under_10": 21.764705882352942,
+      "pct_under_20": 45.88235294117647,
+      "pct_over_50": 22.745098039215687
+    },
+    "M6": {
+      "mape": 39.414256692040404,
+      "median_ape": 16.489056738506907,
+      "p90_ape": 100.0,
+      "p95_ape": 115.14026691006143,
+      "max_ape": 1580.440514629264,
+      "skew": 9.635681373617432,
+      "pct_under_5": 16.07843137254902,
+      "pct_under_10": 32.15686274509804,
+      "pct_under_20": 56.470588235294116,
+      "pct_over_50": 21.176470588235293
+    },
+    "M6b": {
+      "mape": 40.9016473052245,
+      "median_ape": 15.863814669375353,
+      "p90_ape": 100.0,
+      "p95_ape": 128.13733921220484,
+      "max_ape": 1929.446371076469,
+      "skew": 11.281227331964745,
+      "pct_under_5": 18.235294117647058,
+      "pct_under_10": 35.294117647058826,
+      "pct_under_20": 55.490196078431374,
+      "pct_over_50": 21.568627450980394
+    },
+    "M7": {
+      "mape": 12.71898294380942,
+      "median_ape": 9.129075155709906,
+      "p90_ape": 24.817826040584336,
+      "p95_ape": 35.30761093852452,
+      "max_ape": 163.67713293618306,
+      "skew": 1.6331824313079324,
+      "pct_under_5": 26.27450980392157,
+      "pct_under_10": 53.72549019607843,
+      "pct_under_20": 84.11764705882354,
+      "pct_over_50": 2.3529411764705883
+    },
+    "M7b": {
+      "mape": 45.326827622695404,
+      "median_ape": 20.064428282538405,
+      "p90_ape": 100.0,
+      "p95_ape": 122.22624705369763,
+      "max_ape": 920.7971789757383,
+      "skew": 4.803095833148362,
+      "pct_under_5": 15.490196078431373,
+      "pct_under_10": 27.254901960784313,
+      "pct_under_20": 49.80392156862745,
+      "pct_over_50": 24.901960784313726
+    },
+    "M7c": {
+      "mape": 12.973685807340757,
+      "median_ape": 9.603734918325143,
+      "p90_ape": 26.096244152037844,
+      "p95_ape": 32.48186633294875,
+      "max_ape": 112.91846308348237,
+      "skew": 1.0330594215477222,
+      "pct_under_5": 27.058823529411764,
+      "pct_under_10": 52.156862745098046,
+      "pct_under_20": 80.7843137254902,
+      "pct_over_50": 2.549019607843137
+    },
+    "M8": {
+      "mape": 61.73495460723326,
+      "median_ape": 27.306583446281216,
+      "p90_ape": 123.10570426424339,
+      "p95_ape": 227.15220186855134,
+      "max_ape": 1414.1060828504635,
+      "skew": 4.87067728857951,
+      "pct_under_5": 10.980392156862745,
+      "pct_under_10": 20.392156862745097,
+      "pct_under_20": 39.21568627450981,
+      "pct_over_50": 32.549019607843135
+    },
+    "M9": {
+      "mape": 40.29388767133937,
+      "median_ape": 20.599118275794314,
+      "p90_ape": 100.0,
+      "p95_ape": 119.48145748353608,
+      "max_ape": 893.2558417368193,
+      "skew": 5.083785860998804,
+      "pct_under_5": 13.92156862745098,
+      "pct_under_10": 26.27450980392157,
+      "pct_under_20": 49.01960784313725,
+      "pct_over_50": 21.372549019607842
+    }
+  },
+  "segment_fairness": {
+    "M0": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 36.94993137549851,
+          "median_ape": 37.016458397376375,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 35.80443789822694,
+          "median_ape": 35.372078396987476,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 44.44706299196944,
+          "median_ape": 45.32441976790908,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 44.11641442986585,
+          "median_ape": 45.51838874964419,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 36.00576318540594,
+          "median_ape": 35.14557944957052,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 41.20286138174463,
+          "median_ape": 41.77745719718732,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 37.98914798412722,
+          "median_ape": 39.187694211828436,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 44.90958054986199,
+          "median_ape": 48.049490519271245,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 40.400560374819136,
+          "median_ape": 43.36234942524497,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 45.25014827231905,
+          "median_ape": 45.98951528153734,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 28.66943697809542,
+          "median_ape": 28.872626947080967,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 39.117781343461296,
+          "median_ape": 39.782843347887955,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 39.80767767460054,
+          "median_ape": 40.02580112538999,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 52.430140533269416,
+          "median_ape": 53.01567231545026,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 41.485204537266135,
+          "median_ape": 41.490304736744115,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 38.83729018960114,
+          "median_ape": 41.558289492897984,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 44.93804133784348,
+          "median_ape": 45.10175164146915,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 34.86711647126754,
+          "median_ape": 33.06314906791628,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 37.34994791043366,
+          "median_ape": 39.85355770742169,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 47.06464630473569,
+          "median_ape": 49.89290887979954,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 35.222531955858244,
+          "median_ape": 34.35225296157803,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 43.49684648518394,
+          "median_ape": 44.50107285097582,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 37.77817817121727,
+          "median_ape": 39.81330891199829,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 43.89225493819476,
+          "median_ape": 44.35764489436054,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 34.59045069670827,
+          "median_ape": 34.95485719711603,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 39.524340299576906,
+          "median_ape": 39.28295769274048,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 47.16816441978757,
+          "median_ape": 48.47895732911002,
+          "count": 170
+        }
+      }
+    },
+    "M1": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 149.82406265520962,
+          "median_ape": 100.0,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 153.35530502063284,
+          "median_ape": 127.30267548488085,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 23.502434222039092,
+          "median_ape": 20.30801945742813,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 71.49252899004568,
+          "median_ape": 65.96132653179806,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 75.77523512273837,
+          "median_ape": 66.12631258446984,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 89.35233163572346,
+          "median_ape": 60.33172775087582,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 124.5312890341781,
+          "median_ape": 92.37518539908365,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 109.81200205009885,
+          "median_ape": 100.0,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 74.45619128355675,
+          "median_ape": 62.72285844707617,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 236.57679318704302,
+          "median_ape": 100.0,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 78.42035430365493,
+          "median_ape": 75.55760167490507,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 226.7519584514615,
+          "median_ape": 100.0,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 100.05398522910701,
+          "median_ape": 66.29129863714161,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 81.44908232016888,
+          "median_ape": 92.37518539908365,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 88.61534682356849,
+          "median_ape": 89.43251021298099,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 126.51882218527045,
+          "median_ape": 75.69006359056662,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 78.59012885077655,
+          "median_ape": 92.34541822952637,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 61.50204395088744,
+          "median_ape": 49.588462027715885,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 72.60095427037278,
+          "median_ape": 65.78612387299583,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 84.05315784471114,
+          "median_ape": 81.90465336268588,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 202.59613131502826,
+          "median_ape": 100.0,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 59.150615668465484,
+          "median_ape": 43.37120128195052,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 121.91423113923078,
+          "median_ape": 100.0,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 32.655378917348386,
+          "median_ape": 27.39309288647686,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 102.7184079877166,
+          "median_ape": 92.50646611452379,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 98.65617665594905,
+          "median_ape": 83.98836937599509,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 96.86567539354805,
+          "median_ape": 58.41091953605328,
+          "count": 170
+        }
+      }
+    },
+    "M2": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 11.114167033000776,
+          "median_ape": 8.746077824236854,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 10.412659942586618,
+          "median_ape": 7.937368659289927,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 11.091409919743224,
+          "median_ape": 8.765826889198856,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 10.706048017310179,
+          "median_ape": 7.228605685397553,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 12.5010652161351,
+          "median_ape": 11.831492081847355,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 7.993179740495731,
+          "median_ape": 6.730507364488011,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 7.338118385581588,
+          "median_ape": 5.581802185077754,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 14.008826900603369,
+          "median_ape": 12.210877394142365,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 9.808513817183282,
+          "median_ape": 8.43099153155217,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 29.239887409669187,
+          "median_ape": 21.847414365967488,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 10.61885042185359,
+          "median_ape": 8.398667677434904,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 16.111222126016745,
+          "median_ape": 13.75405775378363,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 9.80777825801004,
+          "median_ape": 7.211780278221185,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 10.213141500053435,
+          "median_ape": 6.7227321196066585,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 10.510425154159487,
+          "median_ape": 10.53484315694304,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 12.958695943368424,
+          "median_ape": 7.746282907399362,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 8.639030781573013,
+          "median_ape": 6.952895106901396,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 11.952952866774327,
+          "median_ape": 8.274680003415629,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 10.3268990039953,
+          "median_ape": 8.392053856422542,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 7.611360957263116,
+          "median_ape": 6.9916260413234275,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 10.800297755019702,
+          "median_ape": 8.027493718828548,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 10.432370338329605,
+          "median_ape": 8.279320836053557,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 10.869506159596112,
+          "median_ape": 8.269253402231168,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 11.628840468303839,
+          "median_ape": 8.228333799403709,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 10.802342157857316,
+          "median_ape": 8.687218723712204,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 10.650557751974983,
+          "median_ape": 8.277000419734593,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 11.034581953693005,
+          "median_ape": 7.623427119646452,
+          "count": 170
+        }
+      }
+    },
+    "M3a": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 14.832485037527146,
+          "median_ape": 12.124257819470216,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 11.739422110080476,
+          "median_ape": 8.481279799175935,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 11.711279624097811,
+          "median_ape": 8.507018556774675,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 11.088376954811856,
+          "median_ape": 8.65155988002077,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 13.140851138693936,
+          "median_ape": 11.84806162882349,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 9.157653425759984,
+          "median_ape": 7.580953509430107,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 10.085026608125053,
+          "median_ape": 7.2363551707470855,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 16.333725952182554,
+          "median_ape": 13.31282402875005,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 10.756274504073055,
+          "median_ape": 8.079994074309756,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 28.22950841014477,
+          "median_ape": 21.605420919072056,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 12.256554827447921,
+          "median_ape": 10.276762324242629,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 18.912242177482963,
+          "median_ape": 15.563703188054767,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 11.567150310490291,
+          "median_ape": 8.588316338908639,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 10.83226593059161,
+          "median_ape": 8.470199409331778,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 12.36985560079822,
+          "median_ape": 9.465867090713743,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 13.555714370054591,
+          "median_ape": 9.83911094403885,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 10.848843319927733,
+          "median_ape": 9.38986026912665,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 12.710779763587166,
+          "median_ape": 8.188422125736745,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 11.556563320062468,
+          "median_ape": 8.339505352778266,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 9.113701828904532,
+          "median_ape": 6.325009974060267,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 15.97813518153546,
+          "median_ape": 11.921872263937416,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 10.852350569711046,
+          "median_ape": 8.401029545485615,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 12.28142074452895,
+          "median_ape": 9.633843895241146,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 11.733760742549421,
+          "median_ape": 8.050005255753153,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 12.242933617102269,
+          "median_ape": 8.63681050510381,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 12.215667849181646,
+          "median_ape": 9.465867090713743,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 12.57939677048146,
+          "median_ape": 8.632283724042253,
+          "count": 170
+        }
+      }
+    },
+    "M3b": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 14.9658030366217,
+          "median_ape": 12.859516783548273,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 11.407291264489219,
+          "median_ape": 8.237749018885678,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 13.722798110234946,
+          "median_ape": 10.922901720105127,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 12.546153621495174,
+          "median_ape": 9.279181683302028,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 13.043993045900732,
+          "median_ape": 11.521389061326342,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 10.531858438445955,
+          "median_ape": 8.135712890117764,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 10.183571216621088,
+          "median_ape": 8.474626828758334,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 17.451800659463167,
+          "median_ape": 15.020007990703235,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 12.300047677423867,
+          "median_ape": 10.062785725774765,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 28.88258080029628,
+          "median_ape": 26.16596832649168,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 12.732647702308181,
+          "median_ape": 10.297833543591905,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 17.036992729770503,
+          "median_ape": 14.076349937325732,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 13.470538792858353,
+          "median_ape": 10.773037455264324,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 13.867911941580083,
+          "median_ape": 11.92181291931973,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 11.209206123999534,
+          "median_ape": 8.948139818568492,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 14.194928931781298,
+          "median_ape": 8.60272762545929,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 13.867443599311466,
+          "median_ape": 13.658899656337313,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 11.93037069074032,
+          "median_ape": 9.182579729664747,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 12.537327072919856,
+          "median_ape": 9.476493541598815,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 10.940964938442885,
+          "median_ape": 8.237749018885678,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 16.077984806725585,
+          "median_ape": 14.149766026315714,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 11.161032478590789,
+          "median_ape": 9.057759157816236,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 11.794281332573219,
+          "median_ape": 8.705058385809185,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 16.802477828885017,
+          "median_ape": 12.81875910233856,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 13.25694655575759,
+          "median_ape": 11.308069225374716,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 12.660707053389746,
+          "median_ape": 10.092457892356931,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 13.542734933758485,
+          "median_ape": 10.119271954395915,
+          "count": 170
+        }
+      }
+    },
+    "M4": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 11.574438596014698,
+          "median_ape": 8.974233793403585,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 10.893375488658883,
+          "median_ape": 8.231779603244474,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 11.417336029190471,
+          "median_ape": 9.727533117400867,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 10.358506700071107,
+          "median_ape": 7.05457657727378,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 12.046649019581748,
+          "median_ape": 11.724266117433094,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 7.853539448554825,
+          "median_ape": 5.767188935253901,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 7.74308956599028,
+          "median_ape": 5.264074914366715,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 14.503398957372355,
+          "median_ape": 13.460945109516004,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 10.924110926174391,
+          "median_ape": 9.686553829000887,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 27.11114065612738,
+          "median_ape": 18.14000129023166,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 10.958219566206559,
+          "median_ape": 10.070204055528492,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 16.371011004374687,
+          "median_ape": 14.95078635577162,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 9.347429999615073,
+          "median_ape": 6.647511214223288,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 11.745725506112004,
+          "median_ape": 10.511009917990963,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 10.474521959165125,
+          "median_ape": 10.202533861994148,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 13.283778332594819,
+          "median_ape": 8.503710841352891,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 8.803416412881331,
+          "median_ape": 6.905118289789202,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 11.260635444399117,
+          "median_ape": 8.270640759171876,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 11.117532988392776,
+          "median_ape": 8.65419526578448,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 7.979382141044324,
+          "median_ape": 6.481325182882918,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 11.329632757026166,
+          "median_ape": 8.597066034852782,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 10.976521614084293,
+          "median_ape": 9.27469500636111,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 10.616140826436917,
+          "median_ape": 7.902971889564787,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 11.789113712854858,
+          "median_ape": 9.43873860446601,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 11.104084618382966,
+          "median_ape": 8.865347067134739,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 11.393364187156825,
+          "median_ape": 9.84487653144949,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 10.707427580829084,
+          "median_ape": 7.845832674279281,
+          "count": 170
+        }
+      }
+    },
+    "M5": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 53.458560112812904,
+          "median_ape": 37.476501821545114,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 29.05804047238002,
+          "median_ape": 17.18483106040047,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 25.080154328488096,
+          "median_ape": 18.855295305084518,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 39.76440615482575,
+          "median_ape": 25.04540192704982,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 20.488739856590072,
+          "median_ape": 15.366059016875784,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 23.520497435289467,
+          "median_ape": 15.481880040721617,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 38.25862860706962,
+          "median_ape": 30.35068683740853,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 59.73733450416986,
+          "median_ape": 40.541220760206734,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 40.13015264088452,
+          "median_ape": 26.891937977680108,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 38.00765942272964,
+          "median_ape": 29.650470515743216,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 24.340370021722055,
+          "median_ape": 15.19940016755875,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 34.71514920804079,
+          "median_ape": 20.592630352282647,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 21.827084167784797,
+          "median_ape": 17.054302100488,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 53.35669222473217,
+          "median_ape": 49.81475624385659,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 27.273371445531986,
+          "median_ape": 18.829576037171996,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 38.36125028527618,
+          "median_ape": 31.806236532466396,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 32.92664157251997,
+          "median_ape": 17.930090194553195,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 24.059376754009502,
+          "median_ape": 17.399474458232003,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 91.13258516718729,
+          "median_ape": 80.58478704961118,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 28.083896285902817,
+          "median_ape": 16.38298142498855,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 42.28785056856505,
+          "median_ape": 25.296944027050497,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 38.26893822667335,
+          "median_ape": 21.953765858111122,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 36.66359548793786,
+          "median_ape": 25.38673693098672,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 28.482934891240486,
+          "median_ape": 18.8709463309589,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 45.18689824105901,
+          "median_ape": 30.3121168041612,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 32.064358606552965,
+          "median_ape": 18.599686611650444,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 32.52627711589742,
+          "median_ape": 21.412275156092704,
+          "count": 170
+        }
+      }
+    },
+    "M6": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 86.56147411190989,
+          "median_ape": 79.55129336678374,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 33.12474259226515,
+          "median_ape": 14.714497018416772,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 16.77399209754401,
+          "median_ape": 10.433800489101753,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 21.003849833959308,
+          "median_ape": 13.129654791381624,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 24.8783452407423,
+          "median_ape": 11.493613174246487,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 25.65608170070699,
+          "median_ape": 12.68994221052741,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 46.69131904452574,
+          "median_ape": 17.753365103608765,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 49.804155630334904,
+          "median_ape": 29.831480207065407,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 30.703250948900685,
+          "median_ape": 15.88288825867584,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 157.07718300761016,
+          "median_ape": 32.63139182270773,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 24.568455669196226,
+          "median_ape": 12.544033999066379,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 68.42502057831418,
+          "median_ape": 26.951779677530453,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 42.33656845970498,
+          "median_ape": 20.18755702486875,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 32.56431226510486,
+          "median_ape": 19.422109802956054,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 25.31825474799433,
+          "median_ape": 12.610185589742173,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 76.5513560641626,
+          "median_ape": 19.727074436468275,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 28.593730693366343,
+          "median_ape": 15.303773323427574,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 27.947361983478913,
+          "median_ape": 10.63803471521607,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 39.57896207366867,
+          "median_ape": 32.95357727150329,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 28.24231352128135,
+          "median_ape": 12.763099933252297,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 122.70219304113175,
+          "median_ape": 100.0,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 16.82402230079484,
+          "median_ape": 12.272682995868522,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 26.55241280275628,
+          "median_ape": 15.835303836732466,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 22.17576904897135,
+          "median_ape": 10.445508801333839,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 50.26080136296464,
+          "median_ape": 22.638418715191854,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 28.303248015896894,
+          "median_ape": 13.113376036871985,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 38.38709991213802,
+          "median_ape": 16.975291093755136,
+          "count": 170
+        }
+      }
+    },
+    "M6b": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 93.51401095941648,
+          "median_ape": 71.0659176085933,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 34.86281380561214,
+          "median_ape": 16.35540006217651,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 16.16888906045356,
+          "median_ape": 9.80794774717494,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 18.841350943373143,
+          "median_ape": 10.661543101724448,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 28.906951327218284,
+          "median_ape": 11.54291451078992,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 28.858777603927088,
+          "median_ape": 12.092297847704248,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 51.672839366628494,
+          "median_ape": 22.233966724544846,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 43.99452248761744,
+          "median_ape": 21.490742062101546,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 28.926564377385237,
+          "median_ape": 19.38780721891818,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 179.00030117960904,
+          "median_ape": 29.457431199666196,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 25.365504776111397,
+          "median_ape": 11.568127748320293,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 68.85960667609321,
+          "median_ape": 23.247086738100155,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 47.00058329751644,
+          "median_ape": 21.33151041945948,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 31.106454089415656,
+          "median_ape": 23.353560146487943,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 29.070756182199336,
+          "median_ape": 14.85132309307578,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 85.99471930445658,
+          "median_ape": 20.898184685484765,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 26.162698841722268,
+          "median_ape": 12.522289410714617,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 23.91915035782859,
+          "median_ape": 9.572269023588529,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 42.784566450470216,
+          "median_ape": 32.136608228839876,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 26.835720960111356,
+          "median_ape": 12.076282760431132,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 134.24258681902973,
+          "median_ape": 100.0,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 16.036482218825554,
+          "median_ape": 10.900357565420546,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 26.260675904341944,
+          "median_ape": 18.732123279072034,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 21.063096074513727,
+          "median_ape": 9.51917913888667,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 48.06302174741956,
+          "median_ape": 19.505950855438883,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 30.888500252787757,
+          "median_ape": 14.204062517066447,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 42.74315394519372,
+          "median_ape": 17.636023010427145,
+          "count": 170
+        }
+      }
+    },
+    "M7": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 13.561651510537839,
+          "median_ape": 9.040421177924575,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 11.899280574257386,
+          "median_ape": 9.088412364983135,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 12.995287334300832,
+          "median_ape": 8.89242561050181,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 12.410901545454852,
+          "median_ape": 9.43141018267915,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 10.698690537515375,
+          "median_ape": 9.119812211991661,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 10.554431472600552,
+          "median_ape": 8.311360690853139,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 12.317504739124125,
+          "median_ape": 9.66332659262109,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 13.747434211076998,
+          "median_ape": 9.173889723212168,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 12.323953927791289,
+          "median_ape": 9.154833889274853,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 37.76285437005892,
+          "median_ape": 30.68949875048976,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 10.57123345298196,
+          "median_ape": 8.959892863394916,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 14.736443705919486,
+          "median_ape": 11.180338299547165,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 12.174156970361913,
+          "median_ape": 11.542895785881992,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 14.298963991465657,
+          "median_ape": 11.864688544991138,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 9.349129713889266,
+          "median_ape": 5.718237835771092,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 13.997452528857329,
+          "median_ape": 10.073359927200668,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 10.212116353391941,
+          "median_ape": 7.803611064086675,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 11.615633783059593,
+          "median_ape": 5.937608968997825,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 21.00405101535178,
+          "median_ape": 15.760555187607775,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 10.367820961072482,
+          "median_ape": 10.65035664699012,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 13.138165090728487,
+          "median_ape": 9.040421177924575,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 11.817987428614073,
+          "median_ape": 9.097630322271065,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 12.128760530788515,
+          "median_ape": 9.061202649465532,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 15.248452993505467,
+          "median_ape": 9.66332659262109,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 13.8660631990367,
+          "median_ape": 9.570780224203975,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 11.884442222796732,
+          "median_ape": 8.785842508353786,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 12.289877469816004,
+          "median_ape": 9.279189706792096,
+          "count": 170
+        }
+      }
+    },
+    "M7b": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 94.87236486359332,
+          "median_ape": 77.53242767712001,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 44.613783171477486,
+          "median_ape": 20.877969877350502,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 19.719671944891775,
+          "median_ape": 12.760857060361692,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 21.912999317408836,
+          "median_ape": 12.758157877250737,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 30.2359687230038,
+          "median_ape": 16.448762328012915,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 34.88256147119742,
+          "median_ape": 15.295746804484205,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 58.665222566176276,
+          "median_ape": 23.51305890861451,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 56.273524049705486,
+          "median_ape": 25.603639174552633,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 39.262234514911526,
+          "median_ape": 19.173653491877282,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 81.03728106947315,
+          "median_ape": 44.338459436116175,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 29.303256267544686,
+          "median_ape": 13.469075398586394,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 95.02448476583746,
+          "median_ape": 34.29082545412793,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 58.16752834683059,
+          "median_ape": 23.63244261058025,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 42.98283980977188,
+          "median_ape": 22.98822478529117,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 31.008529052720718,
+          "median_ape": 19.921236309752672,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 53.62207042760035,
+          "median_ape": 24.117734182232827,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 27.321638565407902,
+          "median_ape": 14.791281219636534,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 27.147282262642715,
+          "median_ape": 12.702299312816834,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 59.57543889409948,
+          "median_ape": 30.17682686398982,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 30.956505992837908,
+          "median_ape": 14.302010763270165,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 124.93039859253365,
+          "median_ape": 100.0,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 18.59066675168846,
+          "median_ape": 13.23839951137229,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 40.38369963262765,
+          "median_ape": 23.65054258317278,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 25.903219496971776,
+          "median_ape": 9.754435863932171,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 50.80205449812341,
+          "median_ape": 23.87761223933931,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 34.766780189022214,
+          "median_ape": 17.14595092647023,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 49.46839675099346,
+          "median_ape": 17.625812840536902,
+          "count": 170
+        }
+      }
+    },
+    "M7c": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 15.054058652672296,
+          "median_ape": 9.482465591887088,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 11.676702947549247,
+          "median_ape": 9.753623115677367,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 13.176957362768404,
+          "median_ape": 9.777369120701714,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 11.969042814398602,
+          "median_ape": 9.366517753658135,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 11.03673653361956,
+          "median_ape": 9.839955266021244,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 10.584490679363318,
+          "median_ape": 7.790751534518885,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 12.829720884657872,
+          "median_ape": 9.30790612436122,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 15.270692543402294,
+          "median_ape": 12.484326641159177,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 12.211121436965126,
+          "median_ape": 9.480022015549249,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 31.17999617632162,
+          "median_ape": 27.10520118712134,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 11.9519650823882,
+          "median_ape": 9.662405998636444,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 15.201583499256422,
+          "median_ape": 9.71422536537435,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 12.3636932668596,
+          "median_ape": 11.550027563398192,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 14.3546594323576,
+          "median_ape": 11.3704546390827,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 9.61255578015279,
+          "median_ape": 6.320950370757645,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 15.031188920507148,
+          "median_ape": 9.484909168224927,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 9.73170369005171,
+          "median_ape": 6.901582183883113,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 9.796751086402423,
+          "median_ape": 5.404748436657552,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 21.615756710556905,
+          "median_ape": 17.61298050903034,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 11.106094262854212,
+          "median_ape": 9.972883442531963,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 14.369325953240669,
+          "median_ape": 9.322187972050678,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 11.81392615000569,
+          "median_ape": 9.30790612436122,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 12.274830064398573,
+          "median_ape": 9.954406880188039,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 15.210027614425229,
+          "median_ape": 11.25220678438427,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 13.839001286012076,
+          "median_ape": 10.706927468324565,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 12.39123658575782,
+          "median_ape": 9.159810415041676,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 12.605656920825654,
+          "median_ape": 9.442625205731018,
+          "count": 170
+        }
+      }
+    },
+    "M8": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 134.24288198153033,
+          "median_ape": 100.0,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 60.02742922406992,
+          "median_ape": 28.496986788588487,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 24.963467236145842,
+          "median_ape": 17.68875887842301,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 27.424650695823118,
+          "median_ape": 18.385490593729227,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 51.4607966180125,
+          "median_ape": 22.126719385737815,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 55.54503221923151,
+          "median_ape": 21.54971548610299,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 89.63345499820375,
+          "median_ape": 31.147791572300896,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 64.34715712995146,
+          "median_ape": 43.381380681828006,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 48.69820321502053,
+          "median_ape": 30.450502250663785,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 43.268311499169116,
+          "median_ape": 36.50316633541998,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 49.16908707298466,
+          "median_ape": 30.007699290239245,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 130.36923767412097,
+          "median_ape": 38.14823046372117,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 92.89841852097996,
+          "median_ape": 30.962083307336783,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 38.93909881856089,
+          "median_ape": 20.67052781653552,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 51.22713346456413,
+          "median_ape": 34.53854130020525,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 77.12778942144406,
+          "median_ape": 34.75445766412171,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 34.75330938695719,
+          "median_ape": 21.554063169329545,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 35.36952996963958,
+          "median_ape": 18.568209691636095,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 52.18412888102208,
+          "median_ape": 43.35285977509224,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 50.66468211670483,
+          "median_ape": 19.375620380839056,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 192.71962575598175,
+          "median_ape": 100.0,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 27.47304417945086,
+          "median_ape": 19.804495281442474,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 43.26652992218631,
+          "median_ape": 28.473358548292623,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 28.720235108027897,
+          "median_ape": 17.520838637087717,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 45.30156213126067,
+          "median_ape": 22.57552301128179,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 69.89316864300739,
+          "median_ape": 34.788727892968616,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 71.45669813635804,
+          "median_ape": 29.131354220213122,
+          "count": 170
+        }
+      }
+    },
+    "M9": {
+      "by_price_quartile": {
+        "Q1 (cheapest)": {
+          "mape": 81.96638800127155,
+          "median_ape": 57.59710974385345,
+          "count": 128
+        },
+        "Q2": {
+          "mape": 35.75400011261633,
+          "median_ape": 20.765363128801766,
+          "count": 127
+        },
+        "Q4 (priciest)": {
+          "mape": 19.931110335229903,
+          "median_ape": 13.426116913143346,
+          "count": 128
+        },
+        "Q3": {
+          "mape": 23.35625914180014,
+          "median_ape": 14.88958325934183,
+          "count": 127
+        }
+      },
+      "by_material": {
+        "Inconel 718": {
+          "mape": 31.84135953306444,
+          "median_ape": 14.011232456552598,
+          "count": 90
+        },
+        "Titanium Grade 5": {
+          "mape": 31.75485703569759,
+          "median_ape": 16.755059063306213,
+          "count": 100
+        },
+        "Stainless Steel 17-4 PH": {
+          "mape": 46.63800324836352,
+          "median_ape": 23.309392374306608,
+          "count": 103
+        },
+        "Aluminum 6061": {
+          "mape": 50.36870202725927,
+          "median_ape": 28.834451162821278,
+          "count": 101
+        },
+        "Aluminum 7075": {
+          "mape": 28.248675749473463,
+          "median_ape": 18.199610145249935,
+          "count": 101
+        },
+        "Missing": {
+          "mape": 117.64034405373829,
+          "median_ape": 33.402946219471396,
+          "count": 15
+        }
+      },
+      "by_part_type": {
+        "Sensor Housing": {
+          "mape": 30.197741537665465,
+          "median_ape": 17.060700343307982,
+          "count": 52
+        },
+        "Manifold Block": {
+          "mape": 63.074642253315425,
+          "median_ape": 25.8014120957207,
+          "count": 47
+        },
+        "Turbine Blade Housing": {
+          "mape": 38.690121645663694,
+          "median_ape": 21.136619993915023,
+          "count": 61
+        },
+        "Mounting Bracket": {
+          "mape": 34.21822440798205,
+          "median_ape": 20.072296380312434,
+          "count": 45
+        },
+        "Structural Rib": {
+          "mape": 32.225673586970615,
+          "median_ape": 19.74038981387694,
+          "count": 56
+        },
+        "Fuel Injector Nozzle": {
+          "mape": 67.3365950727214,
+          "median_ape": 22.934909027889223,
+          "count": 53
+        },
+        "Actuator Linkage": {
+          "mape": 31.243401958876756,
+          "median_ape": 20.888333943440266,
+          "count": 54
+        },
+        "Landing Gear Pin": {
+          "mape": 33.618070388339746,
+          "median_ape": 15.471780347613006,
+          "count": 47
+        },
+        "Heat Sink": {
+          "mape": 41.277154997904255,
+          "median_ape": 30.035361230751455,
+          "count": 48
+        },
+        "Electronic Chassis": {
+          "mape": 31.770228385503554,
+          "median_ape": 13.842341828401223,
+          "count": 47
+        }
+      },
+      "by_quantity_band": {
+        "qty=1": {
+          "mape": 115.11750798172476,
+          "median_ape": 100.0,
+          "count": 90
+        },
+        "qty=20-50": {
+          "mape": 19.159335622824454,
+          "median_ape": 14.127962438456592,
+          "count": 177
+        },
+        "qty=5-10": {
+          "mape": 28.78142026216636,
+          "median_ape": 20.993948993695003,
+          "count": 158
+        },
+        "qty=100": {
+          "mape": 26.47811985136044,
+          "median_ape": 13.313137051201396,
+          "count": 85
+        }
+      },
+      "by_estimator": {
+        "Sato-san": {
+          "mape": 55.50310810993809,
+          "median_ape": 26.55110735209959,
+          "count": 180
+        },
+        "Suzuki-san": {
+          "mape": 31.760039864673644,
+          "median_ape": 15.695315320792723,
+          "count": 160
+        },
+        "Tanaka-san": {
+          "mape": 32.22186396615553,
+          "median_ape": 17.870317572822756,
+          "count": 170
+        }
+      }
+    }
+  },
+  "economic_coherence": {
+    "M0": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Aluminum 6061": 1000.2155910248173,
+            "Aluminum 7075": 1262.3972773371836,
+            "Stainless Steel 17-4 PH": 1547.8759472899594,
+            "Titanium Grade 5": 1731.616982313305,
+            "Inconel 718": 2180.5193198913566
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Surface Grinding": 675.3844025457278,
+            "CNC Turning": 876.9231721872962,
+            "3-Axis Milling": 1000.2155910248173,
+            "Wire EDM": 1512.8479771053283,
+            "5-Axis Milling": 2042.146283116339
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 5,
+          "details": [],
+          "unit_prices": {
+            "1": 153.57671887969548,
+            "5": 113.80332924969693,
+            "10": 100.02155910248173,
+            "20": 87.90878396308331,
+            "50": 74.11791647615854,
+            "100": 65.14211501762932
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": true,
+          "no_rush_price": 1000.2155910248173,
+          "rush_price": 1422.300749196236,
+          "premium_pct": 42.19941800136826,
+          "details": []
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 1000.2155910248173,
+          "complex_price": 1000.2155910248173,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 10,
+      "total_count": 10,
+      "pass_rate": 100.0
+    },
+    "M1": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": false,
+          "violations": 1,
+          "max_violations": 4,
+          "details": [
+            "Aluminum 6061 ($1,527) >= Aluminum 7075 ($434)"
+          ],
+          "predictions": {
+            "Aluminum 6061": 1527.053062297302,
+            "Aluminum 7075": 434.29676105399085,
+            "Stainless Steel 17-4 PH": 2964.3165456966462,
+            "Titanium Grade 5": 3551.496061336922,
+            "Inconel 718": 4453.797303095869
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": false,
+          "violations": 1,
+          "max_violations": 4,
+          "details": [
+            "CNC Turning ($1,606) >= 3-Axis Milling ($1,527)"
+          ],
+          "predictions": {
+            "Surface Grinding": 0.0,
+            "CNC Turning": 1606.3653484250417,
+            "3-Axis Milling": 1527.053062297302,
+            "Wire EDM": 5620.515926181764,
+            "5-Axis Milling": 7353.4294997687375
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": false,
+          "violations": 2,
+          "max_violations": 5,
+          "details": [
+            "qty=5 ($0.00/unit) < qty=10 ($152.71/unit)",
+            "qty=10 ($152.71/unit) < qty=20 ($255.85/unit)"
+          ],
+          "unit_prices": {
+            "1": 0.0,
+            "5": 0.0,
+            "10": 152.70530622973018,
+            "20": 255.84733177209145,
+            "50": 197.25055614874327,
+            "100": 134.52421380581694
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": true,
+          "no_rush_price": 1527.053062297302,
+          "rush_price": 4605.219744499103,
+          "premium_pct": 201.5756202715707,
+          "details": []
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 1527.053062297302,
+          "complex_price": 7135.459449191568,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 1,
+          "total_probes": 50,
+          "violation_rate": 2.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 1,
+          "total_probes": 50,
+          "violation_rate": 2.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 41,
+          "total_probes": 50,
+          "violation_rate": 82.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 4,
+      "total_count": 10,
+      "pass_rate": 40.0
+    },
+    "M2": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Aluminum 6061": 1346.8270660559267,
+            "Aluminum 7075": 1506.9538478067416,
+            "Stainless Steel 17-4 PH": 1731.3443531820374,
+            "Titanium Grade 5": 2118.4789832718475,
+            "Inconel 718": 2423.415903543387
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Surface Grinding": 836.9816601348579,
+            "CNC Turning": 1107.3503385535334,
+            "3-Axis Milling": 1346.8270660559267,
+            "Wire EDM": 2237.099173078141,
+            "5-Axis Milling": 2680.1020135219796
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 5,
+          "details": [],
+          "unit_prices": {
+            "1": 188.380482205941,
+            "5": 148.99755822786233,
+            "10": 134.68270660559267,
+            "20": 121.7431458230174,
+            "50": 106.52586820440787,
+            "100": 96.29145889316607
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": true,
+          "no_rush_price": 1346.8270660559267,
+          "rush_price": 1802.373608818719,
+          "premium_pct": 33.82368488456527,
+          "details": []
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 1346.8270660559267,
+          "complex_price": 2639.4673484546984,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 10,
+      "total_count": 10,
+      "pass_rate": 100.0
+    },
+    "M3a": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Aluminum 6061": 1372.85872118388,
+            "Aluminum 7075": 1558.937503425476,
+            "Stainless Steel 17-4 PH": 1779.5112810288956,
+            "Titanium Grade 5": 2184.787117076789,
+            "Inconel 718": 2486.876786536321
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Surface Grinding": 847.3023424681263,
+            "CNC Turning": 1123.93874482975,
+            "3-Axis Milling": 1372.85872118388,
+            "Wire EDM": 2249.022349029803,
+            "5-Axis Milling": 2665.287250357577
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 5,
+          "details": [],
+          "unit_prices": {
+            "1": 210.79369265657,
+            "5": 156.2022172641082,
+            "10": 137.285872118388,
+            "20": 120.6603274487389,
+            "50": 101.73149563287299,
+            "100": 89.41164437027534
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": true,
+          "no_rush_price": 1372.85872118388,
+          "rush_price": 1952.1971115045053,
+          "premium_pct": 42.199418001368315,
+          "details": []
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 1372.85872118388,
+          "complex_price": 2664.8477920322402,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 10,
+      "total_count": 10,
+      "pass_rate": 100.0
+    },
+    "M3b": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Aluminum 6061": 1580.1783619468326,
+            "Aluminum 7075": 1736.45494662666,
+            "Stainless Steel 17-4 PH": 2007.5109561500674,
+            "Titanium Grade 5": 2463.3982042686466,
+            "Inconel 718": 2792.2588329345604
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Surface Grinding": 980.8010972512727,
+            "CNC Turning": 1296.012249345902,
+            "3-Axis Milling": 1580.1783619468326,
+            "Wire EDM": 2567.3679580870125,
+            "5-Axis Milling": 3045.453802008447
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 5,
+          "details": [],
+          "unit_prices": {
+            "1": 193.67684687630114,
+            "5": 167.99974074758887,
+            "10": 158.01783619468327,
+            "20": 148.6290183814353,
+            "50": 137.06829671363337,
+            "100": 128.92422072318007
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": true,
+          "no_rush_price": 1580.1783619468326,
+          "rush_price": 2247.0044340719514,
+          "premium_pct": 42.19941800136832,
+          "details": []
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 1580.1783619468326,
+          "complex_price": 3002.4669131888186,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 10,
+      "total_count": 10,
+      "pass_rate": 100.0
+    },
+    "M4": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Aluminum 6061": 1354.4046885786481,
+            "Aluminum 7075": 1558.74850194943,
+            "Stainless Steel 17-4 PH": 1786.5835762072356,
+            "Titanium Grade 5": 2111.593846225223,
+            "Inconel 718": 2432.22104349359
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Surface Grinding": 828.1598232788209,
+            "CNC Turning": 1103.727637571016,
+            "3-Axis Milling": 1354.4046885786481,
+            "Wire EDM": 2163.839450275119,
+            "5-Axis Milling": 2612.7941626545885
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 5,
+          "details": [],
+          "unit_prices": {
+            "1": 196.05177915945515,
+            "5": 151.39118577937012,
+            "10": 135.4404688578648,
+            "20": 121.17033438903115,
+            "50": 104.5871313732332,
+            "100": 93.56773339719814
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": true,
+          "no_rush_price": 1354.4046885786481,
+          "rush_price": 1710.5016154541554,
+          "premium_pct": 26.291767141562822,
+          "details": []
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 1354.4046885786481,
+          "complex_price": 3802.864232810197,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 10,
+      "total_count": 10,
+      "pass_rate": 100.0
+    },
+    "M5": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Aluminum 6061": 1618.7048144001126,
+            "Aluminum 7075": 1668.9293155726562,
+            "Stainless Steel 17-4 PH": 1793.018112549517,
+            "Titanium Grade 5": 2055.9630982845465,
+            "Inconel 718": 2121.581366341394
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Surface Grinding": 1547.4662618049779,
+            "CNC Turning": 1560.704366174941,
+            "3-Axis Milling": 1618.7048144001124,
+            "Wire EDM": 3674.494408355939,
+            "5-Axis Milling": 3822.1983745550415
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": false,
+          "violations": 1,
+          "max_violations": 5,
+          "details": [
+            "qty=20 ($128.03/unit) < qty=50 ($162.08/unit)"
+          ],
+          "unit_prices": {
+            "1": 246.7865630538312,
+            "5": 221.04934689355363,
+            "10": 161.87048144001125,
+            "20": 128.0348821520653,
+            "50": 162.08471531895555,
+            "100": 120.88789643478346
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": true,
+          "no_rush_price": 1618.704814400113,
+          "rush_price": 1621.6578659468296,
+          "premium_pct": 0.18243298719111692,
+          "details": []
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 1618.704814400113,
+          "complex_price": 3646.7429807955937,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 9,
+          "total_probes": 50,
+          "violation_rate": 18.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 22,
+          "total_probes": 50,
+          "violation_rate": 44.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 7,
+      "total_count": 10,
+      "pass_rate": 70.0
+    },
+    "M6": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Aluminum 6061": 1389.8675537109375,
+            "Aluminum 7075": 1411.6151123046875,
+            "Stainless Steel 17-4 PH": 1701.928955078125,
+            "Titanium Grade 5": 2196.0439453125,
+            "Inconel 718": 2566.31640625
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Surface Grinding": 603.4784545898438,
+            "CNC Turning": 1017.7755126953125,
+            "3-Axis Milling": 1389.8675537109375,
+            "Wire EDM": 2669.870361328125,
+            "5-Axis Milling": 3263.33251953125
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": false,
+          "violations": 2,
+          "max_violations": 5,
+          "details": [
+            "qty=1 ($0.00/unit) < qty=5 ($122.83/unit)",
+            "qty=5 ($122.83/unit) < qty=10 ($138.99/unit)"
+          ],
+          "unit_prices": {
+            "1": 0.0,
+            "5": 122.825146484375,
+            "10": 138.98675537109375,
+            "20": 121.65224609375,
+            "50": 110.730947265625,
+            "100": 92.361787109375
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": true,
+          "no_rush_price": 1389.8675537109375,
+          "rush_price": 1669.751708984375,
+          "premium_pct": 20.137469539895985,
+          "details": []
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 1389.8675537109375,
+          "complex_price": 4160.0751953125,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 8,
+          "total_probes": 50,
+          "violation_rate": 16.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 26,
+          "total_probes": 50,
+          "violation_rate": 52.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 7,
+      "total_count": 10,
+      "pass_rate": 70.0
+    },
+    "M6b": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": false,
+          "violations": 1,
+          "max_violations": 4,
+          "details": [
+            "Aluminum 6061 ($1,253) >= Aluminum 7075 ($1,222)"
+          ],
+          "predictions": {
+            "Aluminum 6061": 1253.1436767578125,
+            "Aluminum 7075": 1222.0,
+            "Stainless Steel 17-4 PH": 1458.072998046875,
+            "Titanium Grade 5": 2151.53857421875,
+            "Inconel 718": 2354.1611328125
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Surface Grinding": 502.9399108886719,
+            "CNC Turning": 1177.9586181640625,
+            "3-Axis Milling": 1253.1436767578125,
+            "Wire EDM": 2583.06884765625,
+            "5-Axis Milling": 3027.449951171875
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": false,
+          "violations": 2,
+          "max_violations": 5,
+          "details": [
+            "qty=1 ($0.00/unit) < qty=5 ($91.75/unit)",
+            "qty=5 ($91.75/unit) < qty=10 ($125.31/unit)"
+          ],
+          "unit_prices": {
+            "1": 0.0,
+            "5": 91.75087890625,
+            "10": 125.31436767578126,
+            "20": 112.84088134765625,
+            "50": 104.914150390625,
+            "100": 86.322998046875
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": true,
+          "no_rush_price": 1253.1436767578125,
+          "rush_price": 1503.73291015625,
+          "premium_pct": 19.996847771420178,
+          "details": []
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 1253.1436767578125,
+          "complex_price": 5123.14453125,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 6,
+          "total_probes": 50,
+          "violation_rate": 12.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 26,
+          "total_probes": 50,
+          "violation_rate": 52.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 6,
+      "total_count": 10,
+      "pass_rate": 60.0
+    },
+    "M7": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Aluminum 6061": 1321.865234375,
+            "Aluminum 7075": 1364.3883056640625,
+            "Stainless Steel 17-4 PH": 1680.169677734375,
+            "Titanium Grade 5": 2172.89990234375,
+            "Inconel 718": 2373.66064453125
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Surface Grinding": 773.9282836914062,
+            "CNC Turning": 962.357666015625,
+            "3-Axis Milling": 1321.865234375,
+            "Wire EDM": 2338.098876953125,
+            "5-Axis Milling": 2818.28515625
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 5,
+          "details": [],
+          "unit_prices": {
+            "1": 196.8861541748047,
+            "5": 146.0260009765625,
+            "10": 132.1865234375,
+            "20": 120.04482421875,
+            "50": 109.652548828125,
+            "100": 99.77015625
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": true,
+          "no_rush_price": 1321.865234375,
+          "rush_price": 1524.90966796875,
+          "premium_pct": 15.360448880384755,
+          "details": []
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 1321.865234375,
+          "complex_price": 3388.279296875,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 10,
+      "total_count": 10,
+      "pass_rate": 100.0
+    },
+    "M7b": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": false,
+          "violations": 1,
+          "max_violations": 4,
+          "details": [
+            "Aluminum 6061 ($761) >= Aluminum 7075 ($761)"
+          ],
+          "predictions": {
+            "Aluminum 6061": 760.913736018599,
+            "Aluminum 7075": 760.913736018599,
+            "Stainless Steel 17-4 PH": 904.138571617623,
+            "Titanium Grade 5": 1613.9749323497108,
+            "Inconel 718": 2129.261896925217
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Surface Grinding": 151.02951110425445,
+            "CNC Turning": 677.4830338873829,
+            "3-Axis Milling": 760.913736018599,
+            "Wire EDM": 2454.6684089753803,
+            "5-Axis Milling": 2838.8469831885013
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": false,
+          "violations": 3,
+          "max_violations": 5,
+          "details": [
+            "qty=1 ($0.00/unit) < qty=5 ($15.62/unit)",
+            "qty=5 ($15.62/unit) < qty=10 ($76.09/unit)",
+            "qty=10 ($76.09/unit) < qty=20 ($110.27/unit)"
+          ],
+          "unit_prices": {
+            "1": 0.0,
+            "5": 15.619413408622384,
+            "10": 76.0913736018599,
+            "20": 110.27215205300342,
+            "50": 100.00619274225114,
+            "100": 90.8077004106202
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": true,
+          "no_rush_price": 760.913736018599,
+          "rush_price": 1686.8537426262913,
+          "premium_pct": 121.6879079424398,
+          "details": []
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 760.913736018599,
+          "complex_price": 3109.382758200963,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 6,
+          "total_probes": 50,
+          "violation_rate": 12.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 24,
+          "total_probes": 50,
+          "violation_rate": 48.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 6,
+      "total_count": 10,
+      "pass_rate": 60.0
+    },
+    "M7c": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Aluminum 6061": 1313.7707142194267,
+            "Aluminum 7075": 1428.3200764402368,
+            "Stainless Steel 17-4 PH": 1745.3253914934544,
+            "Titanium Grade 5": 2038.8216576950304,
+            "Inconel 718": 2250.2272886132614
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Surface Grinding": 822.2294843055614,
+            "CNC Turning": 1006.1365380977669,
+            "3-Axis Milling": 1313.7707142194267,
+            "Wire EDM": 2333.2153780209446,
+            "5-Axis Milling": 2790.3086328438017
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 5,
+          "details": [],
+          "unit_prices": {
+            "1": 193.98573790683906,
+            "5": 144.175031168554,
+            "10": 131.37707142194267,
+            "20": 109.74238587451819,
+            "50": 104.2986422584077,
+            "100": 103.03466454837047
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": true,
+          "no_rush_price": 1313.7707142194267,
+          "rush_price": 1560.3291252379363,
+          "premium_pct": 18.767232999633542,
+          "details": []
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 1313.7707142194267,
+          "complex_price": 3332.4194843073215,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 10,
+      "total_count": 10,
+      "pass_rate": 100.0
+    },
+    "M8": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Aluminum 6061": 622.7534790039062,
+            "Aluminum 7075": 943.9258422851562,
+            "Stainless Steel 17-4 PH": 1405.08056640625,
+            "Titanium Grade 5": 1947.84423828125,
+            "Inconel 718": 2455.639892578125
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Surface Grinding": 214.7976837158203,
+            "CNC Turning": 448.36346435546875,
+            "3-Axis Milling": 622.7534790039062,
+            "Wire EDM": 1980.5958251953125,
+            "5-Axis Milling": 3354.636962890625
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": false,
+          "violations": 3,
+          "max_violations": 5,
+          "details": [
+            "qty=5 ($0.00/unit) < qty=10 ($62.28/unit)",
+            "qty=10 ($62.28/unit) < qty=20 ($108.63/unit)",
+            "qty=20 ($108.63/unit) < qty=50 ($145.37/unit)"
+          ],
+          "unit_prices": {
+            "1": 0.0,
+            "5": 0.0,
+            "10": 62.27534790039063,
+            "20": 108.62520751953124,
+            "50": 145.372509765625,
+            "100": 90.403330078125
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": true,
+          "no_rush_price": 622.7534790039062,
+          "rush_price": 4454.2919921875,
+          "premium_pct": 615.257664929008,
+          "details": []
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 622.7534790039062,
+          "complex_price": 5385.1689453125,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 4,
+          "total_probes": 50,
+          "violation_rate": 8.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 21,
+          "total_probes": 50,
+          "violation_rate": 42.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 7,
+      "total_count": 10,
+      "pass_rate": 70.0
+    },
+    "M9": {
+      "checks": [
+        {
+          "name": "material_ordering",
+          "type": "deterministic",
+          "passed": false,
+          "violations": 1,
+          "max_violations": 4,
+          "details": [
+            "Aluminum 6061 ($1,727) >= Aluminum 7075 ($1,682)"
+          ],
+          "predictions": {
+            "Aluminum 6061": 1727.0740966796875,
+            "Aluminum 7075": 1681.5753173828125,
+            "Stainless Steel 17-4 PH": 1732.6702880859375,
+            "Titanium Grade 5": 2064.402099609375,
+            "Inconel 718": 2275.43798828125
+          }
+        },
+        {
+          "name": "process_ordering",
+          "type": "deterministic",
+          "passed": true,
+          "violations": 0,
+          "max_violations": 4,
+          "details": [],
+          "predictions": {
+            "Surface Grinding": 653.2499389648438,
+            "CNC Turning": 1169.1572265625,
+            "3-Axis Milling": 1727.0740966796875,
+            "Wire EDM": 2646.640869140625,
+            "5-Axis Milling": 3367.72900390625
+          }
+        },
+        {
+          "name": "quantity_discount",
+          "type": "deterministic",
+          "passed": false,
+          "violations": 1,
+          "max_violations": 5,
+          "details": [
+            "qty=1 ($0.00/unit) < qty=5 ($176.19/unit)"
+          ],
+          "unit_prices": {
+            "1": 0.0,
+            "5": 176.191162109375,
+            "10": 172.70740966796876,
+            "20": 137.16922607421876,
+            "50": 112.2457421875,
+            "100": 93.414375
+          }
+        },
+        {
+          "name": "rush_premium",
+          "type": "deterministic",
+          "passed": false,
+          "no_rush_price": 1727.0740966796875,
+          "rush_price": 1703.29052734375,
+          "premium_pct": -1.377101849982093,
+          "details": [
+            "Rush ($1,703) <= No rush ($1,727)"
+          ]
+        },
+        {
+          "name": "complexity_premium",
+          "type": "deterministic",
+          "passed": true,
+          "simple_price": 1727.0740966796875,
+          "complex_price": 4066.593994140625,
+          "details": []
+        },
+        {
+          "name": "stochastic_material_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_rush_premium",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 5,
+          "total_probes": 50,
+          "violation_rate": 10.0
+        },
+        {
+          "name": "stochastic_quantity_discount",
+          "type": "stochastic",
+          "passed": false,
+          "violations": 26,
+          "total_probes": 50,
+          "violation_rate": 52.0
+        },
+        {
+          "name": "stochastic_process_ordering",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        },
+        {
+          "name": "stochastic_complexity_premium",
+          "type": "stochastic",
+          "passed": true,
+          "violations": 0,
+          "total_probes": 50,
+          "violation_rate": 0.0
+        }
+      ],
+      "pass_count": 5,
+      "total_count": 10,
+      "pass_rate": 50.0
+    }
+  },
+  "calibration_bias": {
+    "M0": {
+      "mean_signed_error_dollars": -3984.0951681104098,
+      "mean_signed_error_pct": -39.587199334727046,
+      "median_signed_error_pct": -41.88810975266668,
+      "pct_overestimated": 1.5686274509803921,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": -35.3978814061724,
+          "pct_overestimated": 3.90625,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": -35.63904803431564,
+          "pct_overestimated": 0.7874015748031495,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": -42.85952501882325,
+          "pct_overestimated": 1.574803149606299,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": -44.44706299196944,
+          "pct_overestimated": 0.0,
+          "count": 128
+        }
+      },
+      "label": "aggressive"
+    },
+    "M1": {
+      "mean_signed_error_dollars": 803.9409715617297,
+      "mean_signed_error_pct": 52.90980037075743,
+      "median_signed_error_pct": 31.941398884834918,
+      "pct_overestimated": 62.94117647058823,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": 3.991752442305608,
+          "pct_overestimated": 24.21875,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": 148.58729691021205,
+          "pct_overestimated": 94.48818897637796,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": 71.466144113398,
+          "pct_overestimated": 99.21259842519686,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": -11.513540105682011,
+          "pct_overestimated": 34.375,
+          "count": 128
+        }
+      },
+      "label": "conservative"
+    },
+    "M2": {
+      "mean_signed_error_dollars": -46.857894837331465,
+      "mean_signed_error_pct": 1.9986712954898662,
+      "median_signed_error_pct": 1.1884833417727152,
+      "pct_overestimated": 54.11764705882353,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": 2.619301886304517,
+          "pct_overestimated": 53.125,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": 3.9721486262642016,
+          "pct_overestimated": 60.629921259842526,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": 1.9760424525143943,
+          "pct_overestimated": 52.75590551181102,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": -0.5575667793127219,
+          "pct_overestimated": 50.0,
+          "count": 128
+        }
+      },
+      "label": "balanced"
+    },
+    "M3a": {
+      "mean_signed_error_dollars": -501.67625505310303,
+      "mean_signed_error_pct": 2.5614852449187544,
+      "median_signed_error_pct": 1.6684108587733206,
+      "pct_overestimated": 55.294117647058826,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": 11.194931970676649,
+          "pct_overestimated": 77.34375,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": 6.286895192650716,
+          "pct_overestimated": 64.56692913385827,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": -0.511316037181696,
+          "pct_overestimated": 48.031496062992126,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": -6.7194716412704025,
+          "pct_overestimated": 31.25,
+          "count": 128
+        }
+      },
+      "label": "balanced"
+    },
+    "M3b": {
+      "mean_signed_error_dollars": -125.35302661309645,
+      "mean_signed_error_pct": 2.884159473523758,
+      "median_signed_error_pct": 1.5012743057304265,
+      "pct_overestimated": 54.31372549019608,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": 6.210243911666022,
+          "pct_overestimated": 59.375,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": 3.9693884250047375,
+          "pct_overestimated": 57.48031496062992,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": 2.7300651824895183,
+          "pct_overestimated": 55.118110236220474,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": -1.3657851355305044,
+          "pct_overestimated": 45.3125,
+          "count": 128
+        }
+      },
+      "label": "balanced"
+    },
+    "M4": {
+      "mean_signed_error_dollars": -181.70098516902323,
+      "mean_signed_error_pct": 1.9922781942078653,
+      "median_signed_error_pct": 1.6747902355641107,
+      "pct_overestimated": 56.470588235294116,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": 4.041656955253583,
+          "pct_overestimated": 55.46875,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": 4.869780517011145,
+          "pct_overestimated": 65.35433070866141,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": 1.0294948257521068,
+          "pct_overestimated": 51.181102362204726,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": -1.9568607793545332,
+          "pct_overestimated": 53.90625,
+          "count": 128
+        }
+      },
+      "label": "balanced"
+    },
+    "M5": {
+      "mean_signed_error_dollars": -24.22826988418484,
+      "mean_signed_error_pct": 21.11801061012737,
+      "median_signed_error_pct": 8.65997336499963,
+      "pct_overestimated": 59.01960784313726,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": 45.19879155760261,
+          "pct_overestimated": 75.0,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": 16.3089424743554,
+          "pct_overestimated": 55.90551181102362,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": 22.146695933210083,
+          "pct_overestimated": 62.99212598425197,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": 0.7880782346172457,
+          "pct_overestimated": 42.1875,
+          "count": 128
+        }
+      },
+      "label": "conservative"
+    },
+    "M6": {
+      "mean_signed_error_dollars": 65.43214383622714,
+      "mean_signed_error_pct": 11.818967031141186,
+      "median_signed_error_pct": 4.820054743462178,
+      "pct_overestimated": 57.45098039215686,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": 11.397632526698983,
+          "pct_overestimated": 45.3125,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": 22.113025443089473,
+          "pct_overestimated": 72.44094488188976,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": 12.202850680435633,
+          "pct_overestimated": 64.56692913385827,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": 1.6457808966941239,
+          "pct_overestimated": 47.65625,
+          "count": 128
+        }
+      },
+      "label": "conservative"
+    },
+    "M6b": {
+      "mean_signed_error_dollars": 44.891482817257156,
+      "mean_signed_error_pct": 14.230499625022178,
+      "median_signed_error_pct": 3.7875491135832724,
+      "pct_overestimated": 57.05882352941176,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": 20.242965399092995,
+          "pct_overestimated": 42.96875,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": 24.756712339031374,
+          "pct_overestimated": 70.86614173228347,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": 10.982994045024137,
+          "pct_overestimated": 65.35433070866141,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": 0.9961916164246629,
+          "pct_overestimated": 49.21875,
+          "count": 128
+        }
+      },
+      "label": "conservative"
+    },
+    "M7": {
+      "mean_signed_error_dollars": -643.9312746605966,
+      "mean_signed_error_pct": 1.6996429262615118,
+      "median_signed_error_pct": 1.0550789928238695,
+      "pct_overestimated": 52.94117647058824,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": 7.534072459892554,
+          "pct_overestimated": 67.1875,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": 3.3237288377144956,
+          "pct_overestimated": 56.69291338582677,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": 2.113302414786613,
+          "pct_overestimated": 52.75590551181102,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": -6.156612121410289,
+          "pct_overestimated": 35.15625,
+          "count": 128
+        }
+      },
+      "label": "balanced"
+    },
+    "M7b": {
+      "mean_signed_error_dollars": 164.8163611431524,
+      "mean_signed_error_pct": 13.859093417102125,
+      "median_signed_error_pct": 2.252422690913856,
+      "pct_overestimated": 52.94117647058824,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": 13.6635753636166,
+          "pct_overestimated": 43.75,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": 25.013794563667375,
+          "pct_overestimated": 61.417322834645674,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": 12.991811386316234,
+          "pct_overestimated": 60.629921259842526,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": 3.847562816650323,
+          "pct_overestimated": 46.09375,
+          "count": 128
+        }
+      },
+      "label": "conservative"
+    },
+    "M7c": {
+      "mean_signed_error_dollars": -640.3664695889966,
+      "mean_signed_error_pct": 1.9559446901217594,
+      "median_signed_error_pct": 1.0666207996328803,
+      "pct_overestimated": 52.54901960784314,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": 9.050148851269743,
+          "pct_overestimated": 69.53125,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": 2.946697691797521,
+          "pct_overestimated": 59.055118110236215,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": 1.2982798056100173,
+          "pct_overestimated": 47.24409448818898,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": -5.468745337274901,
+          "pct_overestimated": 34.375,
+          "count": 128
+        }
+      },
+      "label": "balanced"
+    },
+    "M8": {
+      "mean_signed_error_dollars": 128.13046865306183,
+      "mean_signed_error_pct": 34.72607291654323,
+      "median_signed_error_pct": 7.625220091378258,
+      "pct_overestimated": 58.43137254901961,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": 79.03874762770967,
+          "pct_overestimated": 61.71875,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": 45.75097524912019,
+          "pct_overestimated": 68.50393700787401,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": 15.278918600816763,
+          "pct_overestimated": 63.77952755905512,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": -1.2301486550920664,
+          "pct_overestimated": 39.84375,
+          "count": 128
+        }
+      },
+      "label": "conservative"
+    },
+    "M9": {
+      "mean_signed_error_dollars": 54.27751069192323,
+      "mean_signed_error_pct": 13.186124174687743,
+      "median_signed_error_pct": 3.8207921402464224,
+      "pct_overestimated": 55.294117647058826,
+      "by_price_quartile": {
+        "Q1": {
+          "mean_signed_pct": 14.750847807369144,
+          "pct_overestimated": 50.78125,
+          "count": 128
+        },
+        "Q2": {
+          "mean_signed_pct": 24.24195624450488,
+          "pct_overestimated": 66.14173228346458,
+          "count": 127
+        },
+        "Q3": {
+          "mean_signed_pct": 11.671717974316806,
+          "pct_overestimated": 59.055118110236215,
+          "count": 127
+        },
+        "Q4": {
+          "mean_signed_pct": 2.154517062165193,
+          "pct_overestimated": 45.3125,
+          "count": 128
+        }
+      },
+      "label": "conservative"
+    }
+  },
+  "stability_robustness": {
+    "M0": {
+      "fold_mapes": [
+        36.24835549318294,
+        42.220367482427164,
+        40.45444904384121,
+        40.393092751498685,
+        42.338279588889975
+      ],
+      "fold_mape_mean": 40.33090887196799,
+      "fold_mape_std": 2.2039039060432453,
+      "fold_mape_range": 6.089924095707033,
+      "bootstrap_mean_cv_pct": 20.072289188510855,
+      "bootstrap_max_cv_pct": 32.118273718821655
+    },
+    "M1": {
+      "fold_mapes": [
+        93.06118463415656,
+        103.63338912640701,
+        93.03638776571171,
+        108.43245082185963,
+        99.30194568759062
+      ],
+      "fold_mape_mean": 99.4930716071451,
+      "fold_mape_std": 6.002486073010576,
+      "fold_mape_range": 15.396063056147923,
+      "bootstrap_mean_cv_pct": 34.17855310580646,
+      "bootstrap_max_cv_pct": 435.8898943540674
+    },
+    "M2": {
+      "fold_mapes": [
+        10.145585842286238,
+        10.475326042032176,
+        11.118123354035415,
+        11.382752863632586,
+        11.038895827995205
+      ],
+      "fold_mape_mean": 10.832136785996322,
+      "fold_mape_std": 0.4530743402171598,
+      "fold_mape_range": 1.2371670213463482,
+      "bootstrap_mean_cv_pct": 3.373218280494707,
+      "bootstrap_max_cv_pct": 16.12700942660324
+    },
+    "M3a": {
+      "fold_mapes": [
+        10.521615550809319,
+        13.43564858717212,
+        11.714483962255215,
+        13.705786854210292,
+        12.355135221330709
+      ],
+      "fold_mape_mean": 12.346534035155532,
+      "fold_mape_std": 1.1630672794888521,
+      "fold_mape_range": 3.184171303400973,
+      "bootstrap_mean_cv_pct": 6.177063895785786,
+      "bootstrap_max_cv_pct": 22.013941296519043
+    },
+    "M3b": {
+      "fold_mapes": [
+        13.013626590111329,
+        13.471981240432443,
+        12.662273618486717,
+        13.502899574370641,
+        13.174988067948554
+      ],
+      "fold_mape_mean": 13.165153818269937,
+      "fold_mape_std": 0.3111787175978167,
+      "fold_mape_range": 0.8406259558839242,
+      "bootstrap_mean_cv_pct": 9.711826284877702,
+      "bootstrap_max_cv_pct": 23.600825329032922
+    },
+    "M4": {
+      "fold_mapes": [
+        10.659604438052067,
+        10.86415665677582,
+        11.573366309327465,
+        10.758130449861412,
+        11.457842047894712
+      ],
+      "fold_mape_mean": 11.062619980382298,
+      "fold_mape_std": 0.37724935720375735,
+      "fold_mape_range": 0.9137618712753977,
+      "bootstrap_mean_cv_pct": 5.154033551655158,
+      "bootstrap_max_cv_pct": 34.9455950804728
+    },
+    "M5": {
+      "fold_mapes": [
+        35.65921932714828,
+        35.56768101503619,
+        38.63293103835959,
+        33.99107413807657,
+        40.39817458080741
+      ],
+      "fold_mape_mean": 36.84981601988561,
+      "fold_mape_std": 2.3239683065050967,
+      "fold_mape_range": 6.407100442730837,
+      "bootstrap_mean_cv_pct": 18.396257899353998,
+      "bootstrap_max_cv_pct": 278.00066996700986
+    },
+    "M6": {
+      "fold_mapes": [
+        47.70101292148218,
+        40.10475409154793,
+        31.60920487542646,
+        34.48880063365501,
+        43.16751093809041
+      ],
+      "fold_mape_mean": 39.4142566920404,
+      "fold_mape_std": 5.80367097867419,
+      "fold_mape_range": 16.09180804605572,
+      "bootstrap_mean_cv_pct": 26.778181076049805,
+      "bootstrap_max_cv_pct": 435.8899230957031
+    },
+    "M6b": {
+      "fold_mapes": [
+        48.79538627849488,
+        45.73953459457286,
+        30.83182860582987,
+        35.89436481214685,
+        43.247122235078024
+      ],
+      "fold_mape_mean": 40.9016473052245,
+      "fold_mape_std": 6.598358093545655,
+      "fold_mape_range": 17.96355767266501,
+      "bootstrap_mean_cv_pct": 24.515562057495117,
+      "bootstrap_max_cv_pct": 126.70394134521484
+    },
+    "M7": {
+      "fold_mapes": [
+        13.570058615206332,
+        12.082272742558775,
+        13.598296997901643,
+        12.18241601798574,
+        12.161870345394611
+      ],
+      "fold_mape_mean": 12.71898294380942,
+      "fold_mape_std": 0.707276664077759,
+      "fold_mape_range": 1.5160242553428684,
+      "bootstrap_mean_cv_pct": 10.07419204711914,
+      "bootstrap_max_cv_pct": 21.040950775146484
+    },
+    "M7b": {
+      "fold_mapes": [
+        51.46914273974383,
+        30.390255111947955,
+        38.08483642132151,
+        57.18563627778161,
+        49.50426756268212
+      ],
+      "fold_mape_mean": 45.326827622695404,
+      "fold_mape_std": 9.709356488427629,
+      "fold_mape_range": 26.795381165833657,
+      "bootstrap_mean_cv_pct": 31.853245110128693,
+      "bootstrap_max_cv_pct": 435.88989435406734
+    },
+    "M7c": {
+      "fold_mapes": [
+        13.794225784350253,
+        12.977934355288806,
+        12.664977310198413,
+        12.771977642366785,
+        12.659313944499534
+      ],
+      "fold_mape_mean": 12.973685807340757,
+      "fold_mape_std": 0.42617383594062264,
+      "fold_mape_range": 1.1349118398507194,
+      "bootstrap_mean_cv_pct": 11.22580330697482,
+      "bootstrap_max_cv_pct": 23.22351559297284
+    },
+    "M8": {
+      "fold_mapes": [
+        64.32265701237569,
+        49.50180217456621,
+        67.70154337131424,
+        66.48802002262153,
+        60.66075045528866
+      ],
+      "fold_mape_mean": 61.73495460723327,
+      "fold_mape_std": 6.567982172039145,
+      "fold_mape_range": 18.199741196748036,
+      "bootstrap_mean_cv_pct": 33.62595285194641,
+      "bootstrap_max_cv_pct": 165.1966536689126
+    },
+    "M9": {
+      "fold_mapes": [
+        58.714424624375106,
+        35.21911837812077,
+        32.98969634856586,
+        35.958016024501525,
+        38.5881829811336
+      ],
+      "fold_mape_mean": 40.29388767133937,
+      "fold_mape_std": 9.3822160210184,
+      "fold_mape_range": 25.724728275809248,
+      "bootstrap_mean_cv_pct": 29.966400146484375,
+      "bootstrap_max_cv_pct": 334.99755859375
+    }
+  },
+  "boundary_behavior": {
+    "M0": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 6514.211501762932,
+          "pred_at_200": 11450.659572534125,
+          "ratio": 1.75779671406666,
+          "reasonable": true,
+          "failure_mode": "normal"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 6514.211501762932,
+          "pred_at_1000": 42425.80486695051,
+          "ratio": 6.512807398941356,
+          "reasonable": true,
+          "failure_mode": "normal"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 53.151815237782834,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": true,
+          "details": "Min prediction: $53.15"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 81715.29511334043,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $81,715.30"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 1000.2155910248173,
+          "pred_without_material": 1496.148242345916,
+          "degradation_pct": 49.582575573828834,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 5,
+      "total_count": 5
+    },
+    "M1": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 13452.421380581694,
+          "pred_at_200": 17042.31495372622,
+          "ratio": 1.2668585432750767,
+          "reasonable": true,
+          "failure_mode": "normal"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 13452.421380581694,
+          "pred_at_1000": 25377.789698866087,
+          "ratio": 1.8864848922661928,
+          "reasonable": true,
+          "failure_mode": "normal"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 0.0,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": false,
+          "details": "Min prediction: $0.00 (below $50 floor)"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 35639.86837406745,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $35,639.87"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 1527.053062297302,
+          "pred_without_material": 6949.575818924578,
+          "degradation_pct": 355.09720588684854,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 4,
+      "total_count": 5
+    },
+    "M2": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 9629.145889316607,
+          "pred_at_200": 17408.062871606984,
+          "ratio": 1.807851191757409,
+          "reasonable": true,
+          "failure_mode": "normal"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 9629.145889316607,
+          "pred_at_1000": 68843.61986373422,
+          "ratio": 7.149504291976216,
+          "reasonable": true,
+          "failure_mode": "normal"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 113.83446128346274,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": true,
+          "details": "Min prediction: $113.83"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 148343.63783880408,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $148,343.64"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 1346.8270660559267,
+          "pred_without_material": 1771.5348659233719,
+          "degradation_pct": 31.533951950577244,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 5,
+      "total_count": 5
+    },
+    "M3a": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 8941.164437027533,
+          "pred_at_200": 15716.749467336682,
+          "ratio": 1.7577967140666606,
+          "reasonable": true,
+          "failure_mode": "normal"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 8941.164437027533,
+          "pred_at_1000": 58232.08190062428,
+          "ratio": 6.51280739894136,
+          "reasonable": true,
+          "failure_mode": "normal"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 125.76884496332443,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": true,
+          "details": "Min prediction: $125.77"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 140547.89127114735,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $140,547.89"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 1372.85872118388,
+          "pred_without_material": 1847.7862069023915,
+          "degradation_pct": 34.59405388115678,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 5,
+      "total_count": 5
+    },
+    "M3b": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 12892.422072318008,
+          "pred_at_200": 24252.806940185692,
+          "ratio": 1.8811676195631355,
+          "reasonable": true,
+          "failure_mode": "normal"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 12892.422072318008,
+          "pred_at_1000": 105187.20601009247,
+          "ratio": 8.158839775804843,
+          "reasonable": true,
+          "failure_mode": "normal"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 138.13761116907904,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": true,
+          "details": "Min prediction: $138.14"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 121376.75931588834,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $121,376.76"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 1580.1783619468326,
+          "pred_without_material": 2009.2921481992234,
+          "degradation_pct": 27.156034824050383,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 5,
+      "total_count": 5
+    },
+    "M4": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 9356.773339719814,
+          "pred_at_200": 16741.86989955014,
+          "ratio": 1.7892781295107734,
+          "reasonable": true,
+          "failure_mode": "normal"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 9356.773339719814,
+          "pred_at_1000": 64640.36049872805,
+          "ratio": 6.9084029453110265,
+          "reasonable": true,
+          "failure_mode": "normal"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 119.87717419420655,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": true,
+          "details": "Min prediction: $119.88"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 149554.83062836825,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $149,554.83"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 1354.4046885786481,
+          "pred_without_material": 1813.9301483622419,
+          "degradation_pct": 33.92822423450359,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 5,
+      "total_count": 5
+    },
+    "M5": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 12088.789643478345,
+          "pred_at_200": 12088.789643478342,
+          "ratio": 0.9999999999999997,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 12088.789643478345,
+          "pred_at_1000": 12088.789643478345,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 225.20303154543254,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": true,
+          "details": "Min prediction: $225.20"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 50253.11338742841,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $50,253.11"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 1618.7048144001126,
+          "pred_without_material": 1647.560745073708,
+          "degradation_pct": 1.7826555167372682,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 3,
+      "total_count": 5
+    },
+    "M6": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 9236.1787109375,
+          "pred_at_200": 9236.1787109375,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 9236.1787109375,
+          "pred_at_1000": 9236.1787109375,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 0.0,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": false,
+          "details": "Min prediction: $0.00 (below $50 floor)"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 75704.2421875,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $75,704.24"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 1389.8675537109375,
+          "pred_without_material": 4390.8984375,
+          "degradation_pct": 215.92207658753736,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 2,
+      "total_count": 5
+    },
+    "M6b": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 8632.2998046875,
+          "pred_at_200": 8632.2998046875,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 8632.2998046875,
+          "pred_at_1000": 8632.2998046875,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 0.0,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": false,
+          "details": "Min prediction: $0.00 (below $50 floor)"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 79444.328125,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $79,444.33"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 1253.1436767578125,
+          "pred_without_material": 4759.50048828125,
+          "degradation_pct": 279.8048521136248,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 2,
+      "total_count": 5
+    },
+    "M7": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 9977.015625,
+          "pred_at_200": 9977.015625,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 9977.015625,
+          "pred_at_1000": 9977.015625,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 117.28244018554688,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": true,
+          "details": "Min prediction: $117.28"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 93437.171875,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $93,437.17"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 1321.865234375,
+          "pred_without_material": 1757.889892578125,
+          "degradation_pct": 32.98556062027645,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 3,
+      "total_count": 5
+    },
+    "M7b": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 9080.77004106202,
+          "pred_at_200": 9080.77004106202,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 9080.77004106202,
+          "pred_at_1000": 9080.77004106202,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 0.0,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": false,
+          "details": "Min prediction: $0.00 (below $50 floor)"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 67717.85832609447,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $67,717.86"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 760.913736018599,
+          "pred_without_material": 1918.0177443142536,
+          "degradation_pct": 152.06769881039074,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 2,
+      "total_count": 5
+    },
+    "M7c": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 10303.466454837047,
+          "pred_at_200": 10303.466454837047,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 10303.466454837047,
+          "pred_at_1000": 10303.466454837047,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 120.45172825240486,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": true,
+          "details": "Min prediction: $120.45"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 97773.13622685215,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $97,773.14"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 1313.7707142194267,
+          "pred_without_material": 1769.652084206284,
+          "degradation_pct": 34.700223186031195,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 3,
+      "total_count": 5
+    },
+    "M8": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 9040.3330078125,
+          "pred_at_200": 9040.3330078125,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 9040.3330078125,
+          "pred_at_1000": 9040.3330078125,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 0.0,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": false,
+          "details": "Min prediction: $0.00 (below $50 floor)"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 69668.609375,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $69,668.61"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 622.7534790039062,
+          "pred_without_material": 1048.4046630859375,
+          "degradation_pct": 68.34986851664964,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 2,
+      "total_count": 5
+    },
+    "M9": {
+      "tests": [
+        {
+          "name": "qty_extrapolation_200",
+          "pred_at_100": 9341.4375,
+          "pred_at_200": 9341.4375,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "qty_extrapolation_1000",
+          "pred_at_100": 9341.4375,
+          "pred_at_1000": 9341.4375,
+          "ratio": 1.0,
+          "reasonable": false,
+          "failure_mode": "flat"
+        },
+        {
+          "name": "price_floor",
+          "min_prediction": 0.0,
+          "min_config": "Aluminum 6061/Surface Grinding",
+          "passed": false,
+          "details": "Min prediction: $0.00 (below $50 floor)"
+        },
+        {
+          "name": "price_ceiling",
+          "max_prediction": 73249.6953125,
+          "max_config": "Inconel/5-Axis/TurbineBlade-complex/qty=100/rush",
+          "passed": true,
+          "details": "Max prediction: $73,249.70"
+        },
+        {
+          "name": "missing_material_graceful",
+          "pred_with_material": 1727.0740966796875,
+          "pred_without_material": 2903.192626953125,
+          "degradation_pct": 68.09890395174902,
+          "handles_gracefully": true
+        }
+      ],
+      "pass_count": 2,
+      "total_count": 5
+    }
+  },
+  "complexity_interpretability": {
+    "M0": {
+      "train_seconds": 0.003,
+      "effective_params": 22,
+      "interpretability_rating": "high",
+      "interpretability_reason": "Lookup table \u2014 every factor is directly readable",
+      "explanation_method": "direct inspection",
+      "model_type": "M0LookupTable"
+    },
+    "M1": {
+      "train_seconds": 0.005,
+      "effective_params": 40,
+      "interpretability_rating": "high",
+      "interpretability_reason": "Linear model \u2014 coefficients show per-feature contribution",
+      "explanation_method": "coefficients",
+      "model_type": "M1RidgeAdditive"
+    },
+    "M2": {
+      "train_seconds": 0.005,
+      "effective_params": 40,
+      "interpretability_rating": "high",
+      "interpretability_reason": "Linear model \u2014 coefficients show per-feature contribution",
+      "explanation_method": "coefficients",
+      "model_type": "M2RidgeLogLinear"
+    },
+    "M3a": {
+      "train_seconds": 0.007,
+      "effective_params": "unknown",
+      "interpretability_rating": "high",
+      "interpretability_reason": "Two-stage decomposition \u2014 unit price + discount curve are inspectable",
+      "explanation_method": "coefficients + curve parameters",
+      "model_type": "M3TwoStage"
+    },
+    "M3b": {
+      "train_seconds": 0.008,
+      "effective_params": "unknown",
+      "interpretability_rating": "high",
+      "interpretability_reason": "Two-stage decomposition \u2014 unit price + discount curve are inspectable",
+      "explanation_method": "coefficients + curve parameters",
+      "model_type": "M3TwoStage"
+    },
+    "M4": {
+      "train_seconds": 0.018,
+      "effective_params": 26,
+      "interpretability_rating": "medium-high",
+      "interpretability_reason": "Lasso with interactions \u2014 non-zero coefficients are readable, but many interaction terms",
+      "explanation_method": "coefficients (sparse)",
+      "model_type": "M4KitchenSinkLasso"
+    },
+    "M5": {
+      "train_seconds": 0.069,
+      "effective_params": 7234,
+      "interpretability_rating": "medium",
+      "interpretability_reason": "Random Forest \u2014 feature importance available, but individual trees are opaque",
+      "explanation_method": "permutation importance / SHAP",
+      "model_type": "M5RandomForest"
+    },
+    "M6": {
+      "train_seconds": 0.152,
+      "effective_params": 2196,
+      "interpretability_rating": "medium",
+      "interpretability_reason": "XGBoost \u2014 SHAP provides per-prediction explanations, but model internals are complex",
+      "explanation_method": "SHAP TreeExplainer",
+      "model_type": "XGBoostModel"
+    },
+    "M6b": {
+      "train_seconds": 0.152,
+      "effective_params": 2209,
+      "interpretability_rating": "medium",
+      "interpretability_reason": "XGBoost \u2014 SHAP provides per-prediction explanations, but model internals are complex",
+      "explanation_method": "SHAP TreeExplainer",
+      "model_type": "XGBoostModel"
+    },
+    "M7": {
+      "train_seconds": 0.15,
+      "effective_params": 2697,
+      "interpretability_rating": "medium",
+      "interpretability_reason": "XGBoost \u2014 SHAP provides per-prediction explanations, but model internals are complex",
+      "explanation_method": "SHAP TreeExplainer",
+      "model_type": "XGBoostModel"
+    },
+    "M7b": {
+      "train_seconds": 0.182,
+      "effective_params": "unknown",
+      "interpretability_rating": "medium",
+      "interpretability_reason": "LightGBM \u2014 SHAP available, similar to XGBoost",
+      "explanation_method": "SHAP TreeExplainer",
+      "model_type": "LightGBMModel"
+    },
+    "M7c": {
+      "train_seconds": 0.233,
+      "effective_params": "unknown",
+      "interpretability_rating": "medium",
+      "interpretability_reason": "LightGBM \u2014 SHAP available, similar to XGBoost",
+      "explanation_method": "SHAP TreeExplainer",
+      "model_type": "LightGBMModel"
+    },
+    "M8": {
+      "train_seconds": 0.45,
+      "effective_params": 5940,
+      "interpretability_rating": "low-medium",
+      "interpretability_reason": "3 separate XGBoost models \u2014 harder to compare across estimators",
+      "explanation_method": "per-model SHAP (fragmented)",
+      "model_type": "M8PerEstimatorXGBoost"
+    },
+    "M9": {
+      "train_seconds": 0.173,
+      "effective_params": 2231,
+      "interpretability_rating": "medium",
+      "interpretability_reason": "XGBoost \u2014 SHAP provides per-prediction explanations, but model internals are complex",
+      "explanation_method": "SHAP TreeExplainer",
+      "model_type": "XGBoostModel"
+    }
+  }
+}

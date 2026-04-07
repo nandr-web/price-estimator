@@ -29,6 +29,7 @@ from price_estimator.comparison import (
 from price_estimator.models import (
     M0LookupTable,
     M2RidgeLogLinear,
+    XGBoostModel,
 )
 
 # ---------------------------------------------------------------------------
@@ -48,6 +49,14 @@ def trained_m0(raw_data):
 def trained_m2(raw_data):
     """M2 log-linear Ridge trained on real data."""
     model = M2RidgeLogLinear()
+    model.fit(raw_data)
+    return model
+
+
+@pytest.fixture
+def trained_m6(raw_data):
+    """M6 XGBoost trained on real data."""
+    model = XGBoostModel(name="M6")
     model.fit(raw_data)
     return model
 
@@ -322,6 +331,56 @@ class TestDomainInvariants:
                 f"(${unit_prices[i + 1]:,.2f}/unit)"
             )
 
+    def test_m6_material_ordering(self, raw_data, trained_m6):
+        """M6 must respect material cost ordering (domain invariant)."""
+        materials = [
+            "Aluminum 6061",
+            "Aluminum 7075",
+            "Stainless Steel 17-4 PH",
+            "Titanium Grade 5",
+            "Inconel 718",
+        ]
+        preds = []
+        for mat in materials:
+            probe = _build_probe_row(material=mat)
+            preds.append(float(trained_m6.predict(probe)[0]))
+
+        for i in range(len(preds) - 1):
+            assert preds[i] < preds[i + 1], (
+                f"Material ordering violated: {materials[i]} (${preds[i]:,.0f}) "
+                f">= {materials[i + 1]} (${preds[i + 1]:,.0f})"
+            )
+
+    def test_m6_quantity_discount(self, raw_data, trained_m6):
+        """M6 must produce decreasing unit prices at high quantities.
+
+        XGBoost is a tree model so unit prices may not be strictly
+        monotonic across all quantities. We verify the discount trend
+        holds from qty=10 onwards where the model has seen enough
+        training data to learn the discount curve.
+        """
+        quantities = [10, 20, 50, 100]
+        unit_prices = []
+        for qty in quantities:
+            probe = _build_probe_row(quantity=qty)
+            total = float(trained_m6.predict(probe)[0])
+            unit_prices.append(total / qty)
+
+        for i in range(len(unit_prices) - 1):
+            assert unit_prices[i] >= unit_prices[i + 1], (
+                f"Quantity discount violated at M6: qty={quantities[i]} "
+                f"(${unit_prices[i]:,.2f}/unit) < qty={quantities[i + 1]} "
+                f"(${unit_prices[i + 1]:,.2f}/unit)"
+            )
+
+    def test_m6_rush_premium(self, raw_data, trained_m6):
+        """M6 (learned from data) should charge more for rush jobs."""
+        no_rush = float(trained_m6.predict(_build_probe_row(rush=False))[0])
+        rush = float(trained_m6.predict(_build_probe_row(rush=True))[0])
+        assert rush > no_rush, (
+            f"Rush premium violated: rush=${rush:,.0f} <= no_rush=${no_rush:,.0f}"
+        )
+
 
 # ---------------------------------------------------------------------------
 # Lens 3: Boundary Safety Checks (VALIDATION_PLAN.md Section 3)
@@ -393,6 +452,25 @@ class TestBoundarySafety:
         probe.loc[0, "Material"] = np.nan
         pred = float(trained_m2.predict(probe)[0])
         assert pred > 0, "Prediction should be positive even with missing material"
+
+    def test_m2_missing_material_reasonable_degradation(self, raw_data, trained_m2):
+        """Prediction with missing material should be within 3x of with-material.
+
+        Per VALIDATION_PLAN.md section 3.3, graceful degradation means the model
+        should not produce wildly different predictions when a feature is missing.
+        """
+        probe_with = _build_probe_row(material="Aluminum 6061")
+        pred_with = float(trained_m2.predict(probe_with)[0])
+
+        probe_without = _build_probe_row(material="Aluminum 6061")
+        probe_without.loc[0, "Material"] = np.nan
+        pred_without = float(trained_m2.predict(probe_without)[0])
+
+        ratio = max(pred_with, pred_without) / min(pred_with, pred_without)
+        assert ratio <= 3.0, (
+            f"Missing material degradation too large: "
+            f"with=${pred_with:,.0f}, without=${pred_without:,.0f}, ratio={ratio:.2f}"
+        )
 
 
 # ---------------------------------------------------------------------------
