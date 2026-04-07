@@ -41,6 +41,29 @@ class TrainingBounds:
         self.known_part_types: set[str] = set()
         self.known_estimators: set[str] = set()
 
+    def to_json(self) -> dict:
+        """Serialize bounds to a JSON-compatible dict for S3 storage."""
+        return {
+            "quantity_range": list(self.quantity_range),
+            "lead_time_range": list(self.lead_time_range),
+            "known_materials": sorted(self.known_materials),
+            "known_processes": sorted(self.known_processes),
+            "known_part_types": sorted(self.known_part_types),
+            "known_estimators": sorted(self.known_estimators),
+        }
+
+    @classmethod
+    def from_json(cls, data: dict) -> "TrainingBounds":
+        """Deserialize bounds from a JSON dict (e.g. loaded from S3)."""
+        bounds = cls()
+        bounds.quantity_range = tuple(data["quantity_range"])
+        bounds.lead_time_range = tuple(data["lead_time_range"])
+        bounds.known_materials = set(data["known_materials"])
+        bounds.known_processes = set(data["known_processes"])
+        bounds.known_part_types = set(data["known_part_types"])
+        bounds.known_estimators = set(data["known_estimators"])
+        return bounds
+
     @classmethod
     def from_dataframe(cls, df: pd.DataFrame) -> "TrainingBounds":
         """Compute bounds from training data.

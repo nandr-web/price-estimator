@@ -50,9 +50,10 @@ def _valid_quote_payload(**overrides) -> dict:
 @pytest.fixture(autouse=True)
 def _isolate_db(tmp_path, monkeypatch):
     """Point the API's DB_PATH at a temp file so tests never touch the
-    real overrides database."""
+    real overrides database.  Also reset the cached store."""
     db_file = tmp_path / "test_overrides.db"
     monkeypatch.setattr("price_estimator.api.DB_PATH", db_file)
+    monkeypatch.setattr("price_estimator.api._store", None)
 
 
 @pytest.fixture()
@@ -132,7 +133,7 @@ class TestOverrideQuote:
         )
         resp = client.get(f"{V1}/quote/{qid}")
         body = resp.json()
-        ovr = body["human_override"]
+        ovr = body["override"]
         assert ovr["reason_category"] == "material_hardness"
         assert ovr["reason_text"] == "Inconel is harder than expected"
         assert ovr["estimator_id"] == "Tanaka-san"
@@ -145,7 +146,7 @@ class TestOverrideQuote:
         )
         resp = client.get(f"{V1}/quote/{qid}")
         body = resp.json()
-        ovr = body["human_override"]
+        ovr = body["override"]
         assert ovr["reason_category"] is None
         assert ovr["reason_text"] is None
         assert ovr["estimator_id"] is None
@@ -175,7 +176,7 @@ class TestGetQuote:
         assert resp.status_code == 200
         body = resp.json()
         assert body["original_estimate"] == 1000.0
-        assert body["human_override"] is None
+        assert body["override"] is None
         assert body["final_price"] == 1000.0
 
     def test_with_override(self, client):
@@ -187,7 +188,7 @@ class TestGetQuote:
         resp = client.get(f"{V1}/quote/{qid}")
         body = resp.json()
         assert body["final_price"] == 1500.0
-        assert body["human_override"]["human_price"] == 1500.0
+        assert body["override"]["human_price"] == 1500.0
 
     def test_not_found(self, client):
         resp = client.get(f"{V1}/quote/Q-NONEXISTENT")

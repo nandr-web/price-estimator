@@ -13,7 +13,7 @@ from price_estimator.predict import (
 
 
 class TestTrainingBounds:
-    """Tests for TrainingBounds.from_dataframe()."""
+    """Tests for TrainingBounds.from_dataframe() and JSON serialization."""
 
     def test_from_dataframe_quantity_range(self, sample_df):
         """Quantity range matches min/max of sample data."""
@@ -39,6 +39,28 @@ class TestTrainingBounds:
         bounds = TrainingBounds.from_dataframe(df)
         assert np.nan not in bounds.known_materials
         assert len(bounds.known_materials) == 4
+
+    def test_json_round_trip(self, sample_df):
+        """to_json → from_json preserves all fields exactly."""
+        original = TrainingBounds.from_dataframe(sample_df)
+        restored = TrainingBounds.from_json(original.to_json())
+        assert restored.quantity_range == original.quantity_range
+        assert restored.lead_time_range == original.lead_time_range
+        assert restored.known_materials == original.known_materials
+        assert restored.known_processes == original.known_processes
+        assert restored.known_part_types == original.known_part_types
+        assert restored.known_estimators == original.known_estimators
+
+    def test_to_json_types(self, sample_df):
+        """to_json produces JSON-serializable types (lists, not sets/tuples)."""
+        import json
+
+        bounds = TrainingBounds.from_dataframe(sample_df)
+        data = bounds.to_json()
+        # Should not raise — all values are JSON-serializable
+        json.dumps(data)
+        assert isinstance(data["quantity_range"], list)
+        assert isinstance(data["known_materials"], list)
 
 
 class TestDetectOOD:
