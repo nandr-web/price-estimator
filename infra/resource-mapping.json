@@ -1,0 +1,11 @@
+{
+  "OverridesTable7BDFBA35": {
+    "TableName": "PriceEstimator-Overrides"
+  },
+  "QuotesTable820F70F6": {
+    "TableName": "PriceEstimator-Quotes"
+  },
+  "LambdaImageRepo5E63E2C6": {
+    "RepositoryName": "price-estimator-lambda"
+  }
+}
