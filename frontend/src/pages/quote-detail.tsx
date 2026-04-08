@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Link, useParams } from "react-router-dom"
 import {
   useQuote,
@@ -141,7 +141,12 @@ export function QuoteDetailPage() {
       {/* AI Estimate */}
       <Card>
         <CardHeader className="pb-3">
-          <CardTitle className="text-base">AI Estimate</CardTitle>
+          <div className="flex items-center gap-3">
+            <CardTitle className="text-base">AI Estimate</CardTitle>
+            {quote.warnings.length > 0 && (
+              <WarningPopover warnings={quote.warnings} />
+            )}
+          </div>
           {quote.override && (
             <CardDescription>
               Overridden to {formatCurrency(quote.override.human_price)} (
@@ -154,7 +159,7 @@ export function QuoteDetailPage() {
             </CardDescription>
           )}
         </CardHeader>
-        <CardContent className="space-y-4">
+        <CardContent>
           <EstimateRange
             estimate={quote.original_estimate}
             aggressive={quote.aggressive_estimate}
@@ -162,19 +167,6 @@ export function QuoteDetailPage() {
             range={quote.typical_range}
             override={quote.override?.human_price}
           />
-
-          {quote.warnings.length > 0 && (
-            <div className="space-y-1">
-              {quote.warnings.map((w, i) => (
-                <p
-                  key={i}
-                  className="text-sm text-amber-600 before:mr-1.5 before:content-['!']"
-                >
-                  {w}
-                </p>
-              ))}
-            </div>
-          )}
         </CardContent>
       </Card>
 
@@ -473,5 +465,51 @@ function OutcomeActionPanel({
         )}
       </CardContent>
     </Card>
+  )
+}
+
+function WarningPopover({ warnings }: { warnings: string[] }) {
+  const [open, setOpen] = useState(false)
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  return (
+    <div
+      ref={containerRef}
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="inline-flex items-center gap-1.5 rounded-md bg-amber-50 px-2.5 py-1 text-xs font-medium text-amber-700 ring-1 ring-amber-200 transition-colors hover:bg-amber-100"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          fill="currentColor"
+          className="h-3.5 w-3.5"
+        >
+          <path
+            fillRule="evenodd"
+            d="M6.701 2.25c.577-1 2.02-1 2.598 0l5.196 9a1.5 1.5 0 0 1-1.299 2.25H2.804a1.5 1.5 0 0 1-1.3-2.25l5.197-9ZM8 5a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 1-1.5 0v-2.5A.75.75 0 0 1 8 5Zm0 6.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+            clipRule="evenodd"
+          />
+        </svg>
+        Review Recommended
+      </button>
+
+      {open && (
+        <div className="absolute left-0 top-full z-10 mt-1.5 w-80 rounded-lg border bg-popover p-3 shadow-md">
+          <ul className="space-y-1.5">
+            {warnings.map((w, i) => (
+              <li key={i} className="text-xs text-popover-foreground">
+                {w}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
   )
 }

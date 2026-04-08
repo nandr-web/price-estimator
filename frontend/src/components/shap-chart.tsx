@@ -18,13 +18,38 @@ interface ShapChartProps {
   features: ShapFeature[]
 }
 
+/** Map raw feature names from the backend to plain-English labels. */
+const FEATURE_LABELS: Record<string, string> = {
+  log_quantity: "Quantity",
+  process_precision_tier: "Process Precision",
+  complexity_score: "Complexity",
+  material_cost_tier: "Material Cost",
+  complex_internal: "Internal Channels",
+  high_precision: "Precision Requirement",
+  high_fin_density: "Fin Density",
+  base_part_type: "Part Type",
+  rush_job: "Rush Job",
+  lead_time_weeks: "Lead Time",
+}
+
+function humanLabel(raw: string): string {
+  const key = raw.replace(/ /g, "_")
+  if (FEATURE_LABELS[key]) return FEATURE_LABELS[key]
+  // estimator_Sato-san → Estimator
+  if (key.startsWith("estimator")) return "Estimator"
+  // Fallback: title-case with underscores replaced
+  return raw
+    .replace(/_/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+}
+
 export function ShapChart({ features }: ShapChartProps) {
   const sorted = [...features]
     .sort((a, b) => Math.abs(b.contribution) - Math.abs(a.contribution))
     .slice(0, 8)
 
   const data = sorted.map((f) => ({
-    name: f.feature.replace(/_/g, " "),
+    name: humanLabel(f.feature),
     value: f.contribution,
   }))
 

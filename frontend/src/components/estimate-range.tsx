@@ -17,58 +17,114 @@ export function EstimateRange({
 }: EstimateRangeProps) {
   const low = aggressive ?? range?.low ?? estimate * 0.9
   const high = conservative ?? range?.high ?? estimate * 1.1
-  const span = high - low
-  const estimatePos = ((estimate - low) / span) * 100
+  const span = high - low || 1
 
-  const overridePos =
-    override != null ? ((override - low) / span) * 100 : null
+  const pct = (v: number) => Math.max(0, Math.min(100, ((v - low) / span) * 100))
+  const estimatePos = pct(estimate)
+  const overridePos = override != null ? pct(override) : null
 
   return (
-    <div className="space-y-2">
-      <div className="flex items-baseline justify-between">
-        <span className="text-3xl font-semibold tabular-nums">
-          {formatCurrency(override ?? estimate)}
-        </span>
-        {conservative && (
-          <span className="text-sm text-muted-foreground">
-            conservative: {formatCurrency(conservative)}
-          </span>
-        )}
-      </div>
+    <div className="space-y-1">
+      {/* Large price display */}
+      <span className="text-3xl font-semibold tabular-nums">
+        {formatCurrency(override ?? estimate)}
+      </span>
 
-      {/* Range bar */}
-      <div className="relative h-3 rounded-full bg-muted">
-        {/* Typical range band */}
+      {/* Number line */}
+      <div className="relative mt-4 mb-8 mx-2">
+        {/* Track */}
+        <div className="h-1 rounded-full bg-muted" />
+
+        {/* Range band */}
         {range && (
           <div
-            className="absolute inset-y-0 rounded-full bg-primary/15"
+            className="absolute top-0 h-1 rounded-full bg-primary/20"
             style={{
-              left: `${((range.low - low) / span) * 100}%`,
-              right: `${100 - ((range.high - low) / span) * 100}%`,
+              left: `${pct(range.low)}%`,
+              width: `${pct(range.high) - pct(range.low)}%`,
             }}
           />
         )}
 
-        {/* Estimate marker */}
-        <div
-          className="absolute top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-primary bg-background"
-          style={{ left: `${estimatePos}%` }}
+        {/* Tick: aggressive / low */}
+        <Tick position={0} label={formatCurrency(low)} sublabel={aggressive ? "aggressive" : ""} />
+
+        {/* Tick: estimate */}
+        <Tick
+          position={estimatePos}
+          label={formatCurrency(estimate)}
+          sublabel="estimate"
+          emphasis
         />
 
-        {/* Override marker */}
-        {overridePos != null && (
-          <div
-            className="absolute top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-amber-500 bg-background"
-            style={{ left: `${Math.max(0, Math.min(100, overridePos))}%` }}
+        {/* Tick: override */}
+        {overridePos != null && override != null && (
+          <Tick
+            position={overridePos}
+            label={formatCurrency(override)}
+            sublabel="override"
+            color="amber"
           />
         )}
-      </div>
 
-      {/* Labels below the bar */}
-      <div className="flex justify-between text-xs text-muted-foreground">
-        <span>{formatCurrency(low)} {aggressive ? "(win bid)" : ""}</span>
-        <span>{formatCurrency(estimate)} (estimate)</span>
-        <span>{formatCurrency(high)} {range ? `(${(range.coverage * 100).toFixed(0)}% range)` : ""}</span>
+        {/* Tick: conservative / high */}
+        <Tick
+          position={100}
+          label={formatCurrency(high)}
+          sublabel={conservative ? "conservative" : ""}
+          align="right"
+        />
+      </div>
+    </div>
+  )
+}
+
+function Tick({
+  position,
+  label,
+  sublabel,
+  emphasis,
+  color,
+  align,
+}: {
+  position: number
+  label: string
+  sublabel?: string
+  emphasis?: boolean
+  color?: "amber"
+  align?: "right"
+}) {
+  const dotColor = color === "amber"
+    ? "bg-amber-500"
+    : emphasis
+      ? "bg-primary"
+      : "bg-muted-foreground/50"
+
+  const textColor = color === "amber"
+    ? "text-amber-600"
+    : emphasis
+      ? "text-foreground"
+      : "text-muted-foreground"
+
+  // Determine horizontal alignment of the label relative to the tick
+  const alignClass = align === "right"
+    ? "right-0 text-right"
+    : position < 15
+      ? "left-0 text-left"
+      : "-translate-x-1/2 text-center"
+
+  return (
+    <div className="absolute top-0 -translate-y-1/2" style={{ left: `${position}%` }}>
+      {/* Dot on the line */}
+      <div
+        className={`h-3 w-3 -translate-x-1/2 rounded-full border-2 border-background ${dotColor}`}
+      />
+      {/* Label below */}
+      <div className={`absolute top-5 whitespace-nowrap ${alignClass}`}>
+        <p className={`text-xs font-medium tabular-nums ${textColor}`}>{label}</p>
+        {sublabel && (
+          <p className="text-[10px] text-muted-foreground">{sublabel}</p>
+        )}
       </div>
     </div>
   )

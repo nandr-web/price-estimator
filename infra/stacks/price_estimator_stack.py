@@ -147,8 +147,8 @@ class PriceEstimatorStack(Stack):
                 repository=ecr_repo,
                 tag_or_digest="latest",
             ),
-            memory_size=512,
-            timeout=Duration.seconds(30),
+            memory_size=2048,
+            timeout=Duration.seconds(60),
             environment={
                 "ARTIFACTS_BUCKET": artifacts_bucket.bucket_name,
                 "ARTIFACTS_PREFIX": "v1",
@@ -156,6 +156,21 @@ class PriceEstimatorStack(Stack):
                 "OVERRIDES_TABLE": overrides_table.table_name,
             },
             description="Serves /quote endpoints via FastAPI + Mangum",
+            current_version_options=lambda_.VersionOptions(
+                removal_policy=RemovalPolicy.RETAIN,
+                description="Auto-published version for alias tracking",
+            ),
+        )
+
+        # ------------------------------------------------------------------ #
+        # Lambda alias — "live" with provisioned concurrency                  #
+        # ------------------------------------------------------------------ #
+        predict_alias = lambda_.Alias(
+            self,
+            "PredictLiveAlias",
+            alias_name="live",
+            version=predict_fn.current_version,
+            provisioned_concurrent_executions=1,
         )
 
         # ------------------------------------------------------------------ #
@@ -207,7 +222,7 @@ class PriceEstimatorStack(Stack):
         # ------------------------------------------------------------------ #
         predict_integration = apigwv2_integrations.HttpLambdaIntegration(
             "PredictIntegration",
-            handler=predict_fn,
+            handler=predict_alias,
         )
 
         http_api = apigwv2.HttpApi(
@@ -293,6 +308,18 @@ class PriceEstimatorStack(Stack):
             description="Triggers model retraining every Monday at 06:00 UTC",
         )
         retrain_rule.add_target(targets.LambdaFunction(retrain_fn))
+
+        # ------------------------------------------------------------------ #
+        # EventBridge — predict Lambda warm-up (every 5 minutes)              #
+        # ------------------------------------------------------------------ #
+        warmup_rule = events.Rule(
+            self,
+            "PredictWarmupRule",
+            rule_name="price-estimator-predict-warmup",
+            schedule=events.Schedule.rate(Duration.minutes(5)),
+            description="Keeps predict Lambda warm by invoking alias every 5 minutes",
+        )
+        warmup_rule.add_target(targets.LambdaFunction(predict_alias))
 
         # ------------------------------------------------------------------ #
         # SNS topic for alarms (optional recipient — add subscription later)  #

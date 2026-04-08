@@ -1,9 +1,35 @@
 .venv/
 __pycache__/
 *.pyc
-outputs/models/
-outputs/figures/
 *.egg-info/
 dist/
 build/
 .ruff_cache/
+.pytest_cache/
+.coverage
+.DS_Store
+.claude/
+
+# Tooling / internal
+CLAUDE.md
+INSTRUCTIONS.md
+uv.lock
+
+# Frontend / infra build artifacts
+frontend/node_modules/
+frontend/dist/
+infra/.venv/
+infra/cdk.out/
+
+# Old drafts (kept only docs/Overview - Price Estimator.md)
+Summary.md
+docs/SUMMARY.md
+docs/SUMMARY-v2.md
+docs/SUMMARY-v3.md
+docs/agent_001.md
+docs/agent_002.md
+docs/plan_review_feedback.md
+docs/TODO.md
+docs/TODO_PRODUCT_REVIEW.md
+docs/REVIEW.md
+docs/deployment-checklist.md

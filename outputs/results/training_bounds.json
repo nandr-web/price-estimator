@@ -1,0 +1,41 @@
+{
+  "quantity_range": [
+    1,
+    100
+  ],
+  "lead_time_range": [
+    2,
+    12
+  ],
+  "known_materials": [
+    "Aluminum 6061",
+    "Aluminum 7075",
+    "Inconel 718",
+    "Stainless Steel 17-4 PH",
+    "Titanium Grade 5"
+  ],
+  "known_processes": [
+    "3-Axis Milling",
+    "5-Axis Milling",
+    "CNC Turning",
+    "Surface Grinding",
+    "Wire EDM"
+  ],
+  "known_part_types": [
+    "Actuator Linkage",
+    "Electronic Chassis - EMI shielded",
+    "Fuel Injector Nozzle - high precision",
+    "Heat Sink - high fin density",
+    "Landing Gear Pin - hardened",
+    "Manifold Block - complex internal channels",
+    "Mounting Bracket - standard",
+    "Sensor Housing - threaded",
+    "Structural Rib - aerospace grade",
+    "Turbine Blade Housing - thin walls"
+  ],
+  "known_estimators": [
+    "Sato-san",
+    "Suzuki-san",
+    "Tanaka-san"
+  ]
+}
